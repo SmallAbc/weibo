@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+/*
+自定义jquery UI 皮肤
+*/
+
+.ui-dialog{
+    border-radius: 0;
+    border:none;
+    padding:0;
+}
+
+.ui-dialog-titlebar{
+    background: #267cbe;
+    border:none;
+    border-radius: 0;
+    color: #fff3f3;
+    font-weight:normal;
+}
+
+button.ui-button:nth-child(1){
+    height: 35px;
+    background: #267cbe;
+    color: #fff3f3;
+}
+button.ui-button:nth-child(1):hover{
+    background: #050b0c;
+    color: #eecd34;
+    text-shadow: 3px -3px 3px #ba8d3a;
+}
+
+body{
+    padding:0;
+    margin:0;
+    height: 100%;
+    background: #43a866;
+    /*background: url("../img/login_bg1.jpg")no-repeat;*/
+    /*background-size:cover;*/
+}
+
+#header{
+    width:198px;
+    height: 60px;
+    background: url(../img/Logo.png);
+    margin:0 auto;
+    position: relative;
+    top: 150px;
+}
+
+#main{
+    text-align: center;
+    position:relative;
+    top: 200px;
+}
+
+#login input[type='text'],
+#login input[type='password']{
+    width: 250px;
+    height:25px;
+    line-height: 25px;
+    background: #000;
+    border:1px solid #d2d2d2;
+    color: #fff;
+    font-size:18px;
+    font-family: Tahoma, monospace;
+    padding:12px;
+    border-radius: 10px;
+    margin-right:10px;
+
+}
+
+#login input[type='submit']{
+    width:150px;
+    height:50px;
+    position: relative;
+    top:-4px;
+    font-size:24px;
+    font-family:黑体,fantasy;
+    background: #267cbe;
+    border:none;
+}
+#login input[type='submit']:hover{
+    background: #050b0c;
+    color: #eecd34;
+    text-shadow: 3px -3px 3px #ba8d3a;
+}
+
+#login .bottom{
+    width:380px;
+    margin:0 auto;
+    text-align: right;
+    color: #fff;
+    font-size:14px;
+    text-shadow: 2px -2px 1px #333;
+    
+}
+
+#login .bottom a{
+    color: #eee;
+    text-decoration: none;
+}
+#login .bottom a:hover{
+    color: #ee970f;
+    text-decoration: underline;
+}
+
+#footer{
+    height:40px;
+    background: #eee;
+    position:absolute;
+    bottom:0px;
+    width:100%;
+    text-align: center;
+    opacity:0.4;
+    -moz-opacity: 0.4;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+}
+
+.footer_text{
+    height:40px;
+    line-height:70px;
+    position:absolute;
+    bottom:0px;
+    font-size:14px;
+    width:100%;
+    text-align: center;
+    color: #fff3f3;
+
+}
+
+#register form P input.text{
+    width:270px;
+    height: 25px;
+    border:1px solid #cccccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin: 5px;
+
+}
+
+
+span.star{
+    color: #ee0b0b;
+}
+
+
+
+/*
+设置input框内的placeholder的字体属性
+*/
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #8b8b8b;
+    opacity:0.4;
+    font-size: 15px;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #939393;
+    opacity:0.5;
+    font-size: 15px;
+}
+
+input:-ms-input-placeholder{
+    color: #979797;
+    opacity:0.5;
+    font-size: 15px;
+}
+
+input::-webkit-input-placeholder{
+    color: #919191;
+    opacity:0.5;
+    font-size: 15px;
+}
