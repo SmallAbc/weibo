@@ -13,10 +13,8 @@ use function var_dump;
 class LoginController extends Controller{
     public function index(){
         $this->display();
-        $this->test();
     }
     public function test(){
         $m=M('User');
-        var_dump($m);
     }
 }

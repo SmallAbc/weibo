@@ -5,6 +5,8 @@
     <script type="text/javascript" src="__JS__/jquery.js"></script>
     <script type="text/javascript" src="__JS__/Login.js"></script>
     <script type="text/javascript" src="__JS__/jquery.ui.js"></script>
+    <script type="text/javascript" src="__JS__/jquery.form.js"></script>
+    <script type="text/javascript" src="__JS__/jquery.validate.js"></script>
     <link rel="stylesheet" href="__CSS__/jquery.ui.css">
     <link rel="stylesheet" href="__CSS__/Login.css">
     <script type="text/javascript">var ThinkPHP={
@@ -16,7 +18,7 @@
 <body>
 <div id="header"></div>
 <div id="main">
-    <form id="login" action="">
+    <form id="login"  >
         <div class="top">
             <input type="text" name="user" placeholder="用户名">
             <input type="password" name="password" placeholder="密码">
@@ -31,25 +33,23 @@
 <div id="footer"></div>
 <p class="footer_text">&copy;20017-2022 哎哟喂 PHP 俱乐部. Powered by ThinkPHP.</p>
 
-<div id="register" title="注册新用户" >
-    <form action="">
-        <p>
-            <label for="user" >账号:</label>
-            <input type="text" name="user" id="user" class="text" placeholder="用户名不得小于2位或大于20位" >
-            <span class="star">*</span>
-        </p>
-        <p>
-            <label for="password" >密码:</label>
-            <input type="password" name="password" id="password" class="text" placeholder="密码不得小于6位或大于30位" >
-            <span class="star">*</span>
-        </p>
-        <p>
-            <label for="email" >邮件:</label>
-            <input type="text" name="email" id="email" class="text" placeholder="例如:aiyov@163.com" >
-            <span class="star">*</span>
-        </p>
-    </form>
-</div>
+<form  id="register" title="注册新用户">
+    <p>
+        <label for="user" >账号:</label>
+        <input type="text" name="username" id="user" class="text" placeholder="用户名不得小于2位或大于20位" >
+        <span class="star">*</span>
+    </p>
+    <p>
+        <label for="password" >密码:</label>
+        <input type="password" name="password" id="password" class="text" placeholder="密码不得小于6位或大于30位" >
+        <span class="star">*</span>
+    </p>
+    <p>
+        <label for="email" >邮件:</label>
+        <input type="text" name="email" id="email" class="text" placeholder="例如:aiyov@163.com" >
+        <span class="star">*</span>
+    </p>
+</form>
 
 </body>
 </html>
