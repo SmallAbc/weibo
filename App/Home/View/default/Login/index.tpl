@@ -45,6 +45,11 @@
         <span class="star">*</span>
     </p>
     <p>
+        <label for="repassword" >确认:</label>
+        <input type="password" name="repassword" id="repassword" class="text" placeholder="两次密码须一致" >
+        <span class="star">*</span>
+    </p>
+    <p>
         <label for="email" >邮件:</label>
         <input type="text" name="email" id="email" class="text" placeholder="例如:aiyov@163.com" >
         <span class="star">*</span>

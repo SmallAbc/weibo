@@ -108,7 +108,7 @@ body{
     height:40px;
     background: #eee;
     position:absolute;
-    bottom:0px;
+    bottom:0;
     width:100%;
     text-align: center;
     opacity:0.4;
@@ -121,7 +121,7 @@ body{
     height:40px;
     line-height:70px;
     position:absolute;
-    bottom:0px;
+    bottom:0;
     font-size:14px;
     width:100%;
     text-align: center;
