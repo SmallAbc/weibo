@@ -33,7 +33,8 @@
 <div id="footer"></div>
 <p class="footer_text">&copy;20017-2022 哎哟喂 PHP 俱乐部. Powered by ThinkPHP.</p>
 
-<form  id="register" title="注册新用户">
+<form  id="register" >
+    <ol class="reg_error"></ol>
     <p>
         <label for="user" >账号:</label>
         <input type="text" name="username" id="user" class="text" placeholder="用户名不得小于2位或大于20位" >

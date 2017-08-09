@@ -145,6 +145,10 @@ span.star{
     color: #ee0b0b;
 }
 
+span.succ{
+    color: #2dcc2a;
+}
+
 
 
 /*
@@ -172,4 +176,18 @@ input::-webkit-input-placeholder{
     color: #919191;
     opacity:0.5;
     font-size: 15px;
+}
+
+
+ol.reg_error{
+    background: #222222;
+    color: #774b0c;
+    list-style: circle;
+    font-size:12px;
+    padding: 0 0 0 20px;
+    margin:0;
+}
+
+ol.reg_error li{
+    line-height: 20px;
 }
