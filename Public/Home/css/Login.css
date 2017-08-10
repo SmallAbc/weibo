@@ -146,9 +146,18 @@ span.star{
 }
 
 span.succ{
-    color: #2dcc2a;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background: url('../img/success.gif');
 }
 
+span.loading{
+    display: inline-block;
+    width:16px;
+    height:16px;
+    background: url('../img/loading_form.gif');
+}
 
 
 /*

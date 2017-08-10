@@ -57,6 +57,25 @@ class UserModel extends Model{
     }
 
 
+    //
+    public function checkField($field,$type){
+        $date=array();
+        switch ($type){
+            case 'username':
+                $date['username']=$field;
+                break;
+
+            case 'email':
+                $date['email']=$field;
+                break;
+            default:
+                return 0;
+                break;
+        }
+        return $this->create($date)?1:$this->getError();
+    }
+
+
 
 
 

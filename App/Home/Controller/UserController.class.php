@@ -9,6 +9,7 @@
 namespace Home\Controller;
 use Home\Model\UserModel;
 use function I;
+use function sleep;
 use Think\Controller;
 
 class UserController extends Controller
@@ -25,4 +26,30 @@ class UserController extends Controller
         }
     }
 
-}
+
+
+    //
+    public function checkUserName(){
+        if (IS_AJAX) {
+            $user = new UserModel();
+            $uid=$user->checkField(I('post.username'), 'username');
+            sleep(2);
+            echo ($uid>0)?'true':'false';
+        }
+    }
+
+    //
+    public function checkEmail(){
+        if (IS_AJAX) {
+            $user = new UserModel();
+            $uid=$user->checkField(I('post.email'), 'email');
+            sleep(2);
+            echo $uid>0?'true':'false';
+        }
+    }
+
+
+
+
+
+};

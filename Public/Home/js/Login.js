@@ -48,13 +48,27 @@ $(function () {
         },
         unhighlight:function (element,errorClass) {
             $(element).css('border','1px solid #ccc');
-            $(element).parent().find('span').html('√').addClass('succ');
+            $(element).parent().find('span').html('').addClass('succ');
         },
         rules:{
             username:{
                 required:true,
                 minlength:2,
-                maxlength:20
+                maxlength:20,
+                remote:{
+                    url:'home/User/checkUserName',
+                    type:'post',
+                    beforeSend:function () {
+                        $('#username').next().html('').removeClass('star').addClass('loading');
+                    },
+                    complete:function (jqXHR) {
+                        if(jqXHR.responseText==='true'){
+                            $('#username').next().addClass('succ').removeClass('loading');
+                        }else{
+                            $('#username').next().addClass('star').removeClass('loading');
+                        }
+                    }
+                }
             },
             password:{
                 required:true,
@@ -66,7 +80,21 @@ $(function () {
             },
             email:{
                 required:true,
-                email:true
+                email:true,
+                remote:{
+                    url:'home/User/checkEmail',
+                    type:'post',
+                    beforeSend:function () {
+                        $('#email').next().html('').removeClass('star').addClass('loading');
+                    },
+                    complete:function (jqXHR) {
+                        if(jqXHR.responseText==='true'){
+                            $('#email').next().addClass('succ').removeClass('loading');
+                        }else{
+                            $('#email').next().addClass('star').removeClass('loading');
+                        }
+                    }
+                }
             }
 
         },
@@ -74,7 +102,8 @@ $(function () {
             username:{
                 required:'用户名不得为空!',
                 minlength:$.format('账号不得小于{0}位!'),
-                maxlength:$.format('账号不得大于{0}位!')
+                maxlength:$.format('账号不得大于{0}位!'),
+                remote:'该账号已被占用!'
             },
             password:{
                 required:'密码不得为空!',
@@ -86,7 +115,8 @@ $(function () {
             },
             email:{
                 required:'邮箱不得为空!',
-                email:'邮箱格式不正确!'
+                email:'邮箱格式不正确!',
+                remote:'该邮箱已注册!'
             }
 
         }

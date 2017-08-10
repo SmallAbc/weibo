@@ -37,7 +37,7 @@
     <ol class="reg_error"></ol>
     <p>
         <label for="user" >账号:</label>
-        <input type="text" name="username" id="user" class="text" placeholder="用户名不得小于2位或大于20位" >
+        <input type="text" name="username" id="username" class="text" placeholder="用户名不得小于2位或大于20位" >
         <span class="star">*</span>
     </p>
     <p>
