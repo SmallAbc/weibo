@@ -19,6 +19,7 @@ class UserController extends Controller
     public function register(){
         if (IS_POST) {
             $user = new UserModel();
+            sleep(2);
             $uid = $user->register(I('post.username'), I('post.password'),I('post.repassword'), I('post.email'));
             echo $uid;
         }else{

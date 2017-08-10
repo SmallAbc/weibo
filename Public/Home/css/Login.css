@@ -8,6 +8,7 @@
     border-radius: 0;
     border:none;
     padding:0;
+    overflow: visible;
 }
 
 .ui-dialog-titlebar{
@@ -199,4 +200,16 @@ ol.reg_error{
 
 ol.reg_error li{
     line-height: 20px;
+}
+
+
+#loading{
+    height: 24px;
+    widows:24px;
+    background: url('../img/loading.gif') no-repeat 10px center ;
+    padding-left:40px ;
+    background-color: #050b0c;
+    color: #9B410E;
+    opacity: 0.9;
+    font-size: 17px;
 }
