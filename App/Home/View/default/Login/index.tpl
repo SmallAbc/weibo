@@ -61,11 +61,11 @@
     <ol class="ver_error"></ol>
     <p>
         <label for="user" >验证码:</label>
-        <input type="text" name="veerify" id="veerify" class="text"  >
+        <input type="text" name="verify" id="verify" class="text"  >
         <span class="star">*</span>
         <a href="javascript:void (0);" class="changeimg" >换一张</a>
     </p>
-    <p><img src="{:U('verify')}" alt="" class="changeimg" id="verify" ></p>
+    <p><img src="{:U('verify')}" alt="" class="changeimg" id="verify_img" ></p>
 </form>
 
 <div id="loading">数据交互中...</div>

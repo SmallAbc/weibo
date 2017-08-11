@@ -8,13 +8,20 @@
 
 namespace Home\Controller;
 use Think\Controller;
+use Think\Verify;
 use function var_dump;
 
 class LoginController extends Controller{
     public function index(){
         $this->display();
     }
-    public function test(){
-        $m=M('User');
+
+    //生成验证码
+    public function verify(){
+        $verify=new Verify();
+//        $verify->useImageBg=false;
+//        $verify->fontSize=15;
+//        $verify->useZh=true;
+        $verify->entry(1);
     }
 }

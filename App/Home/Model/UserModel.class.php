@@ -35,20 +35,23 @@ class UserModel extends Model{
         //-5 '该账号已被使用!'
         array('username','',-5,self::VALUE_VALIDATE,'unique',self::MODEL_INSERT),
         //-6 '该邮箱已被使用!'
-        array('email','',-6,self::VALUE_VALIDATE,'unique',self::MODEL_INSERT)
+        array('email','',-6,self::VALUE_VALIDATE,'unique',self::MODEL_INSERT),
+        //-7, '验证码错误!'
+        array('verify','check_verify',-7,self::EXISTS_VALIDATE,'function')
     );
 
 
 
     //注册一条用户
-    public function register($username,$password,$repassword,$email){
-        $date=array(
+    public function register($username,$password,$repassword,$email,$verify){
+        $data=array(
             'username'=>$username,
             'password'=>$password,
             'repassword'=>$repassword,
-            'email'=>$email
+            'email'=>$email,
+            'verify'=>$verify
         );
-        if ($this->create($date)){
+        if ($this->create($data)){
             $uid=$this->add();
             return $uid?$uid:0;
         }else{
@@ -57,22 +60,25 @@ class UserModel extends Model{
     }
 
 
-    //
+    //验证数据,用户名是否被占用,邮箱是否被占用,验证码是否正确
     public function checkField($field,$type){
-        $date=array();
+        $data=array();
         switch ($type){
             case 'username':
-                $date['username']=$field;
+                $data['username']=$field;
                 break;
 
             case 'email':
-                $date['email']=$field;
+                $data['email']=$field;
+                break;
+                case 'verify':
+                $data['verify']=$field;
                 break;
             default:
                 return 0;
                 break;
         }
-        return $this->create($date)?1:$this->getError();
+        return $this->create($data)?1:$this->getError();
     }
 
 
