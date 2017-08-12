@@ -66,7 +66,6 @@ body{
     font-family: Tahoma, monospace;
     padding:12px;
     border-radius: 10px;
-    margin-right:10px;
 
 }
 
@@ -94,6 +93,22 @@ body{
     font-size:14px;
     text-shadow: 2px -2px 1px #333;
     
+}
+
+#login span{
+    display: inline-block;
+    position: relative;
+    width: 270px;
+    margin-right:20px;
+
+}
+
+#login label{
+    position: absolute;
+    top: 6px;
+    right: -8px;
+    color: #9B410E;
+    margin: 10px;
 }
 
 #login .bottom a{
@@ -140,6 +155,9 @@ body{
     margin: 5px;
 
 }
+
+
+
 
 
 span.star{
@@ -205,7 +223,7 @@ ol.reg_error li{
 
 #loading{
     height: 24px;
-    widows:24px;
+    width:24px;
     background: url('../img/loading.gif') no-repeat 10px center ;
     padding-left:40px ;
     background-color: #050b0c;
@@ -213,3 +231,45 @@ ol.reg_error li{
     opacity: 0.9;
     font-size: 17px;
 }
+
+
+#verify_register P input.text{
+    width:85px;
+    height: 25px;
+    border:1px solid #cccccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin: 5px;
+
+}
+
+#verify_register p label,a{
+    font-size: 15px;
+}
+
+#verify_register .changeimg:hover{
+    cursor: pointer;
+}
+
+#verify_register p {
+    text-align: center;
+}
+
+#verify_register p img{
+    height: 50px;
+}
+
+ol.ver_error{
+    background: #222222;
+    color: #774b0c;
+    list-style: circle;
+    font-size:12px;
+    padding: 0 0 0 20px;
+    margin:0;
+}
+
+ol.ver_error li{
+    line-height: 16px;
+}
+

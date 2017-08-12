@@ -5,8 +5,64 @@ $(function () {
     //     .css('background','url('+ThinkPHP.IMG+'/login_bg'+rand+'.jpg)'+'no-repeat')
     //     .css('background-size','cover');
 
-    //登录按钮
+    //登录按钮(使用jqueryui的button替代原有样式)
     $('#login').find('input[type="submit"]').button();
+
+
+    //登录验证
+    $('#login').validate({
+        submitHandler:function (form) {
+            $(form).ajaxSubmit({
+                url:'Home/User/login',
+                type:'post',
+                beforeSend:function () {
+                    $('#loading').dialog('open')
+                },
+
+                success:function (responeText) {
+                    if(responeText>0){
+                        $('#loading').dialog('option','width',220).css('background','url('+ThinkPHP['IMG']+'/success.gif) no-repeat  15px center').html('登录成功,正在跳转...');//图片的左右15px,center和上下要分前后,否则不能成功
+                        setTimeout(function () {
+                           /* location.href='http://www.baidu.com';//火狐不能跳转到百度,谷歌可以*/
+                        })
+                    }else{
+                        $('#loading').dialog('option','width',100).css('background','url('+ThinkPHP['IMG']+'/error.png) no-repeat  15px center').html('登录失败!');
+                    }
+                    setTimeout(function () {
+                        $('#loading').dialog('option','width',200).css('background','url('+ThinkPHP['IMG']+'/loading.gif) no-repeat  10px center').html('数据交互中...!');
+                        $('#loading').dialog('close');
+
+                    },2000);
+                }
+            })
+        },
+        rules:{
+            username:{
+                required:true,
+                minlength:2,
+                maxlength:50
+
+            },
+            password:{
+                required:true,
+                minlength:6,
+                maxlength:30
+
+            }
+        },
+        messages:{
+            username:{
+                required:'必填',
+                minlength:$.format('须小于{0}位'),
+                maxlength:$.format('须大于{0}位')
+            },
+            password:{
+                required:'必填',
+                minlength:$.format('须大于{0}位'),
+                maxlength:$.format('须小于{0}位')
+            }
+        }
+    });
 
     // 创建注册对话框
     $('#register').dialog({
@@ -20,31 +76,12 @@ $(function () {
         buttons: [{
             text: '提交',
             click: function (e) {
-                $(this).submit();
+                $(this).submit();     //这里是原始的提交按钮动作,是无用的,被下面的ajaxSubmit替代了
             }
         }]
     }).validate({
         submitHandler:function (form) {
-          $(form).ajaxSubmit({
-              url: 'Home/User/register',
-              type:'post',
-              beforeSend:function () {
-                  $('#loading').dialog('open');
-              },
-              success:function (responseText) {
-                if(responseText){
-                    $('#loading').dialog().css('background','url('+ThinkPHP['IMG']+'/success.gif) no-repeat 20px center').html('数据新增成功!');
-                }
-                setTimeout(function () {
-                    $('#register').dialog('close');
-                    $('#loading').dialog('close');
-                    $('#register').resetForm();
-                    $('#register span').html('*').removeClass('succ').addClass('star');
-                    $('#loading').dialog().css('background','url('+ThinkPHP['IMG']+'/loading.gif) no-repeat 20px center').html('数据交互中...').addClass('loading');
-
-                },1000)
-              }
-          });
+        $('#verify_register').dialog('open');
         },
         errorLabelContainer:'ol.reg_error',
         wrapper:'li',
@@ -70,6 +107,7 @@ $(function () {
                 required:true,
                 minlength:2,
                 maxlength:20,
+                isAt:true,
                 remote:{
                     url:'home/User/checkUserName',
                     type:'post',
@@ -118,6 +156,7 @@ $(function () {
                 required:'用户名不得为空!',
                 minlength:$.format('账号不得小于{0}位!'),
                 maxlength:$.format('账号不得大于{0}位!'),
+                isAt:'用户名不能包含@符号!',
                 remote:'该账号已被占用!'
             },
             password:{
@@ -203,6 +242,116 @@ $(function () {
         draggable:false,
         closeOnEscape:false,
     }).parent().find('.ui-dialog-titlebar').hide();
+
+
+    //验证码弹窗
+    $('#verify_register').dialog({
+        width: 300,
+        height: 300,
+        title:'请输入验证码',     //放在模板内的#register的title了
+        modal: true,
+        resizable: false,
+        autoOpen: false,
+        closeText: '关闭',
+        buttons: [{
+            text: '完成',
+            style:'right:80px',
+            click: function (e) {
+                $(this).submit();
+            }
+        }]
+    }).validate({
+        submitHandler:function (form) {
+            $('#register').ajaxSubmit({
+                          url: 'Home/User/register',
+                          type:'post',
+                          data:{
+                              verify:$('#verify').val()
+                          },
+                          beforeSend:function () {
+                              $('#loading').dialog('open');
+                          },
+                          success:function (responseText) {
+                              if(responseText){
+                                  $('#loading').dialog().css('background','url('+ThinkPHP['IMG']+'/success.gif) no-repeat 20px center').html('数据新增成功!');
+
+                              }else{
+
+                              }
+                              setTimeout(function () {
+                                  $('#register').dialog('close');
+                                  $('#loading').dialog('close');
+                                  $('#verify_register').dialog('close');
+                                  $('#register').resetForm();
+                                  $('#register span').html('*').removeClass('succ').addClass('star');
+                                  $('#loading').dialog().css('background','url('+ThinkPHP['IMG']+'/loading.gif) no-repeat 20px center').html('数据交互中...').addClass('loading');
+
+                              },1000)
+                  }
+              });
+        },
+        errorLabelContainer:'ol.ver_error',
+        wrapper:'li',
+        showErrors:function (errorMap,errorList) {
+            this.defaultShowErrors();
+            var errors=this.numberOfInvalids();
+            if(errors>0){
+                $('#verify_register').dialog('option','height',errors*30+300);
+            }else{
+                $('#verify_register').dialog('option','height',300);
+            }
+        },
+        highlight:function (element,errorClass) {
+            $(element).css('border','1px solid red');
+            $(element).parent().find('span').html('*').removeClass('succ');
+        },
+        unhighlight:function (element,errorClass) {
+            $(element).css('border','1px solid #ccc');
+            $(element).parent().find('span').html('').addClass('succ');
+        },
+
+        rules:{
+            verify:{
+                required:true,
+                remote:{
+                    url:'Home/User/checkVerify',
+                    type:'post',
+                    beforeSend:function () {
+                        $('#verify').next().html('').removeClass('star').addClass('loading');
+                    },
+                    complete:function (jqXHR) {
+                        if(jqXHR.responseText==='true'){
+                            $('#verify').next().addClass('succ').removeClass('loading');
+                        }else{
+                            $('#verify').next().addClass('star').removeClass('loading');
+                        }
+                    }
+                }
+            }
+        },
+        messages:{
+            verify:{
+                required:'验证码不得为空!',
+                remote:'验证码不正确!'
+            }
+        }
+    });
+
+    //自定义验证,不包含@的用户名
+    $.validator.addMethod('isAt',function (value,element) {
+        var text=/^[^@]+$/i;
+        return this.optional(element) || (text.test(value));
+    },'此字段不允许存在@符号!')
+
+    //点击更新验证码
+    var verifyimg=$('#verify_img').attr('src');
+    $('.changeimg').click(function () {
+        if(verifyimg.indexOf('?')>0) {
+            $('#verify_img').attr('src', verifyimg + '&random=' + Math.random());
+        }else{
+            $('#verify_img').attr('src', verifyimg + '?random=' + Math.random());
+        }
+    })
 
 
 

@@ -8,9 +8,9 @@
 
 namespace Home\Controller;
 use Home\Model\UserModel;
+use Think\Controller;
 use function I;
 use function sleep;
-use Think\Controller;
 
 class UserController extends Controller
 {
@@ -21,6 +21,17 @@ class UserController extends Controller
             $user = new UserModel();
             sleep(2);
             $uid = $user->register(I('post.username'), I('post.password'),I('post.repassword'), I('post.email'),I('post.verify'));
+            echo $uid;
+        }else{
+            $this->error('非法访问');
+        }
+    }
+    //登录行为,返回给ajax
+    public function login(){
+        if (IS_AJAX) {
+            $user = new UserModel();
+            sleep(2);
+            $uid = $user->login(I('post.username'), I('post.password'));
             echo $uid;
         }else{
             $this->error('非法访问');

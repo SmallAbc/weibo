@@ -8,8 +8,10 @@
 
 namespace Home\Model;
 
-use function print_r;
 use Think\Model;
+use function print_r;
+use function sha1;
+
 class UserModel extends Model{
     //批量验证,系统默认为false
 //    protected  $patchValidate=true;
@@ -25,7 +27,7 @@ class UserModel extends Model{
     //自动验证
     protected $_validate=array(
         //-1,'用户名须在2位到20位之间!'
-        array('username','2,20',-1,self::EXISTS_VALIDATE,'length'),
+        array('username','^[^@]{2,20}$/i',-1,self::EXISTS_VALIDATE,'length'),
         //-2 '密码须在6位到30位之间!'
         array('password','6,30',-2,self::EXISTS_VALIDATE,'length'),
         //-3 '两次输入的密码不一致!'
@@ -37,7 +39,10 @@ class UserModel extends Model{
         //-6 '该邮箱已被使用!'
         array('email','',-6,self::VALUE_VALIDATE,'unique',self::MODEL_INSERT),
         //-7, '验证码错误!'
-        array('verify','check_verify',-7,self::EXISTS_VALIDATE,'function')
+        array('verify','check_verify',-7,self::EXISTS_VALIDATE,'function'),
+        //-8, 验证登录名
+        array('login_username','2,50',-8,self::EXISTS_VALIDATE,'length'),
+        array('login_username','email','notemail',self::EXISTS_VALIDATE)
     );
 
 
@@ -59,6 +64,39 @@ class UserModel extends Model{
         }
     }
 
+
+    //用户登录
+    public function login($username,$password){
+        $data=array(
+            'login_username'=>$username,
+            'password'=>$password,
+        );
+        $map=array();
+        if($this->create($data)){
+            //正确则说明采用的是邮箱登录方式
+            $map['email']=$username;
+            $user=$this->field('id,password')->where($map)->find();
+            if($user['password']==sha1($password)){
+                return $user['id'];
+            }else{
+                return -9;
+            }
+        }else{
+            $error=$this->getError();
+            if($error=='notemail'){
+                $map['username']=$username;
+                $user=$this->field('id,password')->where($map)->find();
+                if($user['password']==sha1($password)){
+                    return $user['id'];
+                }else{
+                    return -9;
+                }
+
+                }else{
+                return $this->getError();
+                }
+            }
+    }
 
     //验证数据,用户名是否被占用,邮箱是否被占用,验证码是否正确
     public function checkField($field,$type){

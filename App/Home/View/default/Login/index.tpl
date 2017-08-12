@@ -20,8 +20,12 @@
 <div id="main">
     <form id="login"  >
         <div class="top">
-            <input type="text" name="username" placeholder="注册账号或邮箱">
-            <input type="password" name="password" placeholder="密码">
+            <span>
+                <input type="text" name="username" placeholder="注册账号或邮箱">
+            </span>
+            <span>
+                <input type="password" name="password" placeholder="密码">
+            </span>
             <input type="submit" name="submit" value="Login">
         </div>
         <div class="bottom">
