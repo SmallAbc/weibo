@@ -12,29 +12,9 @@ $(function () {
     //登录验证
     $('#login').validate({
         submitHandler:function (form) {
-            $(form).ajaxSubmit({
-                url:'Home/User/login',
-                type:'post',
-                beforeSend:function () {
-                    $('#loading').dialog('open')
-                },
+            $('#verify_register').attr('form-click','login');
+            $('#verify_register').dialog('open');
 
-                success:function (responeText) {
-                    if(responeText>0){
-                        $('#loading').dialog('option','width',220).css('background','url('+ThinkPHP['IMG']+'/success.gif) no-repeat  15px center').html('登录成功,正在跳转...');//图片的左右15px,center和上下要分前后,否则不能成功
-                        setTimeout(function () {
-                           /* location.href='http://www.baidu.com';//火狐不能跳转到百度,谷歌可以*/
-                        })
-                    }else{
-                        $('#loading').dialog('option','width',100).css('background','url('+ThinkPHP['IMG']+'/error.png) no-repeat  15px center').html('登录失败!');
-                    }
-                    setTimeout(function () {
-                        $('#loading').dialog('option','width',200).css('background','url('+ThinkPHP['IMG']+'/loading.gif) no-repeat  10px center').html('数据交互中...!');
-                        $('#loading').dialog('close');
-
-                    },2000);
-                }
-            })
         },
         rules:{
             username:{
@@ -81,6 +61,7 @@ $(function () {
         }]
     }).validate({
         submitHandler:function (form) {
+        $('#verify_register').attr('form-click','register');
         $('#verify_register').dialog('open');
         },
         errorLabelContainer:'ol.reg_error',
@@ -262,33 +243,60 @@ $(function () {
         }]
     }).validate({
         submitHandler:function (form) {
-            $('#register').ajaxSubmit({
-                          url: 'Home/User/register',
-                          type:'post',
-                          data:{
-                              verify:$('#verify').val()
-                          },
-                          beforeSend:function () {
-                              $('#loading').dialog('open');
-                          },
-                          success:function (responseText) {
-                              if(responseText){
-                                  $('#loading').dialog().css('background','url('+ThinkPHP['IMG']+'/success.gif) no-repeat 20px center').html('数据新增成功!');
+            if($('#verify_register').attr('form-click')==='register') {
+                $('#register').ajaxSubmit({
+                    url: 'Home/User/register',
+                    type: 'post',
+                    data: {
+                        verify: $('#verify').val()
+                    },
+                    beforeSend: function () {
+                        $('#loading').dialog('open');
+                    },
+                    success: function (responseText) {
+                        if (responseText) {
+                            $('#loading').dialog().css('background', 'url(' + ThinkPHP['IMG'] + '/success.gif) no-repeat 20px center').html('数据新增成功!');
 
-                              }else{
+                        } else {
 
-                              }
-                              setTimeout(function () {
-                                  $('#register').dialog('close');
-                                  $('#loading').dialog('close');
-                                  $('#verify_register').dialog('close');
-                                  $('#register').resetForm();
-                                  $('#register span').html('*').removeClass('succ').addClass('star');
-                                  $('#loading').dialog().css('background','url('+ThinkPHP['IMG']+'/loading.gif) no-repeat 20px center').html('数据交互中...').addClass('loading');
+                        }
+                        setTimeout(function () {
+                            $('#register').dialog('close');
+                            $('#loading').dialog('close');
+                            $('#verify_register').dialog('close');
+                            $('#register').resetForm();
+                            $('#register span').html('*').removeClass('succ').addClass('star');
+                            $('#loading').dialog().css('background', 'url(' + ThinkPHP['IMG'] + '/loading.gif) no-repeat 20px center').html('数据交互中...').addClass('loading');
 
-                              },1000)
-                  }
-              });
+                        }, 1000)
+                    }
+                });
+            }else if($('#verify_register').attr('form-click')==='login'){
+                $("#login").ajaxSubmit({
+                    url:'Home/User/login',
+                    type:'post',
+                    beforeSend:function () {
+                        $('#loading').dialog('open')
+                    },
+
+                    success:function (responeText) {
+                        if(responeText>0){
+                            $('#loading').dialog('option','width',220).css('background','url('+ThinkPHP['IMG']+'/success.gif) no-repeat  15px center').html('登录成功,正在跳转...');//图片的左右15px,center和上下要分前后,否则不能成功
+                            setTimeout(function () {
+                                /* location.href='http://www.baidu.com';//火狐不能跳转到百度,谷歌可以*/
+                            })
+                        }else{
+                            $('#loading').dialog('option','width',100).css('background','url('+ThinkPHP['IMG']+'/error.png) no-repeat  15px center').html('登录失败!');
+                        }
+                        setTimeout(function () {
+                            $('#loading').dialog('option','width',200).css('background','url('+ThinkPHP['IMG']+'/loading.gif) no-repeat  10px center').html('数据交互中...!');
+                            $('#loading').dialog('close');
+                            $('#verify_register').resetForm();
+                            $('#verify_register').dialog('close');
+                        },2000);
+                    }
+                })
+            }
         },
         errorLabelContainer:'ol.ver_error',
         wrapper:'li',

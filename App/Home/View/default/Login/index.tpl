@@ -26,7 +26,7 @@
             <span>
                 <input type="password" name="password" placeholder="密码">
             </span>
-            <input type="submit" name="submit" value="Login">
+            <input id="login-button" type="submit" name="submit" value="Login">
         </div>
         <div class="bottom">
             <a id="reg_link" href="javascript:void (0)" >注册新用户</a>
@@ -61,7 +61,7 @@
     </p>
 </form>
 
-<form id="verify_register" >
+<form id="verify_register" form-click="">
     <ol class="ver_error"></ol>
     <p>
         <label for="user" >验证码:</label>
