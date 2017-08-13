@@ -9,8 +9,11 @@
 namespace Home\Model;
 
 use Think\Model;
+use function get_client_ip;
 use function print_r;
+use function session;
 use function sha1;
+use function time;
 
 class UserModel extends Model{
     //批量验证,系统默认为false
@@ -85,17 +88,33 @@ class UserModel extends Model{
             $error=$this->getError();
             if($error=='notemail'){
                 $map['username']=$username;
-                $user=$this->field('id,password')->where($map)->find();
+                $user=$this->field('id,username,password,last_login')->where($map)->find();
                 if($user['password']==sha1($password)){
+                    //登录验证后写入登录信息
+                    $update=array(
+                        'id'=>$user['id'],
+                        'last_login'=>time(),
+                        'last_ip'=>get_client_ip(1)
+                    );
+                    $this->save($update);
+
+                    //将记录写到session和cookie中去
+                    $auth=array(
+                        'id='=>$user['id'],
+                        'username'=>$user['username'],
+                        'last_login'=>$user['last_login']
+                    );
+                    session('user_auth',$auth);
+
+
                     return $user['id'];
                 }else{
                     return -9;
                 }
-
-                }else{
+            }else{
                 return $this->getError();
-                }
             }
+        }
     }
 
     //验证数据,用户名是否被占用,邮箱是否被占用,验证码是否正确

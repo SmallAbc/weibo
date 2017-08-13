@@ -8,11 +8,10 @@
 
 namespace Home\Controller;
 use Home\Model\UserModel;
-use Think\Controller;
 use function I;
 use function sleep;
 
-class UserController extends Controller
+class UserController extends HomeController
 {
 
     //注册行为,返回给ajax

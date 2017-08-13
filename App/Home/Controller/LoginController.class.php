@@ -7,11 +7,9 @@
  */
 
 namespace Home\Controller;
-use Think\Controller;
 use Think\Verify;
-use function var_dump;
 
-class LoginController extends Controller{
+class LoginController extends HomeController{
     public function index(){
         $this->display();
     }

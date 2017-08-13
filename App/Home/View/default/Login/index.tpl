@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="__CSS__/jquery.ui.css">
     <link rel="stylesheet" href="__CSS__/Login.css">
     <script type="text/javascript">var ThinkPHP={
-        'IMG':'__PUBLIC__/{$Think.MODULE_NAME}/img'
+        'MODULE':'__MODULE__',
+        'IMG':'__PUBLIC__/{$Think.MODULE_NAME}/img',
+        'INDEX':'{:U("index/index")}'
+
         };
     </script>
     <title>微博系统Login</title>
