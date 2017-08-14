@@ -30,7 +30,7 @@ class UserController extends HomeController
         if (IS_AJAX) {
             $user = new UserModel();
             sleep(2);
-            $uid = $user->login(I('post.username'), I('post.password'));
+            $uid = $user->login(I('post.username'), I('post.password'),I('post.auto'));
             echo $uid;
         }else{
             $this->error('非法访问');

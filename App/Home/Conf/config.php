@@ -10,7 +10,8 @@ return array(
     ),
 
 
-
+    //cookie密钥
+    'COOKIE_KEY'=>'ayov.com'
 
 
 

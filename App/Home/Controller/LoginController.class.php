@@ -8,10 +8,17 @@
 
 namespace Home\Controller;
 use Think\Verify;
+use function redirect;
+use function session;
+use function U;
 
 class LoginController extends HomeController{
     public function index(){
-        $this->display();
+        if(!session('?user_auth')) {
+            $this->display();
+        }else{
+            redirect(U('index/index'));
+        }
     }
 
     //生成验证码

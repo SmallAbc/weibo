@@ -9,6 +9,8 @@
 namespace Home\Model;
 
 use Think\Model;
+use function cookie;
+use function encryption;
 use function get_client_ip;
 use function print_r;
 use function session;
@@ -69,7 +71,7 @@ class UserModel extends Model{
 
 
     //用户登录
-    public function login($username,$password){
+    public function login($username,$password,$auto){
         $data=array(
             'login_username'=>$username,
             'password'=>$password,
@@ -105,8 +107,10 @@ class UserModel extends Model{
                         'last_login'=>$user['last_login']
                     );
                     session('user_auth',$auth);
-
-
+                    //生成COOKIE
+                    if($auto=='on') {
+                        cookie('auto', encryption($user['username'], 0), 3600 * 24 * 30);
+                    }
                     return $user['id'];
                 }else{
                     return -9;

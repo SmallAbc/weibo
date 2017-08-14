@@ -34,6 +34,7 @@
         <div class="bottom">
             <a id="reg_link" href="javascript:void (0)" >注册新用户</a>
             <a href="javascript:void (0)">忘记密码</a>
+            <label for="auto"><input id="auto" name="auto" type="checkbox" >记住密码</label>
         </div>
     </form>
 </div>
