@@ -245,7 +245,7 @@ $(function () {
         submitHandler:function (form) {
             if($('#verify_register').attr('form-click')==='register') {
                 $('#register').ajaxSubmit({
-                    url: 'Home/User/register',
+                    url: Thinkphp['MODULE']+'/User/register',
                     type: 'post',
                     data: {
                         verify: $('#verify').val()
@@ -273,7 +273,7 @@ $(function () {
                 });
             }else if($('#verify_register').attr('form-click')==='login'){
                 $("#login").ajaxSubmit({
-                    url:'Home/User/login',
+                    url:Thinkphp['MODULE']+'/User/login',
                     type:'post',
                     beforeSend:function () {
                         $('#loading').dialog('open')
@@ -322,7 +322,7 @@ $(function () {
             verify:{
                 required:true,
                 remote:{
-                    url:'Home/User/checkVerify',
+                    url:Thinkphp['MODULE']+'/User/checkVerify',
                     type:'post',
                     beforeSend:function () {
                         $('#verify').next().html('').removeClass('star').addClass('loading');
