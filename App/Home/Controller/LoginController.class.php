@@ -21,6 +21,8 @@ class LoginController extends HomeController{
         }
     }
 
+
+
     //生成验证码
     public function verify(){
         $verify=new Verify();
