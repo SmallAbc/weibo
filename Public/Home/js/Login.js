@@ -90,7 +90,7 @@ $(function () {
                 maxlength:20,
                 isAt:true,
                 remote:{
-                    url:Thinkphp['MODULE']+'/User/checkUserName',
+                    url:ThinkPHP['MODULE']+'/User/checkUserName',
                     type:'post',
                     beforeSend:function () {
                         $('#username').next().html('').removeClass('star').addClass('loading');
@@ -116,7 +116,7 @@ $(function () {
                 required:true,
                 email:true,
                 remote:{
-                    url:Thinkphp['MODULE']+'/User/checkEmail',
+                    url:ThinkPHP['MODULE']+'/User/checkEmail',
                     type:'post',
                     beforeSend:function () {
                         $('#email').next().html('').removeClass('star').addClass('loading');
@@ -245,7 +245,7 @@ $(function () {
         submitHandler:function (form) {
             if($('#verify_register').attr('form-click')==='register') {
                 $('#register').ajaxSubmit({
-                    url: Thinkphp['MODULE']+'/User/register',
+                    url: ThinkPHP['MODULE']+'/User/register',
                     type: 'post',
                     data: {
                         verify: $('#verify').val()
@@ -273,7 +273,7 @@ $(function () {
                 });
             }else if($('#verify_register').attr('form-click')==='login'){
                 $("#login").ajaxSubmit({
-                    url:Thinkphp['MODULE']+'/User/login',
+                    url:ThinkPHP['MODULE']+'/User/login',
                     type:'post',
                     beforeSend:function () {
                         $('#loading').dialog('open')
@@ -323,7 +323,7 @@ $(function () {
             verify:{
                 required:true,
                 remote:{
-                    url:Thinkphp['MODULE']+'/User/checkVerify',
+                    url:ThinkPHP['MODULE']+'/User/checkVerify',
                     type:'post',
                     beforeSend:function () {
                         $('#verify').next().html('').removeClass('star').addClass('loading');

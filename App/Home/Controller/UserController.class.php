@@ -13,9 +13,7 @@ use function sleep;
 
 class UserController extends HomeController
 {
-    public function index(){
-        echo "111";
-    }
+
     //注册行为,返回给ajax
     public function register(){
         if (IS_POST) {
@@ -43,7 +41,7 @@ class UserController extends HomeController
 
     //验证用户名,信息返回给ajax
     public function checkUserName(){
-        if (IS_POST) {
+        if (IS_AJAX) {
             $user = new UserModel();
             $uid=$user->checkField(I('post.username'), 'username');
             sleep(2);
