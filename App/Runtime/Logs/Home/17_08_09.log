@@ -1,0 +1,2546 @@
+[ 2017-08-09T11:40:39+08:00 ] ::1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-09T11:40:55+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0032s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001686s ]
+
+[ 2017-08-09T11:43:30+08:00 ] ::1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-09T11:43:39+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001904s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001555s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001731s ]
+
+[ 2017-08-09T11:43:42+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001188s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000964s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001058s ]
+
+[ 2017-08-09T11:43:42+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001276s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000912s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000999s ]
+
+[ 2017-08-09T11:43:42+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001995s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001407s ]
+
+[ 2017-08-09T11:43:42+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001535s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001618s ]
+
+[ 2017-08-09T11:43:45+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001369s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000940s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001026s ]
+
+[ 2017-08-09T11:43:45+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001316s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000992s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001090s ]
+
+[ 2017-08-09T11:43:45+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001185s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001869s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001757s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001937s ]
+
+[ 2017-08-09T11:43:45+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001502s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001238s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001377s ]
+
+[ 2017-08-09T11:43:50+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001291s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001515s ]
+
+[ 2017-08-09T11:43:51+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001647s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001799s ]
+
+[ 2017-08-09T11:43:51+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001324s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000986s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001078s ]
+
+[ 2017-08-09T11:43:51+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001184s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000931s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001021s ]
+
+[ 2017-08-09T11:43:51+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001215s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001144s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001249s ]
+
+[ 2017-08-09T11:43:52+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001235s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000915s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-08-09T11:43:52+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001218s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000923s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001008s ]
+
+[ 2017-08-09T11:43:52+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001973s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000937s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001021s ]
+
+[ 2017-08-09T11:43:52+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001387s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000960s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001051s ]
+
+[ 2017-08-09T11:44:03+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001264s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001187s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001302s ]
+
+[ 2017-08-09T11:44:03+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001253s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000944s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001037s ]
+
+[ 2017-08-09T11:44:04+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001125s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001708s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001613s ]
+
+[ 2017-08-09T11:44:04+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001193s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001131s ]
+
+[ 2017-08-09T11:45:20+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001836s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001169s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001351s ]
+
+[ 2017-08-09T11:45:20+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002150s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001207s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001348s ]
+
+[ 2017-08-09T11:45:21+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001628s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001472s ]
+
+[ 2017-08-09T11:45:21+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001529s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001175s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001312s ]
+
+[ 2017-08-09T11:46:15+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001745s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001279s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001402s ]
+
+[ 2017-08-09T11:46:15+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001531s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000991s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001100s ]
+
+[ 2017-08-09T11:46:16+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001674s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001187s ]
+
+[ 2017-08-09T11:46:16+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000894s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001355s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001143s ]
+
+[ 2017-08-09T11:46:16+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002479s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001240s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001394s ]
+
+[ 2017-08-09T11:47:50+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001491s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001442s ]
+
+[ 2017-08-09T11:47:51+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002263s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001527s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001681s ]
+
+[ 2017-08-09T11:47:51+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001643s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001397s ]
+
+[ 2017-08-09T11:47:51+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001358s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001012s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001123s ]
+
+[ 2017-08-09T11:48:07+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001777s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001135s ]
+
+[ 2017-08-09T13:52:23+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001974s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0026s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = '11' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `weibo_user` WHERE `email` = '123@qq.com' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001262s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001367s ]
+
+[ 2017-08-09T17:45:53+08:00 ] ::1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-09T17:46:39+08:00 ] ::1 /weibo/home/User/checkUsername
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002165s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0024s ]
+ERR: Think\Model:checkField方法不存在！
+
+[ 2017-08-09T18:02:50+08:00 ] ::1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-09T18:02:57+08:00 ] ::1 /weibo/home/User/checkUsername
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001871s ]
+ERR: Think\Model:checkField方法不存在！
+
+[ 2017-08-09T19:20:41+08:00 ] ::1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-09T19:20:46+08:00 ] ::1 /weibo/home/User/checkUsername
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003192s ]
+
+[ 2017-08-09T19:21:02+08:00 ] ::1 /weibo/home/User/checkUsername
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001419s ]
+
+[ 2017-08-09T19:23:06+08:00 ] ::1 /weibo/home/model/user
+ERR: 无法加载控制器:Model
+
+[ 2017-08-09T19:23:41+08:00 ] ::1 /weibo/home/model/usermodel
+ERR: 无法加载控制器:Model
+
+[ 2017-08-09T19:23:47+08:00 ] ::1 /weibo/home/model
+ERR: 无法加载控制器:Model
+
+[ 2017-08-09T19:24:03+08:00 ] ::1 /weibo/home/model
+ERR: 无法加载控制器:Model
+
+[ 2017-08-09T19:24:06+08:00 ] ::1 /weibo/home/model
+ERR: 无法加载控制器:Model
+
+[ 2017-08-09T19:24:16+08:00 ] ::1 /weibo/home/model
+ERR: 无法加载控制器:Model
+
+[ 2017-08-09T19:24:21+08:00 ] ::1 /weibo/home/model
+ERR: 无法加载控制器:Model
+
+[ 2017-08-09T19:24:50+08:00 ] ::1 /weibo/user
+ERR: 非法操作:index
+
+[ 2017-08-09T19:25:08+08:00 ] ::1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-09T19:26:23+08:00 ] ::1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-09T19:26:55+08:00 ] ::1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-09T19:45:53+08:00 ] ::1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-09T20:44:16+08:00 ] ::1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-09T20:44:27+08:00 ] ::1 /weibo/home/User/checkName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001887s ]
+ERR: 非法操作:checkName
+
+[ 2017-08-09T20:45:24+08:00 ] ::1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-09T20:45:33+08:00 ] ::1 /weibo/home/User/checkName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001165s ]
+ERR: 非法操作:checkName
+
+[ 2017-08-09T20:46:55+08:00 ] ::1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-09T20:47:16+08:00 ] ::1 /weibo/Home/User/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001537s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0083s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001420s ]
+
+[ 2017-08-09T22:03:34+08:00 ] ::1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-09T22:03:42+08:00 ] ::1 /weibo/home/User/checkName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002124s ]
+ERR: 非法操作:checkName
+
+[ 2017-08-09T22:11:18+08:00 ] ::1 /weibo/user
+ERR: 非法操作:index
+
+[ 2017-08-09T22:12:07+08:00 ] ::1 /weibo/user
+ERR: 非法操作:index
+
+[ 2017-08-09T22:12:28+08:00 ] ::1 /weibo/user
+ERR: 非法操作:index
+
+[ 2017-08-09T22:13:28+08:00 ] ::1 /weibo/home/User/checkName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001658s ]
+ERR: 非法操作:checkName
+
+[ 2017-08-09T22:14:33+08:00 ] ::1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-09T22:14:48+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002055s ]
+ERR: 非法操作:checkUserName
+
+[ 2017-08-09T22:16:11+08:00 ] ::1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-09T22:16:16+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002297s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0057s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'post.username' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001581s ]
+
+[ 2017-08-09T22:17:00+08:00 ] ::1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-09T22:17:14+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001530s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'post.username' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001722s ]
+
+[ 2017-08-09T22:17:58+08:00 ] ::1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-09T22:18:11+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002143s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'post.username' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001874s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001994s ]
+
+[ 2017-08-09T22:36:28+08:00 ] ::1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-09T22:36:34+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001635s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001708s ]
+
+[ 2017-08-09T22:39:02+08:00 ] ::1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-09T22:39:08+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001258s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000979s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001104s ]
+
+[ 2017-08-09T22:39:20+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001189s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001908s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan2' LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001145s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001302s ]
+
+[ 2017-08-09T22:39:31+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001381s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001276s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001431s ]
+
+[ 2017-08-09T22:39:34+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001422s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan4' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000809s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000893s ]
+
+[ 2017-08-09T22:40:02+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001332s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001158s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001299s ]
+
+[ 2017-08-09T22:40:04+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001510s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan6' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000841s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000925s ]
+
+[ 2017-08-09T22:40:07+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000998s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001610s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001189s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001339s ]
+
+[ 2017-08-09T22:40:11+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001735s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000905s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000989s ]
+
+[ 2017-08-09T22:40:13+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001251s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001104s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001232s ]
+
+[ 2017-08-09T22:40:13+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001176s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan2' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001121s ]
+
+[ 2017-08-09T22:40:14+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001821s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001220s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001371s ]
+
+[ 2017-08-09T22:40:14+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001260s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan3' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000830s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000916s ]
+
+[ 2017-08-09T22:40:15+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001387s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001480s ]
+
+[ 2017-08-09T22:42:31+08:00 ] ::1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-09T22:42:45+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001898s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002334s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002515s ]
+
+[ 2017-08-09T22:43:38+08:00 ] ::1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-09T22:43:45+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001341s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000888s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000983s ]
+
+[ 2017-08-09T22:43:53+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002132s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001515s ]
+
+[ 2017-08-09T22:44:01+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001125s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001935s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002063s ]
+
+[ 2017-08-09T22:44:05+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001294s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan3' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000870s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000959s ]
+
+[ 2017-08-09T22:44:09+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001717s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001165s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001313s ]
+
+[ 2017-08-09T22:44:10+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001187s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000965s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001108s ]
+
+[ 2017-08-09T22:44:11+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001895s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001288s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001444s ]
+
+[ 2017-08-09T22:44:14+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001188s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001740s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan4' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001136s ]
+
+[ 2017-08-09T22:44:14+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001212s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan44' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001180s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001305s ]
+
+[ 2017-08-09T22:44:15+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001135s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan4' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000960s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001079s ]
+
+[ 2017-08-09T22:44:16+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001187s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001446s ]
+
+[ 2017-08-09T22:45:07+08:00 ] ::1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-09T22:45:11+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001936s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001355s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001501s ]
+
+[ 2017-08-09T22:45:25+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003104s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001262s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001411s ]
+
+[ 2017-08-09T22:46:33+08:00 ] ::1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-09T22:46:37+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001448s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001093s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001206s ]
+
+[ 2017-08-09T22:46:40+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001176s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001982s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan2' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000862s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000955s ]
+
+[ 2017-08-09T22:46:44+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001657s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001405s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001586s ]
+
+[ 2017-08-09T22:47:20+08:00 ] ::1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-09T22:47:22+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001824s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001425s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001593s ]
+
+[ 2017-08-09T22:47:25+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001511s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000823s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000908s ]
+
+[ 2017-08-09T22:47:36+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001414s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan2' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000973s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001065s ]
+
+[ 2017-08-09T22:47:39+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001240s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001090s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001189s ]
+
+[ 2017-08-09T22:47:39+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001138s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000912s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001023s ]
+
+[ 2017-08-09T22:48:49+08:00 ] ::1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-09T22:48:50+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002135s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001355s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001509s ]
+
+[ 2017-08-09T22:48:55+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001806s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002205s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002374s ]
+
+[ 2017-08-09T22:48:55+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001167s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan2' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000945s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001036s ]
+
+[ 2017-08-09T22:49:01+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001454s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001629s ]
+
+[ 2017-08-09T22:49:01+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001721s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000911s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-08-09T22:49:46+08:00 ] ::1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-09T22:49:48+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001839s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001611s ]
+
+[ 2017-08-09T22:49:50+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001181s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000832s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000916s ]
+
+[ 2017-08-09T22:51:05+08:00 ] ::1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-09T22:51:08+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001945s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001211s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001375s ]
+
+[ 2017-08-09T22:51:13+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001122s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001737s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000865s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000988s ]
+
+[ 2017-08-09T22:51:46+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002061s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001798s ]
+
+[ 2017-08-09T22:52:28+08:00 ] ::1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-09T22:52:31+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002024s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001433s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001579s ]
+
+[ 2017-08-09T22:52:36+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001166s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001501s ]
+
+[ 2017-08-09T22:52:38+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001131s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000967s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001071s ]
+
+[ 2017-08-09T22:52:45+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002456s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan2' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000924s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001021s ]
+
+[ 2017-08-09T22:52:48+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001727s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001542s ]
+
+[ 2017-08-09T22:52:49+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001148s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wa' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001226s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001366s ]
+
+[ 2017-08-09T22:52:55+08:00 ] ::1 /weibo/home/User/checkEmail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001253s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT * FROM `weibo_user` WHERE `email` = 'cr@qq.com' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001755s ]
+
+[ 2017-08-09T22:53:33+08:00 ] ::1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-09T22:53:37+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001596s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001240s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001445s ]
+
+[ 2017-08-09T22:53:40+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001540s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan5' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001244s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001353s ]
+
+[ 2017-08-09T22:53:44+08:00 ] ::1 /weibo/home/User/checkEmail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001508s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT * FROM `weibo_user` WHERE `email` = 'cr@qq.com' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001407s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001567s ]
+
+[ 2017-08-09T22:53:53+08:00 ] ::1 /weibo/home/User/checkEmail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001331s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT * FROM `weibo_user` WHERE `email` = '123@qq.com' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002635s ]
+
+[ 2017-08-09T22:54:21+08:00 ] ::1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-09T22:54:23+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001399s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan5' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001149s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001292s ]
+
+[ 2017-08-09T22:54:37+08:00 ] ::1 /weibo/home/User/checkEmail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001920s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT * FROM `weibo_user` WHERE `email` = '123@qq.com' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002237s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002404s ]
+
+[ 2017-08-09T22:55:00+08:00 ] ::1 /weibo/home/User/checkEmail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001550s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT * FROM `weibo_user` WHERE `email` = 'cr@qq.com' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001179s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001315s ]
+
+[ 2017-08-09T22:55:03+08:00 ] ::1 /weibo/home/User/checkEmail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001083s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT * FROM `weibo_user` WHERE `email` = 'c@qq.com' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000820s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000901s ]
+
+[ 2017-08-09T22:55:04+08:00 ] ::1 /weibo/home/User/checkEmail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT * FROM `weibo_user` WHERE `email` = '1@qq.com' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000842s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000924s ]
+
+[ 2017-08-09T22:55:04+08:00 ] ::1 /weibo/home/User/checkEmail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001202s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT * FROM `weibo_user` WHERE `email` = '12@qq.com' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000975s ]
+
+[ 2017-08-09T22:55:05+08:00 ] ::1 /weibo/home/User/checkEmail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001295s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT * FROM `weibo_user` WHERE `email` = '123@qq.com' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000872s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000958s ]
+
+[ 2017-08-09T22:58:28+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001201s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000840s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000926s ]
+
+[ 2017-08-09T22:58:49+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001147s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000860s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000941s ]
+
+[ 2017-08-09T22:58:51+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001100s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001542s ]
+
+[ 2017-08-09T22:58:56+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001119s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000998s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001101s ]
+
+[ 2017-08-09T22:58:57+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001096s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000879s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000969s ]
+
+[ 2017-08-09T22:59:17+08:00 ] ::1 /weibo/home/User/checkEmail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT * FROM `weibo_user` WHERE `email` = '123@qq.co' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000937s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001050s ]
+
+[ 2017-08-09T22:59:22+08:00 ] ::1 /weibo/home/User/checkEmail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001160s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT * FROM `weibo_user` WHERE `email` = '123@qq.com' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001078s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001198s ]
+
+[ 2017-08-09T23:15:47+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001284s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000842s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000946s ]
+
+[ 2017-08-09T23:15:55+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001782s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001654s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001907s ]
+
+[ 2017-08-09T23:17:02+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002076s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001729s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001944s ]
+
+[ 2017-08-09T23:18:00+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001606s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002821s ]
+
+[ 2017-08-09T23:18:45+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001806s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000962s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001076s ]
+
+[ 2017-08-09T23:19:28+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001336s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000847s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000957s ]
+
+[ 2017-08-09T23:19:38+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002044s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000877s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001004s ]
+
+[ 2017-08-09T23:25:32+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001982s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002152s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002310s ]
+
+[ 2017-08-09T23:30:24+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002372s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002618s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002971s ]
+
+[ 2017-08-09T23:31:14+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001172s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001850s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001155s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001289s ]
+
+[ 2017-08-09T23:31:24+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001553s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000884s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000999s ]
+
+[ 2017-08-09T23:31:47+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001189s ]
+
+[ 2017-08-09T23:31:52+08:00 ] ::1 /weibo/home/User/checkEmail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002188s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT * FROM `weibo_user` WHERE `email` = '123@qq.com' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001253s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001401s ]
+
+[ 2017-08-09T23:31:57+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001143s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001153s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001298s ]
+
+[ 2017-08-09T23:32:03+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001373s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001192s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001346s ]
+
+[ 2017-08-09T23:32:54+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001672s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002322s ]
+
+[ 2017-08-09T23:32:55+08:00 ] ::1 /weibo/home/User/checkEmail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001681s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT * FROM `weibo_user` WHERE `email` = '123@qq.com' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001067s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001197s ]
+
+[ 2017-08-09T23:33:13+08:00 ] ::1 /weibo/home/User/checkEmail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001767s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT * FROM `weibo_user` WHERE `email` = '1231@qq.com' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001453s ]
+
+[ 2017-08-09T23:33:17+08:00 ] ::1 /weibo/home/User/checkEmail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001531s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT * FROM `weibo_user` WHERE `email` = '123@qq.com' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000847s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000930s ]
+
+[ 2017-08-09T23:33:22+08:00 ] ::1 /weibo/home/User/checkEmail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002502s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT * FROM `weibo_user` WHERE `email` = '123@qq.co' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000920s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001007s ]
+
+[ 2017-08-09T23:33:24+08:00 ] ::1 /weibo/home/User/checkEmail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001397s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT * FROM `weibo_user` WHERE `email` = '123@qq.c' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001457s ]
+
+[ 2017-08-09T23:33:28+08:00 ] ::1 /weibo/home/User/checkEmail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001103s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT * FROM `weibo_user` WHERE `email` = '123@qq.co' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000849s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000935s ]
+
+[ 2017-08-09T23:33:28+08:00 ] ::1 /weibo/home/User/checkEmail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001666s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT * FROM `weibo_user` WHERE `email` = '123@qq.com' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000850s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000934s ]
+
+[ 2017-08-09T23:34:02+08:00 ] ::1 /weibo/home/User/checkEmail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001180s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT * FROM `weibo_user` WHERE `email` = '1231@qq.com' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001178s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001336s ]
+
+[ 2017-08-09T23:34:37+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001624s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002170s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002478s ]
+
+[ 2017-08-09T23:34:38+08:00 ] ::1 /weibo/home/User/checkEmail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001233s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT * FROM `weibo_user` WHERE `email` = '1231@qq.com' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001463s ]
+
+[ 2017-08-09T23:35:06+08:00 ] ::1 /weibo/home/User/checkEmail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001222s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT * FROM `weibo_user` WHERE `email` = '123@qq.com' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000919s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001033s ]
+
+[ 2017-08-09T23:36:15+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001918s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000903s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001013s ]
+
+[ 2017-08-09T23:36:26+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002132s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000963s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001167s ]
+
+[ 2017-08-09T23:36:38+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001711s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = '123' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001104s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001250s ]
+
+[ 2017-08-09T23:36:55+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001491s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = '123' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002868s ]
+
+[ 2017-08-09T23:37:03+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001685s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = '1234' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000825s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000935s ]
+
+[ 2017-08-09T23:37:13+08:00 ] ::1 /weibo/home/User/checkEmail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002205s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT * FROM `weibo_user` WHERE `email` = '123@qq.com' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000842s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000958s ]
+
+[ 2017-08-09T23:38:54+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001630s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = '1234' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001923s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002120s ]
+
+[ 2017-08-09T23:38:58+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001235s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = '1234' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001065s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001324s ]
+
+[ 2017-08-09T23:39:31+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001451s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = '1234' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000836s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000941s ]
+
+[ 2017-08-09T23:39:45+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001894s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = '12342' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000966s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001151s ]
+
+[ 2017-08-09T23:39:48+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001206s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = '123421' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002764s ]
+
+[ 2017-08-09T23:39:56+08:00 ] ::1 /weibo/home/User/checkEmail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003209s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT * FROM `weibo_user` WHERE `email` = '123@qq.com' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002070s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002329s ]
+
+[ 2017-08-09T23:41:13+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001907s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = '111111' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000936s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001043s ]
+
+[ 2017-08-09T23:43:00+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001297s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001360s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001499s ]
+
+[ 2017-08-09T23:43:55+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001367s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001657s ]
+
+[ 2017-08-09T23:44:01+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001281s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001775s ]
+
+[ 2017-08-09T23:44:03+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002992s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan12' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001138s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001284s ]
+
+[ 2017-08-09T23:45:01+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002202s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan12' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000919s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001022s ]
+
+[ 2017-08-09T23:45:04+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001288s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001309s ]
+
+[ 2017-08-09T23:45:06+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001610s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000870s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001006s ]
+
+[ 2017-08-09T23:45:20+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001129s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001805s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001098s ]
+
+[ 2017-08-09T23:45:22+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001784s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001130s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001223s ]
+
+[ 2017-08-09T23:46:24+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001201s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000926s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001020s ]
+
+[ 2017-08-09T23:46:34+08:00 ] ::1 /weibo/home/User/checkEmail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007179s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT * FROM `weibo_user` WHERE `email` = '123@qq.com' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001552s ]
+
+[ 2017-08-09T23:48:01+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001225s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000917s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001007s ]
+
+[ 2017-08-09T23:48:07+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001826s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002195s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002359s ]
+
+[ 2017-08-09T23:48:10+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001091s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001386s ]
+
+[ 2017-08-09T23:48:12+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001864s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001277s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001422s ]
+
+[ 2017-08-09T23:48:59+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002011s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000845s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000932s ]
+
+[ 2017-08-09T23:50:03+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001252s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000921s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001018s ]
+
+[ 2017-08-09T23:52:08+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002046s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001117s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001233s ]
+
+[ 2017-08-09T23:52:13+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001386s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001177s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001319s ]
+
+[ 2017-08-09T23:52:37+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001250s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000878s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000970s ]
+
+[ 2017-08-09T23:52:44+08:00 ] ::1 /weibo/home/User/checkEmail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002049s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT * FROM `weibo_user` WHERE `email` = '123@qq.com' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001481s ]
+
+[ 2017-08-09T23:52:56+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001183s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wa' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001137s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001269s ]
+
+[ 2017-08-09T23:52:59+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001204s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000984s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001084s ]
+
+[ 2017-08-09T23:53:25+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001480s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002193s ]
+
+[ 2017-08-09T23:53:37+08:00 ] ::1 /weibo/home/User/checkEmail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001101s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT * FROM `weibo_user` WHERE `email` = '123@qq.com' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000828s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000951s ]
+
+[ 2017-08-09T23:53:43+08:00 ] ::1 /weibo/home/User/checkEmail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001112s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT * FROM `weibo_user` WHERE `email` = '1231@qq.com' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001248s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001419s ]
+
+[ 2017-08-09T23:53:48+08:00 ] ::1 /weibo/home/User/checkEmail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001087s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT * FROM `weibo_user` WHERE `email` = '123@qq.com' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000846s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000980s ]
+
+[ 2017-08-09T23:53:53+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001654s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001076s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001209s ]
+
+[ 2017-08-09T23:54:35+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001958s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001127s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001269s ]
+
+[ 2017-08-09T23:54:41+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002035s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003288s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003580s ]
+
+[ 2017-08-09T23:55:00+08:00 ] ::1 /weibo/home/User/checkEmail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001665s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT * FROM `weibo_user` WHERE `email` = '1233@qq.com' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000851s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000956s ]
+
+[ 2017-08-09T23:55:32+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001732s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001956s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002199s ]
+
+[ 2017-08-09T23:55:35+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001549s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001729s ]
+
+[ 2017-08-09T23:56:11+08:00 ] ::1 /weibo/home/User/checkEmail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002346s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT * FROM `weibo_user` WHERE `email` = '1233@qq.com' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001852s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002071s ]
+
+[ 2017-08-09T23:56:19+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001167s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan1' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000879s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000990s ]
+
+[ 2017-08-09T23:57:57+08:00 ] ::1 /weibo/home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001121s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan12' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000821s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000924s ]
+
