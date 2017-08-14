@@ -90,7 +90,7 @@ $(function () {
                 maxlength:20,
                 isAt:true,
                 remote:{
-                    url:'home/User/checkUserName',
+                    url:Thinkphp['MODULE']+'/User/checkUserName',
                     type:'post',
                     beforeSend:function () {
                         $('#username').next().html('').removeClass('star').addClass('loading');
@@ -116,7 +116,7 @@ $(function () {
                 required:true,
                 email:true,
                 remote:{
-                    url:'home/User/checkEmail',
+                    url:Thinkphp['MODULE']+'/User/checkEmail',
                     type:'post',
                     beforeSend:function () {
                         $('#email').next().html('').removeClass('star').addClass('loading');
