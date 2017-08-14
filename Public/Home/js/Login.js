@@ -284,6 +284,7 @@ $(function () {
                             $('#loading').dialog('option','width',220).css('background','url('+ThinkPHP['IMG']+'/success.gif) no-repeat  15px center').html('登录成功,正在跳转...');//图片的左右15px,center和上下要分前后,否则不能成功
                             setTimeout(function () {
                                 /* location.href='http://www.baidu.com';//火狐不能跳转到百度,谷歌可以*/
+                                location.href=ThinkPHP['INDEX'];
                             })
                         }else{
                             $('#loading').dialog('option','width',100).css('background','url('+ThinkPHP['IMG']+'/error.png) no-repeat  15px center').html('登录失败!');
