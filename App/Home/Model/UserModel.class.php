@@ -104,12 +104,13 @@ class UserModel extends Model{
                     $auth=array(
                         'id='=>$user['id'],
                         'username'=>$user['username'],
-                        'last_login'=>$user['last_login']
+                        'last_login'=>time()
                     );
                     session('user_auth',$auth);
                     //生成COOKIE
                     if($auto=='on') {
-                        cookie('auto', encryption($user['username'], 0), 3600 * 24 * 30);
+                        $cookie=encryption($user['username'].'|'.get_client_ip(1),0);
+                        cookie('auto', $cookie, 3600 * 24 * 30);
                     }
                     return $user['id'];
                 }else{
