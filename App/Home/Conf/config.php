@@ -11,7 +11,12 @@ return array(
 
 
     //cookie密钥
-    'COOKIE_KEY'=>'ayov.com'
+    'COOKIE_KEY'=>'www.ayov.com',
+
+    //默认错误跳转对应的模板文件
+    'TMPL_ACTION_ERROR'=>'public/jump',
+
+    'TMPL_ACTION_SUCCESS'=>'public/jump'
 
 
 

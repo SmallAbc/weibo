@@ -27,7 +27,7 @@
                 <dd><a href="#">个人设置</a></dd>
                 <dd><a href="#">排行榜</a></dd>
                 <dd><a href="#">申请认证</a></dd>
-                <dd><a href="#" class="line">退出</a></dd>
+                <dd><a href="{:U('User/logout')}" class="line">退出</a></dd>
             </dl>
           </span></li>
       </ul>

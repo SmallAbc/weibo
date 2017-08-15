@@ -8,7 +8,9 @@
 
 namespace Home\Controller;
 use Home\Model\UserModel;
+use function cookie;
 use function I;
+use function session;
 use function sleep;
 
 class UserController extends HomeController
@@ -37,6 +39,16 @@ class UserController extends HomeController
         }
     }
 
+
+    //退出登录状态
+    public function logout(){
+        //清理session
+        session(null);
+        //清除自动登录的cookie
+        cookie('auto',null);
+        //跳转到退出成功页面
+        $this->success('退出成功!',U('Login/index'));
+    }
 
 
     //验证用户名,信息返回给ajax
