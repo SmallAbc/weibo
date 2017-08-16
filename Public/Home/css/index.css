@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-body,h1,h2,h3,h4,h5,h6,ol,p,form{
+body,h1,h2,h3,h4,h5,h6,ol,p,form,dl,dd,dt{
     padding:0;
     margin:0;
 }
@@ -20,6 +20,7 @@ ul,ol{
     background: url("../img/header_bg.png");
     position: fixed;
     top: 0;
+    z-index: 999;
 }
 
 #header .header_main{
@@ -64,11 +65,36 @@ ul,ol{
 }
 
 #header .person{
+    margin-top: -12px;
+    height: 42px;
+    line-height: 42px;
     float:right;
 }
 
-#header .person a{
+#header .person li a,span{
     font-size: 13px;
+}
+
+#header .app{
+    cursor: pointer;
+    position: relative;
+}
+#header  .list{
+    width: 85px;
+    background: #c6b6b6;
+    border:1px solid #9a9a9a;
+    position: absolute;
+    top:42px;
+    right:-16px;
+    display: none;
+}
+
+
+
+#header .list a{
+    color: #666666;
+    line-height: 28px;
+    padding-left: 10px;
 }
 
 #header .search{
@@ -102,6 +128,82 @@ ul,ol{
 }
 
 
+#main .main_left{
+    float: left;
+    width: 650px;
+    padding: 0 20px;
+    min-height:800px;
+    background: #fff;
+}
+
+#main .main_left .left{
+    float: left;
+    color: #666;
+    font-size:14px;
+    font-weight:bold;
+    padding-top:30px;
+}
+
+#main .main_left .right{
+    float: right;
+    color: #ccc;
+    font-size:13px;
+    padding-top:30px;
+}
+
+
+#main .main_left .weibo_text{
+    width:632px;
+    height:80px;
+    background: #fff;
+    border:1px solid #ddd;
+    -webkit-box-shadow: 1px 1px 3px #dcdcdc inset;
+    -moz-box-shadow: 1px 1px 3px #dcdcdc inset;
+    box-shadow: 1px 1px 3px #dcdcdc inset;
+    resize: none;
+    padding:8px;
+    color: #666;
+    font-size:16px;
+}
+
+#main .main_left .weibo_num .red{
+    color: #cd0a0a;
+}
+
+#main .weibo_button{
+    font-size:14px;
+    width:90px;
+    float:right;
+    margin-top: 10px;
+    height: 35px;
+    background: #267cbe;
+    color: #fff3f3;
+}
+
+
+#main .weibo_button:hover{
+    background: #050b0c;
+    color: #eecd34;
+    text-shadow: 3px -3px 3px #ba8d3a;
+}
+
+#main .main_left .right strong{
+    color: #049;
+    font-size:22px;
+    padding:0 5px;
+}
+
+#main .main_right{
+    float: right;
+    width: 269px;
+    background: #f7f7f7;
+    min-height:800px;
+    border-left:1px solid #ddd;
+}
+
+
+
+
 #footer{
     font-size: 13px;
     width: 960px;
@@ -116,4 +218,14 @@ ul,ol{
 
 #footer .footer_right{
     float: right;
+}
+
+
+
+#error{
+    background: url('../img/error.png') no-repeat 10px center ;
+    padding-left:40px ;
+    opacity: 0.9;
+    font-size: 17px;
+    line-height: 15px;
 }
