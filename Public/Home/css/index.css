@@ -170,6 +170,16 @@ ul,ol{
     color: #cd0a0a;
 }
 
+#main .main_left a.weibo_face{
+    color: #666666;
+    text-decoration: none;
+    display: inline-block;
+    margin:10px 0 0 10px;
+    font-size:13px;
+    text-indent:18px;
+    background: url("../img/weibo_face.png") no-repeat left center;
+}
+
 #main .weibo_button{
     font-size:14px;
     width:90px;

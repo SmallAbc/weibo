@@ -1,0 +1,295 @@
+[ 2017-08-15T00:06:48+08:00 ] 127.0.0.1 /weibo/index.php/Home/User/checkVerify
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001331s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000830s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000909s ]
+
+[ 2017-08-15T00:06:50+08:00 ] 127.0.0.1 /weibo/index.php/Home/User/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001857s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT `id`,`username`,`password`,`last_login` FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `weibo_user` SET `last_login`='1502726810',`last_ip`='2130706433' WHERE `id` = 2 [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant COOKIE_KEY - assumed 'COOKIE_KEY' E:\wamp64\www\weibo\App\Home\Common\function.php 第 21 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001984s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002161s ]
+
+[ 2017-08-15T00:15:26+08:00 ] ::1 /weibo/index.php/Home/User/checkUserName
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001282s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001192s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001327s ]
+
+[ 2017-08-15T12:47:11+08:00 ] 127.0.0.1 /weibo/index.php/index/index.html
+ERR: 模板不存在:./App/Home/View/default/Index/index.tpl
+
+[ 2017-08-15T12:49:12+08:00 ] 127.0.0.1 /weibo/index.php/index/index.html
+ERR: 模板不存在:./App/Home/View/default/Index/index.tpl
+
+[ 2017-08-15T12:49:15+08:00 ] 127.0.0.1 /weibo/index.php/index/index.html
+ERR: 模板不存在:./App/Home/View/default/Index/index.tpl
+
+[ 2017-08-15T12:49:15+08:00 ] 127.0.0.1 /weibo/index.php/index/index.html
+ERR: 模板不存在:./App/Home/View/default/Index/index.tpl
+
+[ 2017-08-15T12:49:28+08:00 ] 127.0.0.1 /weibo/
+ERR: 模板不存在:./App/Home/View/default/Index/index.tpl
+
+[ 2017-08-15T12:50:11+08:00 ] 127.0.0.1 /weibo/
+ERR: 模板不存在:./App/Home/View/default/Index/index.tpl
+
+[ 2017-08-15T12:55:31+08:00 ] 127.0.0.1 /weibo/Public/Home/js/index.js
+ERR: 无法加载控制器:Public
+
+[ 2017-08-15T12:55:31+08:00 ] 127.0.0.1 /weibo/Public/Home/css/index.css
+ERR: 无法加载控制器:Public
+
+[ 2017-08-15T12:55:39+08:00 ] 127.0.0.1 /weibo/Public/Home/js/index.js
+ERR: 无法加载控制器:Public
+
+[ 2017-08-15T12:55:39+08:00 ] 127.0.0.1 /weibo/Public/Home/css/index.css
+ERR: 无法加载控制器:Public
+
+[ 2017-08-15T12:55:39+08:00 ] 127.0.0.1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-15T12:55:40+08:00 ] 127.0.0.1 /weibo/Public/Home/js/index.js
+ERR: 无法加载控制器:Public
+
+[ 2017-08-15T12:55:40+08:00 ] 127.0.0.1 /weibo/Public/Home/css/index.css
+ERR: 无法加载控制器:Public
+
+[ 2017-08-15T12:57:28+08:00 ] 127.0.0.1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-15T13:00:30+08:00 ] 127.0.0.1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-15T13:04:17+08:00 ] 127.0.0.1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-15T15:48:18+08:00 ] 127.0.0.1 /weibo/index.php/Home/User/checkVerify
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001243s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000553s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000661s ]
+
+[ 2017-08-15T15:48:20+08:00 ] 127.0.0.1 /weibo/index.php/Home/User/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002512s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT `id`,`username`,`password`,`last_login` FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `weibo_user` SET `last_login`='1502783300',`last_ip`='2130706433' WHERE `id` = 2 [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant COOKIE_KEY - assumed 'COOKIE_KEY' E:\wamp64\www\weibo\App\Home\Common\function.php 第 21 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000990s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001108s ]
+
+[ 2017-08-15T19:39:24+08:00 ] 127.0.0.1 /weibo/index.php/Index/logout.html
+ERR: 非法操作:logout
+
+[ 2017-08-15T19:39:58+08:00 ] 127.0.0.1 /weibo/index.php/Index/logout.html
+ERR: 非法操作:logout
+
+[ 2017-08-15T19:58:05+08:00 ] 127.0.0.1 /weibo/index.php/Login/index.html/111
+ERR: 非法操作:index.html
+
+[ 2017-08-15T19:58:13+08:00 ] 127.0.0.1 /weibo/user
+ERR: 非法操作:index
+
+[ 2017-08-15T19:59:52+08:00 ] 127.0.0.1 /weibo/index.php/Home/User/checkVerify
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001376s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000936s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001025s ]
+
+[ 2017-08-15T19:59:54+08:00 ] 127.0.0.1 /weibo/index.php/Home/User/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001615s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT `id`,`username`,`password`,`last_login` FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0013s ]
+SQL: UPDATE `weibo_user` SET `last_login`='1502798394',`last_ip`='2130706433' WHERE `id` = 2 [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003853s ]
+
+[ 2017-08-15T20:00:17+08:00 ] 127.0.0.1 /weibo/user
+ERR: 非法操作:index
+
+[ 2017-08-15T20:03:01+08:00 ] 127.0.0.1 /weibo/user
+ERR: 非法操作:index
+
+[ 2017-08-15T20:03:15+08:00 ] 127.0.0.1 /weibo/user
+ERR: 非法操作:index
+
+[ 2017-08-15T20:03:26+08:00 ] 127.0.0.1 /weibo/userregister
+ERR: 无法加载控制器:Userregister
+
+[ 2017-08-15T20:03:38+08:00 ] 127.0.0.1 /weibo/userregister
+ERR: 无法加载控制器:Userregister
+
+[ 2017-08-15T20:03:51+08:00 ] 127.0.0.1 /weibo/user/regitser
+ERR: 非法操作:regitser
+
+[ 2017-08-15T20:04:04+08:00 ] 127.0.0.1 /weibo/user/regitser
+ERR: 非法操作:regitser
+
+[ 2017-08-15T20:05:05+08:00 ] 127.0.0.1 /weibo/user/regitser
+ERR: 非法操作:regitser
+
+[ 2017-08-15T20:05:11+08:00 ] 127.0.0.1 /weibo/user/regitser
+ERR: 非法操作:regitser
+
+[ 2017-08-15T20:13:29+08:00 ] 127.0.0.1 /weibo/user/regitser
+ERR: 非法操作:regitser
+
+[ 2017-08-15T20:13:31+08:00 ] 127.0.0.1 /weibo/user/regitser
+ERR: 非法操作:regitser
+
+[ 2017-08-15T20:13:33+08:00 ] 127.0.0.1 /weibo/user/regitser
+ERR: 非法操作:regitser
+
+[ 2017-08-15T20:15:55+08:00 ] 127.0.0.1 /weibo/user/
+ERR: 非法操作:index
+
+[ 2017-08-15T21:47:32+08:00 ] 127.0.0.1 /weibo/index.php/Home/User/checkVerify
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002202s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001256s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001392s ]
+
+[ 2017-08-15T21:47:39+08:00 ] 127.0.0.1 /weibo/index.php/Home/User/checkVerify
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001209s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001711s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000947s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001044s ]
+
+[ 2017-08-15T21:47:41+08:00 ] 127.0.0.1 /weibo/index.php/Home/User/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001502s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT `id`,`username`,`password`,`last_login` FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `weibo_user` SET `last_login`='1502804861',`last_ip`='2130706433' WHERE `id` = 2 [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant COOKIE_KEY - assumed 'COOKIE_KEY' E:\wamp64\www\weibo\App\Home\Common\function.php 第 21 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001577s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001750s ]
+
+[ 2017-08-15T22:47:32+08:00 ] 127.0.0.1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-15T22:47:39+08:00 ] 127.0.0.1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-15T22:48:35+08:00 ] 127.0.0.1 /weibo/register
+ERR: 无法加载控制器:Register
+
+[ 2017-08-15T22:50:32+08:00 ] 127.0.0.1 /weibo/register
+ERR: 无法加载控制器:Register
+
+[ 2017-08-15T22:50:42+08:00 ] 127.0.0.1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-15T22:52:23+08:00 ] 127.0.0.1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-15T22:52:28+08:00 ] 127.0.0.1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-15T22:52:44+08:00 ] 127.0.0.1 /weibo/Public/Home/js/jquery-1.10.2.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-08-15T22:58:36+08:00 ] 127.0.0.1 /weibo/index.php/Home/User/checkVerify
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001300s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0023s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+NOTIC: [2] sha1() expects at least 1 parameter, 0 given E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1154 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001153s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001346s ]
+
+[ 2017-08-15T22:58:38+08:00 ] 127.0.0.1 /weibo/index.php/Home/User/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001282s ]
+SQL: SHOW COLUMNS FROM `weibo_user` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: username E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+NOTIC: [8] Undefined index: email E:\wamp64\www\weibo\ThinkPHP\Library\Think\Model.class.php 第 1217 行.
+SQL: SELECT `id`,`username`,`password`,`last_login` FROM `weibo_user` WHERE `username` = 'cr7wan' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `weibo_user` SET `last_login`='1502809118',`last_ip`='2130706433' WHERE `id` = 2 [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant COOKIE_KEY - assumed 'COOKIE_KEY' E:\wamp64\www\weibo\App\Home\Common\function.php 第 21 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000978s ]
+

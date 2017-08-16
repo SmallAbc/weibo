@@ -53,9 +53,15 @@ $(function () {
 
 
 
-    //微博发表字数统计
+    //微博发表字数统计按钮抬起时统计
     $('.weibo_text').on('keyup',weibo_num );
 
+    //统计字数,文本框获得光标时.
+    $('.weibo_text').on('focus',function () {
+        setTimeout(function () {
+            weibo_num();
+        },50)
+    });
 
 
     //计算可输入字数的方法
