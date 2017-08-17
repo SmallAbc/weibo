@@ -8,6 +8,7 @@
 <script type="text/javascript" src="/weibo/Public/Home/js/index.js"></script>
 <script type="text/javascript" src="/weibo/Public/Home/js/jquery.ui.js"></script>
 <script type="text/javascript" src="/weibo/Public/Home/js/rl_exp.js"></script>
+<script type="text/javascript" src="/weibo/Public/Home/js/pic_box.js"></script>
 <script type="text/javascript" src="/weibo/Public/Home/uploadify/jquery.uploadify.js"></script>
 <link rel="stylesheet" href="/weibo/Public/Home/css/jquery.ui.css">
 <link rel="stylesheet" href="/weibo/Public/Home/css/index.css">
@@ -88,9 +89,14 @@
                                 <ul class="rl_exp_main clearfix" style="display:none;"></ul>
                                 <a href="javascript:void(0);" class="close">×</a>
                         </div>
+                        <a href="javascript:void(0);" class="weibo_pic" id="pic_btn">图片</a>
+                        <div class="weibo_pic_box" id="pic_box" style="display:none;">
+                            <a href="javascript:void(0);" class="close">×</a>
+                            <p>共0张,还可以选择4张</p>
+                            <input type="file" class="file" id="file">
+                        </div>
                         <input type="button" class="weibo_button" value="发布">
                 </form>
-                <div class="weibo_content"><input type="file" class="file" id="file"></div>
         </div>
         <div class="main_right">
                 right

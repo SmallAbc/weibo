@@ -169,7 +169,6 @@ ul,ol{
 #main .main_left .weibo_num .red{
     color: #cd0a0a;
 }
-
 #main .main_left a.weibo_face{
     color: #666666;
     text-decoration: none;
@@ -179,6 +178,58 @@ ul,ol{
     text-indent:18px;
     background: url("../img/weibo_face.png") no-repeat left center;
 }
+
+
+#main .main_left a.weibo_pic{
+    color: #666666;
+    text-decoration: none;
+    display: inline-block;
+    margin:10px 0 0 10px;
+    font-size:13px;
+    text-indent:18px;
+    background: url("../img/weibo_pic.png") no-repeat left center;
+}
+
+
+
+.weibo_pic_box {
+    margin: 0 auto;
+    position: absolute;
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #D0D0D0;
+    box-shadow: 0 1px 2px 2px #656565, 1px 1px 0 rgba(127, 127, 127, 0.1);
+    overflow: hidden;
+    background: none repeat scroll 0 0 white;
+    zoom: 1;
+    z-index: 100;
+    text-align: center;
+
+}
+
+.weibo_pic_box p{
+    margin-bottom: 5px;
+}
+
+#SWFUpload_0.swfupload{
+    margin-left: 30px;
+}
+
+#file-button.uploadify-button{
+    width: 80px;
+    font-size:14px;
+    width:90px;
+    float:right;
+    margin-top: 10px;
+    height: 35px;
+    background: #267cbe;
+    color: #fff3f3;
+    position: relative;
+    top:-12px;
+    left: 32px;
+    border-radius: 4px;
+}
+
 
 #main .weibo_button{
     font-size:14px;
