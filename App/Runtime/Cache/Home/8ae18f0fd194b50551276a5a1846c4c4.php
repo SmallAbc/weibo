@@ -8,15 +8,18 @@
 <script type="text/javascript" src="/weibo/Public/Home/js/index.js"></script>
 <script type="text/javascript" src="/weibo/Public/Home/js/jquery.ui.js"></script>
 <script type="text/javascript" src="/weibo/Public/Home/js/rl_exp.js"></script>
+<script type="text/javascript" src="/weibo/Public/Home/uploadify/jquery.uploadify.js"></script>
 <link rel="stylesheet" href="/weibo/Public/Home/css/jquery.ui.css">
 <link rel="stylesheet" href="/weibo/Public/Home/css/index.css">
 <link rel="stylesheet" href="/weibo/Public/Home/css/rl_exp.css">
+<link rel="stylesheet" href="/weibo/Public/Home/uploadify/uploadify.css">
 <title>微博系统首页</title>
 <script type="text/javascript">var ThinkPHP={
         'MODULE':'/weibo/index.php/Home',
         'IMG':'/weibo/Public/<?php echo (MODULE_NAME); ?>/img',
         'FACE':'/weibo/Public/<?php echo (MODULE_NAME); ?>/face',
-        'INDEX':'<?php echo U("index/index");?>'
+        'INDEX':'<?php echo U("index/index");?>',
+        'UPLOADIFY':'/weibo/Public/Home/uploadify'
 
     };
 </script>
@@ -87,6 +90,7 @@
                         </div>
                         <input type="button" class="weibo_button" value="发布">
                 </form>
+                <div class="weibo_content"><input type="file" class="file" id="file"></div>
         </div>
         <div class="main_right">
                 right

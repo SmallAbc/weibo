@@ -56,6 +56,22 @@ $(function () {
 
     });
 
+
+
+
+
+
+    //文件上传测试
+    $('#file').uploadify({
+        swf:ThinkPHP['UPLOADIFY']+'/uploadify.swf',
+        uploader:ThinkPHP['MODULE']+'/File/upload',
+        fileTypeDesc:'图片类型',
+        fileTypeExts:'*.gif;*.png;*.jpg;*.jpeg',
+        onUploadSuccess:function (file,data,response) {
+            alert(response);
+        }
+    });
+
     //error dialog
     $('#error').dialog({
         height:40,

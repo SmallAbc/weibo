@@ -22,6 +22,7 @@
                         </div>
                         <input type="button" class="weibo_button" value="发布">
                 </form>
+                <div class="weibo_content"><input type="file" class="file" id="file"></div>
         </div>
         <div class="main_right">
                 right
