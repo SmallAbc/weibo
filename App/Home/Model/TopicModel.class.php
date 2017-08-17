@@ -10,7 +10,9 @@ namespace Home\Model;
 
 
 use Think\Model;
+use function get_client_ip;
 use function mb_strlen;
+use function sleep;
 
 class TopicModel extends Model
 {
@@ -37,15 +39,18 @@ class TopicModel extends Model
             $content=$allcontent;
             $content_over='';
         }
+        echo $uid;
         $data=array(
           'content'=>$content,
-            'uid'=>$uid
+            'uid'=>$uid,
+            'ip'=>get_client_ip(1)
         );
         if(!empty($content_over)){
             $data['content_over']=$content_over;
         }
         if($this->create($data)){
             $uid=$this->add();
+            sleep(2);
             return $uid?$uid:0;
         }else{
             return $this->getError();

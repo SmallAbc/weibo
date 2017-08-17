@@ -28,4 +28,5 @@
         </div>
 
         <div id="error">...</div>
+        <div id="loading" class="loading">数据交互中...</div>
 </block>

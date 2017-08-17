@@ -39,13 +39,24 @@ $(function () {
                 type:'post',
                 data:{
                     content:$('.weibo_text').val()
+                },
+                beforeSend:function () {
+                    $('#loading').dialog('open');
+                },
+                success:function (responseText) {
+                    if(responseText){
+                        $('#loading').dialog().html('微博发布成功!').addClass('succ').removeClass('loading');
+                        setTimeout(function () {
+
+                         $('#loading').dialog('close')},1000);
+                    }
                 }
             })
         }
 
     });
 
-
+    //error dialog
     $('#error').dialog({
         height:40,
         width:200,
@@ -58,6 +69,17 @@ $(function () {
     }).parent().find('.ui-dialog-titlebar').hide();
 
 
+    //error dialog
+    $('#loading').dialog({
+        height:50,
+        width:170,
+        autoOpen:false,
+        modal:true,
+        draggable:false,
+        resizable:false,
+        closeOnEscape:false
+
+    }).parent().find('.ui-dialog-titlebar').hide();
 
     //微博发表字数统计按钮抬起时统计
     $('.weibo_text').on('keyup',weibo_num );

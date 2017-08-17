@@ -80,7 +80,7 @@ class UserModel extends Model{
         if($this->create($data)){
             //正确则说明采用的是邮箱登录方式
             $map['email']=$username;
-            $user=$this->field('id,password')->where($map)->find();
+            $user=$this->field('id,password,username')->where($map)->find();
         }else{
             $error=$this->getError();
             if($error=='notemail'){
@@ -101,7 +101,7 @@ class UserModel extends Model{
 
             //将记录写到session和cookie中去//Todo:session 写入没成功
             $auth = array(
-                'id=' => $user['id'],
+                'id' => $user['id'],
                 'username' => $user['username'],
                 'last_login' => time()
             );

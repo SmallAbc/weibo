@@ -239,3 +239,18 @@ ul,ol{
     font-size: 17px;
     line-height: 15px;
 }
+#loading.loading{
+    background: url('../img/loading.gif') no-repeat 10px center ;
+    padding-left:40px ;
+    opacity: 0.6;
+    font-size: 17px;
+    line-height: 20px;
+}
+#loading.succ{
+    height: 40px;
+    background: url('../img/success.gif') no-repeat 10px center ;
+    padding-left:40px ;
+    opacity: 0.8;
+    font-size: 17px;
+    line-height: 20px;
+}

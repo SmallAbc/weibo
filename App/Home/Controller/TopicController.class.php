@@ -10,7 +10,6 @@ namespace Home\Controller;
 
 
 use Home\Model\TopicModel;
-use function dump;
 use function session;
 
 class TopicController extends HomeController
@@ -20,9 +19,8 @@ class TopicController extends HomeController
         if(IS_AJAX){
 
             $topic=new TopicModel();
-            echo session('user_auth')['id'];
             $tip=$topic->publish(I('post.content'),session('user_auth')['id']);
-            dump($tip);
+            echo $tip;
         }else{
             $this->error('非法访问!');
         }
