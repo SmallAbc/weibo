@@ -34,7 +34,13 @@ $(function () {
                 $('.weibo_text').focus();
             },1000)
         }else if(weibo_num()){
-            alert('submit');
+            $.ajax({
+                url:ThinkPHP['MODULE']+'/topic/publish',
+                type:'post',
+                data:{
+                    content:$('.weibo_text').val()
+                }
+            })
         }
 
     });
@@ -78,7 +84,7 @@ $(function () {
                 }
             }
         }
-        var value=parseInt((total-tem)/2);
+        var value=parseInt((total-tem)/2-0.5);
         if(value>=0){
             $('.weibo_num').html('还可以输入<strong>'+value+'</strong>个字');
             return true;

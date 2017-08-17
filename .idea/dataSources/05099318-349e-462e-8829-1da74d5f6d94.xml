@@ -14,71 +14,132 @@
     <schema id="8" parent="1" name="sys"/>
     <schema id="9" parent="1" name="testguest"/>
     <schema id="10" parent="1" name="think"/>
-    <table id="11" parent="2" name="weibo_user"/>
-    <table id="12" parent="2" name="weibo_user_extend"/>
-    <column id="13" parent="11" name="id">
+    <table id="11" parent="2" name="weibo_topic"/>
+    <table id="12" parent="2" name="weibo_user"/>
+    <table id="13" parent="2" name="weibo_user_extend"/>
+    <column id="14" parent="11" name="id">
+      <Position>1</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="15" parent="11" name="content">
+      <Position>2</Position>
+      <Comment>微博内容</Comment>
+      <DataType>char(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="16" parent="11" name="content_over">
+      <Position>3</Position>
+      <Comment>微博溢出内容</Comment>
+      <DataType>char(25)|0</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="17" parent="11" name="ip">
+      <Position>4</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="18" parent="11" name="create_date">
+      <Position>5</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="19" parent="11" name="uid">
+      <Position>6</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="20" parent="11" name="id">
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="21" parent="11" name="uid">
+      <ColNames>uid</ColNames>
+    </index>
+    <key id="22" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="23" parent="11" name="id">
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>id</UnderlyingIndexName>
+    </key>
+    <column id="24" parent="12" name="id">
       <Position>1</Position>
       <Comment>编号</Comment>
       <DataType>int(10) unsigned|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="14" parent="11" name="username">
+    <column id="25" parent="12" name="username">
       <Position>2</Position>
       <DataType>char(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="15" parent="11" name="password">
+    <column id="26" parent="12" name="password">
       <Position>3</Position>
       <DataType>char(40)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="16" parent="11" name="email">
+    <column id="27" parent="12" name="email">
       <Position>4</Position>
       <DataType>char(50)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="17" parent="11" name="create">
+    <column id="28" parent="12" name="create">
       <Position>5</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="18" parent="11" name="weibo_user_email_uindex">
+    <column id="29" parent="12" name="last_login">
+      <Position>6</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="30" parent="12" name="last_ip">
+      <Position>7</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <index id="31" parent="12" name="weibo_user_email_uindex">
       <ColNames>email</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="19" parent="11" name="weibo_user_username_uindex">
+    <index id="32" parent="12" name="weibo_user_username_uindex">
       <ColNames>username</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="20" parent="11" name="PRIMARY">
+    <key id="33" parent="12" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="21" parent="11" name="weibo_user_username_uindex">
+    <key id="34" parent="12" name="weibo_user_username_uindex">
       <ColNames>username</ColNames>
       <UnderlyingIndexName>weibo_user_username_uindex</UnderlyingIndexName>
     </key>
-    <key id="22" parent="11" name="weibo_user_email_uindex">
+    <key id="35" parent="12" name="weibo_user_email_uindex">
       <ColNames>email</ColNames>
       <UnderlyingIndexName>weibo_user_email_uindex</UnderlyingIndexName>
     </key>
-    <column id="23" parent="12" name="intro">
+    <column id="36" parent="13" name="intro">
       <Position>1</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="24" parent="12" name="uid">
+    <column id="37" parent="13" name="uid">
       <Position>2</Position>
       <Comment>关联ID</Comment>
       <DataType>int(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="25" parent="12" name="uid">
+    <index id="38" parent="13" name="uid">
       <ColNames>uid</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="26" parent="12" name="uid">
+    <key id="39" parent="13" name="uid">
       <ColNames>uid</ColNames>
       <UnderlyingIndexName>uid</UnderlyingIndexName>
     </key>

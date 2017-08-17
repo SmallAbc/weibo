@@ -81,46 +81,42 @@ class UserModel extends Model{
             //正确则说明采用的是邮箱登录方式
             $map['email']=$username;
             $user=$this->field('id,password')->where($map)->find();
-            if($user['password']==sha1($password)){
-                return $user['id'];
-            }else{
-                return -9;
-            }
         }else{
             $error=$this->getError();
             if($error=='notemail'){
                 $map['username']=$username;
                 $user=$this->field('id,username,password,last_login')->where($map)->find();
-                if($user['password']==sha1($password)){
-                    //登录验证后写入登录信息
-                    $update=array(
-                        'id'=>$user['id'],
-                        'last_login'=>time(),
-                        'last_ip'=>get_client_ip(1)
-                    );
-                    $this->save($update);
-
-                    //将记录写到session和cookie中去
-                    $auth=array(
-                        'id='=>$user['id'],
-                        'username'=>$user['username'],
-                        'last_login'=>time()
-                    );
-                    session('user_auth',$auth);
-                    //生成COOKIE
-                    if($auto=='on') {
-                        $cookie=encryption($user['username'].'|'.get_client_ip(1),0);
-                        cookie('auto', $cookie, 3600 * 24 * 30);
-                    }
-                    return $user['id'];
-                }else{
-                    return -9;
-                }
             }else{
                 return $this->getError();
             }
         }
+        if($user['password']==sha1($password)) {
+            //登录验证后写入登录信息
+            $update = array(
+                'id' => $user['id'],
+                'last_login' => time(),
+                'last_ip' => get_client_ip(1)
+            );
+            $this->save($update);
+
+            //将记录写到session和cookie中去//Todo:session 写入没成功
+            $auth = array(
+                'id=' => $user['id'],
+                'username' => $user['username'],
+                'last_login' => time()
+            );
+            session('user_auth', $auth);
+            //生成COOKIE
+            if ($auto == 'on') {
+                $cookie = encryption($user['username'] . '|' . get_client_ip(1), 0);
+                cookie('auto', $cookie, 3600 * 24 * 30);
+            }
+            return $user['id'];
+        }
     }
+
+
+
 
     //验证数据,用户名是否被占用,邮箱是否被占用,验证码是否正确
     public function checkField($field,$type){
