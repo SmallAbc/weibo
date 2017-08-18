@@ -192,23 +192,83 @@ ul,ol{
 
 
 
-.weibo_pic_box {
-    margin: 0 auto;
-    position: absolute;
-    width: 200px;
-    padding: 20px;
+#main .main_left .weibo_pic_box {
+    margin:0 auto;
+    position:absolute;
+    min-width:350px;
+    max-width:460px;
     border: 1px solid #D0D0D0;
-    box-shadow: 0 1px 2px 2px #656565, 1px 1px 0 rgba(127, 127, 127, 0.1);
+    box-shadow: 0 0 5px #ccc,1px 1px 0 rgba(127,127,127,0.1);
     overflow: hidden;
     background: none repeat scroll 0 0 white;
-    zoom: 1;
-    z-index: 100;
-    text-align: center;
-
+    zoom:1;
+    z-index:100;
 }
-
-.weibo_pic_box p{
-    margin-bottom: 5px;
+#main .main_left .weibo_pic_header {
+    height:30px;
+    line-height:30px;
+    color:#666;
+    font-size:13px;
+    background:#fafafa;
+    text-indent:10px;
+}
+#main .main_left .weibo_pic_info {
+    float:left;
+}
+#main .main_left .weibo_pic_header .close {
+    float:right;
+}
+#main .main_left .weibo_pic_list {
+    padding:15px 10px 10px 10px;
+}
+#main .main_left .weibo_pic_content {
+    width:100px;
+    height:100px;
+    float:left;
+    border:1px solid #eee;
+    margin:-5px 4px 15px 4px;
+    overflow:hidden;
+    position:relative;
+}
+#main .main_left .weibo_pic_content .remove {
+    display:none;
+    width:100px;
+    height:25px;
+    background:#000;
+    position:absolute;
+    top:75px;
+    left:0;
+    z-index:2;
+    opacity:0.7;
+    filter:alpha(opacity=70);
+    cursor:pointer;
+}
+#main .main_left .weibo_pic_content .text {
+    display:none;
+    width:100px;
+    height:25px;
+    line-height:25px;
+    text-align:center;
+    position:absolute;
+    top:75px;
+    left:0;
+    z-index:3;
+    cursor:pointer;
+    color:#fff;
+    font-size:13px;
+}
+#main .main_left img.weibo_pic_img {
+    position:absolute;
+    top:0;
+    left:0;
+    cursor:pointer;
+    z-index:1;
+}
+#main .main_left .weibo_pic_box #file {
+    clear:both;
+    margin:0 auto;
+    position:relative;
+    top:-5px;
 }
 
 #SWFUpload_0.swfupload{
@@ -240,6 +300,8 @@ ul,ol{
     background: #267cbe;
     color: #fff3f3;
 }
+
+
 
 
 #main .weibo_button:hover{

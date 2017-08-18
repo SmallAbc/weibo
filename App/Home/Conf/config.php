@@ -20,7 +20,7 @@ return array(
     'TMPL_ACTION_SUCCESS'=>'public/jump',
 
     //图片上传路径
-    'UPLOAD_PATH'=>'./Upload/'
+    'UPLOAD_PATH'=>'./Uploads/'
 
 
 
