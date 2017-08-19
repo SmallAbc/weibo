@@ -66,7 +66,6 @@ $(function () {
     //error dialog
     $('#error').dialog({
         height:40,
-        width:200,
         autoOpen:false,
         modal:true,
         draggable:false,

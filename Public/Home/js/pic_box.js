@@ -1,5 +1,7 @@
 $(function () {
     var pic_box= {
+        uploadTotal:0,
+        uploadLimit:8,
         uplodify:function () {
             //文件上传测试
             $('#file').uploadify({
@@ -8,12 +10,38 @@ $(function () {
                 fileTypeDesc:'图片类型',
                 buttonCursor:'hand',
                 buttonText:'上传图片',
+                fileSizeLimit:'1MB',
                 fileTypeExts:'*.gif;*.png;*.jpg;*.jpeg',
+                overrideEvents:['onSelectError','onSelect','onDialogClose'],
+                onSelectError:function (file,errorCode,errorMsg) {
+                  switch (errorCode){
+                      case -110:
+                          $('#error').dialog('open').html('部分上传图片超过1024KB!');
+                          setTimeout(function () {
+                              $('#error').dialog('close').html('...');
+                          },2000);
+                      break;
+                  }
+                },
+                onUploadStart:function () {
+                    if (pic_box.uploadTotal>=8){
+                        $('#file').uplodify('stop');
+                        $('#file').uplodify('cancel');
+
+                    }
+                },
                 onUploadSuccess : function (file, data, response) {
                     $('.weibo_pic_list').append('<div class="weibo_pic_content"><span class="remove"></span><span class="text">删除</span><img src="' + data + '" class="weibo_pic_img"></div>');
                     setTimeout(function () {
                         pic_box.thumb();
+                        pic_box.hover();
+                        pic_box.remove();
+                        pic_box.uploadTotal++;
+                        pic_box.uploadLimit--;
+                        $('.weibo_pic_total').html(pic_box.uploadTotal);
+                        $('.weibo_pic_limit').html(pic_box.uploadLimit);
                     }, 50);
+
                 }
             });
         },
@@ -30,6 +58,37 @@ $(function () {
             }
         },
 
+        //鼠标置于图片上出现删除按钮
+        hover:function () {
+            var content=$('.weibo_pic_content');
+            var len=content.length;
+            for (var i=0;i<=len;i++){
+              $(content[len-i]).on({
+                    'mouseenter':function () {
+                        $(this).find('.text').show();
+                        $(this).find('.remove').show();
+                        },
+                    'mouseleave':function () {
+                        $(this).find('.text').hide();
+                        $(this).find('.remove').hide();
+                        },
+                });
+            }
+        },
+
+        //删除添加了,但后悔不想要的图片
+        remove : function () {
+            var remove = $('.weibo_pic_content .text');
+            var len = remove.length;
+            $(remove[len - 1]).on('click', function () {
+                $(this).parent().remove();
+                pic_box.uploadTotal--;
+                pic_box.uploadLimit++;
+                $('.weibo_pic_total').text(pic_box.uploadTotal);
+                $('.weibo_pic_limit').text(pic_box.uploadLimit);
+            });
+        },
+
         /*绑定图片框弹出按钮响应，初始化。*/
         init:function() {
             $("#pic_btn").on('click', function () {
@@ -40,16 +99,24 @@ $(function () {
 
             $('.close').on('click', function () {
                 $('#pic_box').hide();
+                $('.weibo_pic_list').html('');
+                $('.weibo_pic_total').html(0);
+                $('.weibo_pic_limit').text(8);
             })
 
             $(document).on('click', function (e) {
                 var target = $(e.target);
 
-                if (target.closest('#pic_btn').length == 1) {
+                if (target.closest('#pic_btn').length == 1||target.closest('.weibo_pic_content .text').length==1) {
                     return;
                 }
                 if (target.closest('#pic_box').length == 0) {
                     $('#pic_box').hide();
+                    $('.weibo_pic_list').html('');
+                    $('.weibo_pic_total').html(0);
+                    $('.weibo_pic_limit').text(8);
+                    pic_box.uploadTotal=0;
+                    pic_box.uploadLimit=8;
                 }
             })
         }

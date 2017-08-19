@@ -20,6 +20,7 @@ class FileController extends Controller
     public function upload(){
         $upload=new Upload();
         $upload->rootPath=C('UPLOAD_PATH');
+        $upload->maxSize=1048579;
         $info=$upload->upload();
         if ($info) {
             $imgPath = C('UPLOAD_PATH').$info['Filedata']['savepath'].$info['Filedata']['savename'];
