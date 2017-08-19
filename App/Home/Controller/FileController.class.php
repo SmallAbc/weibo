@@ -13,11 +13,13 @@ use Think\Controller;
 use Think\Image;
 use Think\Upload;
 use function C;
+use function sleep;
 
 class FileController extends Controller
 {
     //图片上传方法
     public function upload(){
+        sleep(1);
         $upload=new Upload();
         $upload->rootPath=C('UPLOAD_PATH');
         $upload->maxSize=1048579;
@@ -28,7 +30,15 @@ class FileController extends Controller
             $image->open($imgPath);
             $thumbPath = C('UPLOAD_PATH').$info['Filedata']['savepath'].'180_'.$info['Filedata']['savename'];
             $image->thumb(180, 180)->save($thumbPath);
-            echo $thumbPath;
+            $image->open($imgPath);
+            $unfoldPath = C('UPLOAD_PATH').$info['Filedata']['savepath'].'550_'.$info['Filedata']['savename'];
+            $image->thumb(550, 550)->save($unfoldPath);
+            $path=array(
+               'source'=>$imgPath,
+                'unfold'=>$unfoldPath,
+                'thumb'=>$thumbPath
+            );
+            $this->ajaxReturn($path);
         } else {
             echo $upload->getError();
         }

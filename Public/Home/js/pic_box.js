@@ -24,14 +24,19 @@ $(function () {
                   }
                 },
                 onUploadStart:function () {
-                    if (pic_box.uploadTotal>=8){
+                    if (pic_box.uploadTotal>=7){
                         $('#file').uplodify('stop');
                         $('#file').uplodify('cancel');
 
+                    }else{
+                        $('.weibo_pic_list').append('<div class="weibo_pic_content"><span class="remove"></span><span class="text">删除</span><img src="' + ThinkPHP['IMG'] + '/loading_100.png" class="weibo_pic_img"></div>');
                     }
                 },
                 onUploadSuccess : function (file, data, response) {
-                    $('.weibo_pic_list').append('<div class="weibo_pic_content"><span class="remove"></span><span class="text">删除</span><img src="' + data + '" class="weibo_pic_img"></div>');
+                    var path=$.parseJSON(data);
+                    var img = $('.weibo_pic_img');
+                    var len = img.length;
+                    $(img[len-1]).attr('src',path['thumb']);
                     setTimeout(function () {
                         pic_box.thumb();
                         pic_box.hover();
@@ -62,8 +67,7 @@ $(function () {
         hover:function () {
             var content=$('.weibo_pic_content');
             var len=content.length;
-            for (var i=0;i<=len;i++){
-              $(content[len-i]).on({
+              $(content[len-1]).on({
                     'mouseenter':function () {
                         $(this).find('.text').show();
                         $(this).find('.remove').show();
@@ -73,7 +77,6 @@ $(function () {
                         $(this).find('.remove').hide();
                         },
                 });
-            }
         },
 
         //删除添加了,但后悔不想要的图片
