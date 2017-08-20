@@ -15,7 +15,8 @@
         'IMG':'__PUBLIC__/{$Think.MODULE_NAME}/img',
         'FACE':'__PUBLIC__/{$Think.MODULE_NAME}/face',
         'INDEX':'{:U("index/index")}',
-        'UPLOADIFY':'__UPLOADIFY__'
+        'UPLOADIFY':'__UPLOADIFY__',
+        'ROOT':'__ROOT__'
 
     };
 </script>

@@ -204,6 +204,11 @@ ul,ol{
     zoom:1;
     z-index:100;
 }
+
+
+#rl_bq{
+    z-index: 101;
+}
 #main .main_left .weibo_pic_header {
     height:30px;
     line-height:30px;

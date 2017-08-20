@@ -20,7 +20,8 @@
         'IMG':'/weibo/Public/<?php echo (MODULE_NAME); ?>/img',
         'FACE':'/weibo/Public/<?php echo (MODULE_NAME); ?>/face',
         'INDEX':'<?php echo U("index/index");?>',
-        'UPLOADIFY':'/weibo/Public/Home/uploadify'
+        'UPLOADIFY':'/weibo/Public/Home/uploadify',
+        'ROOT':'/weibo'
 
     };
 </script>

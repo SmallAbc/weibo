@@ -31,7 +31,7 @@ class HomeController extends Controller
                 $userinfo = $usermodel->field('id,username,last_login')->where($map)->find();
                 //自动登录后的验证信息
                 $auth = array(
-                    'id=' => $userinfo['id'],
+                    'id' => $userinfo['id'],
                     'last_login' => time()
                 );
                 session('user_auth', $auth);

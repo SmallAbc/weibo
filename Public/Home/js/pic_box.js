@@ -33,10 +33,11 @@ $(function () {
                     }
                 },
                 onUploadSuccess : function (file, data, response) {
+                    $('.weibo_pic_list').append('<input type="hidden" name="image" value='+data+'>');
                     var path=$.parseJSON(data);
                     var img = $('.weibo_pic_img');
                     var len = img.length;
-                    $(img[len-1]).attr('src',path['thumb']);
+                    $(img[len-1]).attr('src',ThinkPHP['ROOT']+path['thumb']);
                     setTimeout(function () {
                         pic_box.thumb();
                         pic_box.hover();
@@ -84,6 +85,7 @@ $(function () {
             var remove = $('.weibo_pic_content .text');
             var len = remove.length;
             $(remove[len - 1]).on('click', function () {
+                $(this).parent().next('input[name="image"]').remove();
                 $(this).parent().remove();
                 pic_box.uploadTotal--;
                 pic_box.uploadLimit++;
@@ -102,26 +104,18 @@ $(function () {
 
             $('.close').on('click', function () {
                 $('#pic_box').hide();
-                $('.weibo_pic_list').html('');
-                $('.weibo_pic_total').html(0);
-                $('.weibo_pic_limit').text(8);
             })
 
-            $(document).on('click', function (e) {
-                var target = $(e.target);
-
-                if (target.closest('#pic_btn').length == 1||target.closest('.weibo_pic_content .text').length==1) {
-                    return;
-                }
-                if (target.closest('#pic_box').length == 0) {
-                    $('#pic_box').hide();
-                    $('.weibo_pic_list').html('');
-                    $('.weibo_pic_total').html(0);
-                    $('.weibo_pic_limit').text(8);
-                    pic_box.uploadTotal=0;
-                    pic_box.uploadLimit=8;
-                }
-            })
+            // $(document).on('click', function (e) {
+            //     var target = $(e.target);
+            //
+            //     if (target.closest('#pic_btn').length == 1||target.closest('.weibo_pic_content .text').length==1) {
+            //         return;
+            //     }
+            //     if (target.closest('#pic_box').length == 0) {
+            //         $('#pic_box').hide();
+            //     }
+            // })
         }
     }
 

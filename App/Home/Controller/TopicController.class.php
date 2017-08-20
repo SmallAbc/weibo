@@ -9,6 +9,7 @@
 namespace Home\Controller;
 
 
+use Home\Model\ImageModel;
 use Home\Model\TopicModel;
 use function session;
 
@@ -20,6 +21,11 @@ class TopicController extends HomeController
 
             $topic=new TopicModel();
             $tip=$topic->publish(I('post.content'),session('user_auth')['id']);
+            $img=I('post.img','',false);
+            if (is_array($img)){
+                $image=new ImageModel();
+                $image->storage($img,$tip);
+            }
             echo $tip;
         }else{
             $this->error('非法访问!');
