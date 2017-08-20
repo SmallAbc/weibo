@@ -27,48 +27,60 @@ $(function () {
 
     //微博发布按钮
     $('.weibo_button').button().click(function () {
-        if($('.weibo_text').val().length==0){
-            $('#error').dialog('open').html('请输入微博内容...');
-            setTimeout(function(){
-                $('#error').dialog('close');
-                $('.weibo_text').focus();
-            },1000)
-        }else if(weibo_num()){
-            var img=[];
-            var images=$('input[name="image"]');
-            for (var i=0;i<images.length;i++){
-                img[i]=images.eq(i).val();
-            }
-            $.ajax({
-                url:ThinkPHP['MODULE']+'/topic/publish',
-                type:'post',
-                data:{
-                    content:$('.weibo_text').val(),
-                    img:img
-                },
-                beforeSend:function () {
-                    $('#loading').dialog('open');
-                },
-                success:function (responseText) {
-                    if(responseText){
-                        $('#loading').dialog().html('微博发布成功!').addClass('succ').removeClass('loading');
-                        setTimeout(function () {
-                            $('#pic_box').hide();
-                            $('.weibo_pic_list').remove();
-                            pic_box.uploadTotal=0;
-                            pic_box.uploadLimit=8;
-                            $('.weibo_pic_total').text(pic_box.uploadTotal);
-                            $('.weibo_pic_limit').text(pic_box.uploadLimit);
-                         $('#loading').dialog('close')},1000);
-                    }
-                }
-            })
+        var img = [];
+        var images = $('input[name="image"]');
+        for (var i = 0; i < images.length; i++) {
+            img[i] = images.eq(i).val();
         }
 
+        if ($('.weibo_text').val().length === 0) {
+            if (img.length === 0) {
+                $('#error').dialog('open').html('请输入微博内容...');
+                setTimeout(function () {
+                    $('#error').dialog('close');
+                    $('.weibo_text').focus();
+                }, 1000)
+            } else if (img.length !== 0) {
+                $('.weibo_text').val('分享图片:');
+                weibo_ajax_send(img);
+            }
+        } else {
+            if (weibo_num()) {
+                weibo_ajax_send(img);
+            }
+        }
     });
 
 
 
+
+    //ajax提交微博信息
+    function weibo_ajax_send(img) {
+        $.ajax({
+            url:ThinkPHP['MODULE']+'/topic/publish',
+            type:'post',
+            data:{
+                content:$('.weibo_text').val(),
+                img:img
+            },
+            beforeSend:function () {
+                $('#loading').dialog('open');
+            },
+            success:function (responseText) {
+                if(responseText){
+                    $('#loading').dialog().html('微博发布成功!').addClass('succ').removeClass('loading');
+                    setTimeout(function () {
+                        $('#pic_box').hide();
+                        $('.weibo_pic_list').remove();
+                        pic_box.uploadTotal=0;
+                        pic_box.uploadLimit=8;
+                        $('.weibo_pic_total').text(pic_box.uploadTotal);
+                        $('.weibo_pic_limit').text(pic_box.uploadLimit);
+                        $('#loading').dialog('close')},1000);
+                }
+            }
+        })
+    }
 
 
 

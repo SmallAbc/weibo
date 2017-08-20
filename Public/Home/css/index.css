@@ -315,6 +315,115 @@ ul,ol{
     text-shadow: 3px -3px 3px #ba8d3a;
 }
 
+
+#main .main_left .weibo_content{
+    clear: both;
+}
+
+
+#main .main_left .weibo_content ul{
+    height:32px;
+    border-bottom:1px solid #ccc;
+    margin:0 0 5px 0;
+}
+#main .main_left .weibo_content ul li{
+    width:100px;
+    height:35px;
+    line-height: 35px;
+    float: left;
+    font-size: 13px;
+    text-align: center;
+    margin:0 6px 0 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+#main .main_left .weibo_content ul li a{
+    display: block;
+    height:32px;
+    line-height: 32px;
+    color: #545454;
+    background: #acacac;
+    text-decoration: none;
+}
+
+#main .weibo_content ul li a.selected{
+    background: none;
+    border: 2px solid #ccc;
+    border-bottom: 2px solid #fff;
+    margin-top: -2px;
+    font-weight: bold;
+}
+
+
+#main .weibo_content ul li a i.nav_arrow{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: url("../img/nav_arrow.png") no-repeat right 3px;
+    margin-left: 5px;
+}
+
+
+#main .weibo_content_data{
+    padding:10px 0;
+    float: left;
+}
+
+#main .weibo_content_data dt{
+    width: 65px;
+    float: left;
+    padding:10px 0;
+}
+
+#main .weibo_content_data dd{
+    width: 585px;
+    float: right;
+    padding: 10px 0;
+
+}
+
+#main .weibo_content_data dd h4{
+    padding-left:3px ;
+}
+
+#main .weibo_content_data dd h4 a{
+    color: #049;
+    text-decoration: none;
+    font-weight: 14px;
+}
+
+#main .weibo_content_data dd p{
+    font-weight: 14px;
+    color: #555;
+    line-height: 150%;
+}
+
+#main .weibo_content_data dd img{
+    display: block;
+    border: 1px solid #eee;
+    cursor: pointer;
+    margin-top:10px;
+}
+
+
+#main .weibo_content_data .footer{
+    height: 35px;
+    line-height: 35px;
+    color: #5e7c85;
+    border:1px solid #eee;
+    font-size:13px;
+    margin-top: 20px;
+}
+
+#main .weibo_content_data .footer .time{
+    float: left;
+}
+#main .weibo_content_data .footer .handler{
+    float: right;
+}
+
 #main .main_left .right strong{
     color: #049;
     font-size:22px;
