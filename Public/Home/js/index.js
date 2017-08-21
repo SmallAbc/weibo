@@ -83,9 +83,25 @@ $(function () {
         })
     }
 
+    //点击图片放大
+    var imgdiv=$('.weibo_content_data .img');
+    var len=imgdiv.length;
+    for(var i=0;i<len;i++){
+        $(imgdiv[i]).on('click',function () {
+            $(this).hide();
+            $(this).next().show();
+            var img=$(this).next().find('img');
+            img.attr('src',img.attr('data'));
+        })
+    }
 
 
+    //点击收起按钮,关闭放大图
 
+    $('.weibo_content_data .in').click(function () {
+        $(this).parent().parent().hide();
+        $(this).parent().parent().prev().show();
+    })
 
     //error dialog
     $('#error').dialog({

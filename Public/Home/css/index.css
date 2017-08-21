@@ -401,12 +401,6 @@ ul,ol{
     margin-bottom: 10px;
 }
 
-#main .weibo_content_data dd img{
-    display: block;
-    border: 1px solid #eee;
-    cursor: pointer;
-    margin-top:10px;
-}
 
 
 #main .weibo_content_data .footer{
@@ -449,7 +443,46 @@ ul,ol{
     overflow: hidden;
 }
 
+#main .main_left .weibo_content_data dd .img_zoom{
+    background: #fafafa;
+    margin-top: 10px;
+    border:1px solid #ccc;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
 
+
+#main .weibo_content_data .img_zoom img{
+    display:block;
+    margin:0 auto 20px auto;
+}
+
+#main .main_left .weibo_content_data dd .img_zoom ol{
+    height:35px;
+    line-height:35px;
+    font-size:13px;
+    padding-left:20px;
+}
+
+#main .main_left .weibo_content_data dd .img_zoom ol li{
+    float: left;
+    margin-left:20px;
+}
+
+#main .main_left .weibo_content_data dd .img_zoom ol li a{
+    color: #5e7c85;
+    text-decoration: none;
+}
+
+#main .main_left .weibo_content_data dd .img_zoom ol li.in{
+    background: url("../img/img_zoom_in.png") no-repeat left center;
+    text-indent: 14px;
+}
+#main .main_left .weibo_content_data dd .img_zoom ol li.source{
+    background: url("../img/img_zoom_source.png") no-repeat left center;
+    text-indent: 18px;
+}
 
 #main .main_right{
     float: right;

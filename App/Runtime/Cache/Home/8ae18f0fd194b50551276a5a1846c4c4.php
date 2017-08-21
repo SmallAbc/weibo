@@ -112,12 +112,26 @@
                         <h4><a href="javascript:void(0);"><?php echo ($obj["username"]); ?></a></h4>
                         <p><?php echo ($obj["content"]); echo ($obj["content_over"]); ?></p>
                         <?php switch($obj["count"]): case "0": break;?>
-                            <?php case "1": ?><div class="img"><img src="/weibo<?php echo ($obj["image"]["0"]["thumb"]); ?>" alt=""></div><?php break;?>
+                            <?php case "1": ?><div class="img" style="display: block;"><img src="/weibo<?php echo ($obj["image"]["0"]["thumb"]); ?>" alt=""></div>
+                                <div class="img_zoom" style="display: none;">
+                                    <ol>
+                                        <li class="in"><a href="javascript:void(0);">收起</a></li>
+                                        <li class="source"><a href="/weibo<?php echo ($obj["image"]["0"]["source"]); ?>" target="_blank">查看原图</a></li>
+                                    </ol>
+                                    <img data="/weibo<?php echo ($obj["image"]["0"]["unfold"]); ?>" src="/weibo/Public/Home/img/loading_100.png" alt="">
+                                </div><?php break;?>
                             <?php default: ?>
-                                <?php if(is_array($obj["image"])): $i = 0; $__LIST__ = $obj["image"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$imgs): $mod = ($i % 2 );++$i;?><div class="imgs"><img src="/weibo<?php echo ($imgs["thumb"]); ?>" alt=""></div><?php endforeach; endif; else: echo "" ;endif; endswitch;?>
+                                <?php if(is_array($obj["image"])): $i = 0; $__LIST__ = $obj["image"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$imgs): $mod = ($i % 2 );++$i;?><div class="imgs"><img src="/weibo<?php echo ($imgs["thumb"]); ?>" alt=""></div>
+                                    <div class="img_zoom" style="display: none;">
+                                        <ol>
+                                            <li class="in"><a href="javascript:void(0);">收起</a></li>
+                                            <li class="source"><a href="/weibo<?php echo ($image["source"]); ?>" target="_blank">查看原图</a></li>
+                                        </ol>
+                                        <img data="/weibo<?php echo ($image["unfold"]); ?>" src="/weibo/Public/Home/img/loading_100.png" alt="">
+                                    </div><?php endforeach; endif; else: echo "" ;endif; endswitch;?>
 
                         <div class="footer">
-                            <span class="time"><?php echo ($obj["create_date"]); ?></span>
+                            <span class="time"><?php echo ($obj["time"]); ?></span>
                             <span class="handler">赞(0) | 转发 | 评论 | 收藏</span>
                         </div>
                     </dd>

@@ -53,6 +53,21 @@ class TopicModel extends RelationModel
             }
             $list[$key]=$value;
             $list[$key]['count']=count($value['image']);
+            $time=NOW_TIME-$value['create_date'];
+            if($time<60){
+                $list[$key]['time']='刚刚';
+            }elseif ($time<60*60){
+                $list[$key]['time']=floor($time/60).'分钟前';
+            }elseif ($time<60*60*24){
+                $list[$key]['time']='今天'.date('H:i',$value['create_date']);
+            }elseif ($time<60*60*48){
+                $list[$key]['time']='昨天'.date('H:i',$value['create_date']);
+            }elseif ($time<60*60*24*365){
+                $list[$key]['time']=date('Y年m月d日 H:i',$value['create_date']);
+            }else{
+                $list[$key]['time']=date('Y年m月d日 H:i:s',$value['create_date']);
+            }
+
         }
         return $list;
 
