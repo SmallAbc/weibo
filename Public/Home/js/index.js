@@ -19,9 +19,8 @@ $(function () {
     //微博整体高度协调
     if($('.main_left').height()>800){
         var height=$('.main_left').height();
-        alert(height);
         $('.main_right').height(height);
-        alert($('.main_right').height());
+       $('.main_right').height();
         $('#main').height(height);
     };
 
@@ -71,11 +70,13 @@ $(function () {
                     $('#loading').dialog().html('微博发布成功!').addClass('succ').removeClass('loading');
                     setTimeout(function () {
                         $('#pic_box').hide();
-                        $('.weibo_pic_list').remove();
+                        $('.weibo_pic_content').remove();
+                        $('input[name="image"]').remove();
                         pic_box.uploadTotal=0;
                         pic_box.uploadLimit=8;
                         $('.weibo_pic_total').text(pic_box.uploadTotal);
                         $('.weibo_pic_limit').text(pic_box.uploadLimit);
+                        window.uploadCount.clear();
                         $('#loading').dialog('close')},1000);
                 }
             }

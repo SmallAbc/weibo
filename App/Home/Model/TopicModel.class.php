@@ -9,12 +9,12 @@
 namespace Home\Model;
 
 
-use Think\Model;
+use Think\Model\RelationModel;
 use function get_client_ip;
 use function mb_strlen;
 use function sleep;
 
-class TopicModel extends Model
+class TopicModel extends RelationModel
 {
     //自动完成
     protected $_auto=array(
@@ -28,6 +28,16 @@ class TopicModel extends Model
 
     );
 
+
+
+    //一对多微博获取关联
+    protected $_link=array(
+        'image'=>array(
+            'mapping_type'=>self::HAS_MANY,
+            'class_name'=>'Image',
+            'foreign_key'=>'tid'
+        )
+    );
 
     //发布微博
     public function publish($allcontent,$uid){

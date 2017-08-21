@@ -64,7 +64,7 @@ $(function () {
             }
         },
 
-        //鼠标置于图片上出现删除按钮
+        //鼠标置于图片上出现删除按钮 TODO:批量上传的时候发现第一张和第六章图片没有把删除按钮显示出来
         hover:function () {
             var content=$('.weibo_pic_content');
             var len=content.length;
@@ -86,7 +86,7 @@ $(function () {
             var len = remove.length;
             $(remove[len - 1]).on('click', function () {
                 $(this).parent().next('input[name="image"]').remove();
-                $(this).parent().remove();
+                   $(this).parent().remove();
                 pic_box.uploadTotal--;
                 pic_box.uploadLimit++;
                 $('.weibo_pic_total').text(pic_box.uploadTotal);
@@ -119,9 +119,13 @@ $(function () {
         }
     }
 
-
     pic_box.init();
-
+    window.uploadCount={
+        clear:function(){
+            pic_box.uploadTotal=0;
+            pic_box.uploadLimit=8;
+        }
+    }
 
 
 
