@@ -10,7 +10,10 @@ namespace Home\Model;
 
 
 use Think\Model\RelationModel;
+use function count;
 use function get_client_ip;
+use function is_null;
+use function json_decode;
 use function mb_strlen;
 use function sleep;
 
@@ -35,9 +38,26 @@ class TopicModel extends RelationModel
         'image'=>array(
             'mapping_type'=>self::HAS_MANY,
             'class_name'=>'Image',
-            'foreign_key'=>'tid'
+            'foreign_key'=>'tid',
+            'mapping_fields'=>'data'
         )
     );
+
+    //解析图片json数据
+    public function format($list){
+        foreach ($list as $key=>$value){
+            if (!is_null($value['image'])){
+                foreach ($value['image'] as $key2=>$value2){
+                    $value['image'][$key2]=json_decode($value2['data'],true);
+                }
+            }
+            $list[$key]=$value;
+            $list[$key]['count']=count($value['image']);
+        }
+        return $list;
+
+
+    }
 
     //发布微博
     public function publish($allcontent,$uid){

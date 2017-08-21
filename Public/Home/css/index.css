@@ -391,13 +391,14 @@ ul,ol{
 #main .weibo_content_data dd h4 a{
     color: #049;
     text-decoration: none;
-    font-weight: 14px;
+    font-size: 14px;
 }
 
 #main .weibo_content_data dd p{
-    font-weight: 14px;
+    font-size: 14px;
     color: #555;
     line-height: 150%;
+    margin-bottom: 10px;
 }
 
 #main .weibo_content_data dd img{
@@ -415,6 +416,7 @@ ul,ol{
     border:1px solid #eee;
     font-size:13px;
     margin-top: 20px;
+    clear: both;
 }
 
 #main .weibo_content_data .footer .time{
@@ -429,6 +431,25 @@ ul,ol{
     font-size:22px;
     padding:0 5px;
 }
+
+
+
+#main .main_left .weibo_content_data .img img{
+    display: block;border: 1px solid #eee;
+    cursor: pointer;
+}
+
+#main .main_left .weibo_content_data .imgs img{
+    display: block;
+    width: 120px;
+    height: 120px;
+    float: left;
+    border: 1px solid #eee;
+    margin: 0 0 10px 11px;
+    overflow: hidden;
+}
+
+
 
 #main .main_right{
     float: right;

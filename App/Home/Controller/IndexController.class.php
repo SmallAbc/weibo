@@ -14,7 +14,7 @@ class IndexController extends HomeController{
                                 ->order('create_date DESC')
                                 ->where('a.uid=b.id')
                                 ->select();
-            $this->assign('topiclist',$topiclist);
+            $this->assign('topiclist',$topic->format($topiclist));
             $this->display();
         }
     }

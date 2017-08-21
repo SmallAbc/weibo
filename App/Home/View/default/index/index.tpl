@@ -42,7 +42,17 @@
                     <dd>
                         <h4><a href="javascript:void(0);">{$obj.username}</a></h4>
                         <p>{$obj.content}{$obj.content_over}</p>
-                        <div class="img"><img src="./Uploads/2017-08-21/180_5999b81fa73ee.jpg" alt=""></div>
+                        <switch name="obj.count">
+                            <case value="0"></case>
+                            <case value="1">
+                                <div class="img"><img src="__ROOT__{$obj.image.0.thumb}" alt=""></div>
+                            </case>
+                            <default/>
+                                <volist name="obj.image" id="imgs" >
+                                    <div class="imgs"><img src="__ROOT__{$imgs.thumb}" alt=""></div>
+                                </volist>
+                        </switch>
+
                         <div class="footer">
                             <span class="time">{$obj.create_date}</span>
                             <span class="handler">赞(0) | 转发 | 评论 | 收藏</span>
