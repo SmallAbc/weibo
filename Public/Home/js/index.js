@@ -68,6 +68,30 @@ $(function () {
             success:function (responseText) {
                 if(responseText){
                     $('#loading').dialog().html('微博发布成功!').addClass('succ').removeClass('loading');
+                    var html='';
+                    switch (img.length){
+                        case 0:
+                            html= $('#ajax_html').html();
+                            break;
+                        case 1:
+                            html= $('#ajax_html1').html();
+                            var imgurl=$.parseJSON(img);
+                            break;
+                        default:
+                            html= $('#ajax_html2').html();
+                            break;
+                    }
+                    if(html.indexOf('#内容#')>0){
+                        html=html.replace(/#内容#/g,$('.weibo_text').val());
+
+                    }
+                    if(html.indexOf('#缩略图#')>0){
+                        html=html.replace(/#缩略图#/g,imgurl['thumb']);
+                        html=html.replace(/#原图#/g,imgurl['source']);
+                        html=html.replace(/#放大图#/g,imgurl['unfold']);
+                    }
+
+                    $('.weibo_content ul').after(html);
                     setTimeout(function () {
                         $('#pic_box').hide();
                         $('.weibo_pic_content').remove();
@@ -78,25 +102,37 @@ $(function () {
                         $('.weibo_pic_limit').text(pic_box.uploadLimit);
                         window.uploadCount.clear();
                         $('#loading').dialog('close')},1000);
+
                 }
             }
         })
     }
+    //发布成功时的局部刷新
+
 
     //单图:点击图片放大
-    var imgdiv=$('.weibo_content_data .img');
-    var len=imgdiv.length;
-    for(var i=0;i<len;i++){
-        $(imgdiv[i]).on('click',function () {
-            $(this).hide();
-            $(this).next().show();
-            var img=$(this).next().find('img');
-            img.attr('src',img.attr('data'));
-        })
-    }
+    // var imgdiv=$('.weibo_content_data .img');
+    // var len=imgdiv.length;
+    // for(var i=0;i<len;i++){
+    //     $(imgdiv[i]).on('click',function () {
+    //         $(this).hide();
+    //         $(this).next().show();
+    //         var img=$(this).next().find('img');
+    //         img.attr('src',img.attr('data'));
+    //     })
+    // }
+    //动态绑定,实现新增的节点也能点击放大
+    $('.weibo_content').on('click','.img img',function () {
+        $(this).parent().hide();
+        $(this).parent().next().show();
+        var img=$(this).parent().next().find('img');
+        img.attr('src',img.attr('data'));
+    })
+
+
     //单图:点击收起按钮,关闭放大图
 
-    $('.weibo_content_data .in').click(function () {
+    $('.weibo_content_data').on('click','.in',function () {
         $(this).parent().parent().hide();
         $(this).parent().parent().prev().show();
     })
@@ -118,10 +154,10 @@ $(function () {
 
     //多图:点击收起按钮,关闭放大图
 
-    $('.weibo_content_data .in').click(function () {
-        $(this).parent().parent().hide();
-        $(this).parent().parent().parent().find('.imgs').show();
-    })
+    // $('.weibo_content_data .in').click(function () {
+    //     $(this).parent().parent().hide();
+    //     $(this).parent().parent().parent().find('.imgs').show();
+    // })
 
     //TODO:做一个像新浪微博的,显示中图时,左右切换的箭头
 

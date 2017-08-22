@@ -36,6 +36,43 @@
                 <li ><a href="javascript:void(0);" class="selected">我关注的<i class="nav_arrow"></i></a></li>
                 <li><a href="javascript:void(0);">互听的</a></li>
             </ul>
+            <!--无配图的局部刷新-->
+            <div id="ajax_html" style="display: none;">
+                <dl class="weibo_content_data">
+                    <dt><a href="javascript:void(0);"><img src="__IMG__/small_face.jpg" alt=""></a></dt>
+                    <dd>
+                        <h4><a href="javascript:void(0);">{$Think.session.user_auth.username}</a></h4>
+                        <p>#内容#</p>
+                        <div class="footer">
+                            <span class="time">刚刚发布</span>
+                            <span class="handler">赞(0) | 转发 | 评论 | 收藏</span>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+            <!--一张配图的局部刷新-->
+            <div id="ajax_html1" style="display: none;">
+                <dl class="weibo_content_data" >
+                    <dt><a href="javascript:void(0);"><img src="__IMG__/small_face.jpg" alt=""></a></dt>
+                    <dd>
+                        <h4><a href="javascript:void(0);">{$Think.session.user_auth.username}</a></h4>
+                        <p>#内容#</p>
+                        <div class="img" style="display: block;"><img src="__ROOT__#缩略图#" alt=""></div>
+                        <div class="img_zoom" style="display: none;">
+                            <ol>
+                                <li class="in"><a href="javascript:void(0);">收起</a></li>
+                                <li class="source"><a href="__ROOT__#原图#" target="_blank">查看原图</a></li>
+                            </ol>
+                            <img data="__ROOT__#放大图#" src="__IMG__/loading_100.png" alt="">
+                        </div>
+                        <div class="footer">
+                            <span class="time">刚刚发布</span>
+                            <span class="handler">赞(0) | 转发 | 评论 | 收藏</span>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+            <!--多张配图的局部刷新-->
             <volist name="topiclist" id="obj">
                 <dl class="weibo_content_data">
                     <dt><a href="javascript:void(0);"><img src="__IMG__/small_face.jpg" alt=""></a></dt>
@@ -68,7 +105,7 @@
                         </switch>
 
                         <div class="footer">
-                            <span class="time">{$obj.time}</span>
+                            <span class="time">{$obj.time}发布</span>
                             <span class="handler">赞(0) | 转发 | 评论 | 收藏</span>
                         </div>
                     </dd>
@@ -76,6 +113,7 @@
             </volist>
         </div>
     </div>
+
         <div class="main_right">
                 right
         </div>

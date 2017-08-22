@@ -106,6 +106,43 @@
                 <li ><a href="javascript:void(0);" class="selected">我关注的<i class="nav_arrow"></i></a></li>
                 <li><a href="javascript:void(0);">互听的</a></li>
             </ul>
+            <!--无配图的局部刷新-->
+            <div id="ajax_html" style="display: none;">
+                <dl class="weibo_content_data">
+                    <dt><a href="javascript:void(0);"><img src="/weibo/Public/Home/img/small_face.jpg" alt=""></a></dt>
+                    <dd>
+                        <h4><a href="javascript:void(0);"><?php echo ($_SESSION['user_auth']['username']); ?></a></h4>
+                        <p>#内容#</p>
+                        <div class="footer">
+                            <span class="time">刚刚发布</span>
+                            <span class="handler">赞(0) | 转发 | 评论 | 收藏</span>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+            <!--一张配图的局部刷新-->
+            <div id="ajax_html1" style="display: none;">
+                <dl class="weibo_content_data" >
+                    <dt><a href="javascript:void(0);"><img src="/weibo/Public/Home/img/small_face.jpg" alt=""></a></dt>
+                    <dd>
+                        <h4><a href="javascript:void(0);"><?php echo ($_SESSION['user_auth']['username']); ?></a></h4>
+                        <p>#内容#</p>
+                        <div class="img" style="display: block;"><img src="/weibo#缩略图#" alt=""></div>
+                        <div class="img_zoom" style="display: none;">
+                            <ol>
+                                <li class="in"><a href="javascript:void(0);">收起</a></li>
+                                <li class="source"><a href="/weibo#原图#" target="_blank">查看原图</a></li>
+                            </ol>
+                            <img data="/weibo#放大图#" src="/weibo/Public/Home/img/loading_100.png" alt="">
+                        </div>
+                        <div class="footer">
+                            <span class="time">刚刚发布</span>
+                            <span class="handler">赞(0) | 转发 | 评论 | 收藏</span>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+            <!--多张配图的局部刷新-->
             <?php if(is_array($topiclist)): $i = 0; $__LIST__ = $topiclist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$obj): $mod = ($i % 2 );++$i;?><dl class="weibo_content_data">
                     <dt><a href="javascript:void(0);"><img src="/weibo/Public/Home/img/small_face.jpg" alt=""></a></dt>
                     <dd>
@@ -131,13 +168,14 @@
                                     </div><?php endforeach; endif; else: echo "" ;endif; endswitch;?>
 
                         <div class="footer">
-                            <span class="time"><?php echo ($obj["time"]); ?></span>
+                            <span class="time"><?php echo ($obj["time"]); ?>发布</span>
                             <span class="handler">赞(0) | 转发 | 评论 | 收藏</span>
                         </div>
                     </dd>
                 </dl><?php endforeach; endif; else: echo "" ;endif; ?>
         </div>
     </div>
+
         <div class="main_right">
                 right
         </div>

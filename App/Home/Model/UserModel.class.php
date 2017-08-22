@@ -99,7 +99,7 @@ class UserModel extends Model{
             );
             $this->save($update);
 
-            //将记录写到session和cookie中去//Todo:session 写入没成功
+            //将记录写到session和cookie中去
             $auth = array(
                 'id' => $user['id'],
                 'username' => $user['username'],

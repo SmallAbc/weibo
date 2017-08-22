@@ -32,6 +32,7 @@ class HomeController extends Controller
                 //自动登录后的验证信息
                 $auth = array(
                     'id' => $userinfo['id'],
+                    'username'=>$username,
                     'last_login' => time()
                 );
                 session('user_auth', $auth);
