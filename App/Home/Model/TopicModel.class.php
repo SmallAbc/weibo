@@ -11,11 +11,13 @@ namespace Home\Model;
 
 use Think\Model\RelationModel;
 use function count;
+use function date;
 use function get_client_ip;
 use function is_null;
 use function json_decode;
 use function mb_strlen;
 use function sleep;
+use function strtotime;
 
 class TopicModel extends RelationModel
 {
@@ -58,16 +60,17 @@ class TopicModel extends RelationModel
                 $list[$key]['time']='刚刚';
             }elseif ($time<60*60){
                 $list[$key]['time']=floor($time/60).'分钟前';
-            }elseif ($time<60*60*24){
+            }elseif (date('Y-m-d')==date('Y-m-d',$value['create_date'])){
                 $list[$key]['time']='今天'.date('H:i',$value['create_date']);
-            }elseif ($time<60*60*48){
+            }elseif (date('Y-m-d',strtotime('-1 day'))==date('Y-m-d',$value['create_date'])){
                 $list[$key]['time']='昨天'.date('H:i',$value['create_date']);
             }elseif ($time<60*60*24*365){
                 $list[$key]['time']=date('Y年m月d日 H:i',$value['create_date']);
             }else{
                 $list[$key]['time']=date('Y年m月d日 H:i:s',$value['create_date']);
             }
-
+            $list[$key]['content'].=$list[$key]['content_over'];
+            $list[$key]['content']=preg_replace('/\[(a|b|b|d)([0-9]+)\]/i','<img src="./public/home/face/$1/$2.gif" border="0">',$list[$key]['content']);
         }
         return $list;
 

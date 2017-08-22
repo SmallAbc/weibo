@@ -78,11 +78,25 @@ $(function () {
                             var imgurl=$.parseJSON(img);
                             break;
                         default:
+                            var htmls=[];
                             html= $('#ajax_html2').html();
+                            var imghtml= $('#ajax_img').html();
+                            for(var i=0;i<img.length;i++){
+                                var imgsurl=$.parseJSON(img[i]);
+                                htmls[i]=imghtml.replace(/#缩略图#/g,imgsurl['thumb']);
+                                htmls[i]=htmls[i].replace(/#原图#/g,imgsurl['source']);
+                                htmls[i]=htmls[i].replace(/#放大图#/g,imgsurl['unfold']);
+                            }
+                            var jhtml=htmls.join('');
+                            html=html.replace(/#图片#/g,jhtml);
                             break;
                     }
                     if(html.indexOf('#内容#')>0){
-                        html=html.replace(/#内容#/g,$('.weibo_text').val());
+                        //解析表情
+                        var text=$('.weibo_text').val();
+                        text=text.replace(/\[(a|b|c|d)([0-9]+)\]/g,'<img src="'+ThinkPHP['FACE']+'/$1/$2.gif">');
+                        //插入内容
+                        html=html.replace(/#内容#/g,text);
 
                     }
                     if(html.indexOf('#缩略图#')>0){
@@ -90,7 +104,6 @@ $(function () {
                         html=html.replace(/#原图#/g,imgurl['source']);
                         html=html.replace(/#放大图#/g,imgurl['unfold']);
                     }
-
                     $('.weibo_content ul').after(html);
                     setTimeout(function () {
                         $('#pic_box').hide();
@@ -110,7 +123,7 @@ $(function () {
     //发布成功时的局部刷新
 
 
-    //单图:点击图片放大
+    //单图:点击图片放大 放到下面的动态绑定了
     // var imgdiv=$('.weibo_content_data .img');
     // var len=imgdiv.length;
     // for(var i=0;i<len;i++){
@@ -130,34 +143,32 @@ $(function () {
     })
 
 
-    //单图:点击收起按钮,关闭放大图
+    //单图:点击收起按钮,关闭放大图,已和多图合并
 
-    $('.weibo_content_data').on('click','.in',function () {
-        $(this).parent().parent().hide();
-        $(this).parent().parent().prev().show();
-    })
+    // $('.weibo_content_data').on('click','.in',function () {
+    //     $(this).parent().parent().hide();
+    //     $(this).parent().parent().prev().show();
+    // })
 
 
 
 
     //多图:点击多图的图片放大图片
-    var imgdiv=$('.weibo_content_data .imgs');
-    var len=imgdiv.length;
-    for(var i=0;i<len;i++){
-        $(imgdiv[i]).on('click',function () {
-            $(this).parent().find('.imgs').hide();
-            $(this).next().show();
-            var img=$(this).next().find('img');
+
+        $('.weibo_content' ).on('click','.imgs img',function () {
+            $(this).parent().hide();
+            $(this).parent().siblings().hide();
+            $(this).parent().next().show();
+            var img=$(this).parent().next().find('img');
             img.attr('src',img.attr('data'));
         })
-    }
 
-    //多图:点击收起按钮,关闭放大图
+    //多图,单图:点击收起按钮,关闭放大图
 
-    // $('.weibo_content_data .in').click(function () {
-    //     $(this).parent().parent().hide();
-    //     $(this).parent().parent().parent().find('.imgs').show();
-    // })
+    $('.weibo_content ').on('click','.in',function () {
+        $(this).parent().parent().hide();
+        $(this).parent().parent().parent().find('.imgs').show();
+    })
 
     //TODO:做一个像新浪微博的,显示中图时,左右切换的箭头
 

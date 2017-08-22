@@ -143,11 +143,36 @@
                 </dl>
             </div>
             <!--多张配图的局部刷新-->
+            <div id="ajax_html2" style="display: none;">
+                <dl class="weibo_content_data">
+                    <dt><a href="javascript:void(0);"><img src="/weibo/Public/Home/img/small_face.jpg" alt=""></a></dt>
+                    <dd>
+                        <h4><a href="javascript:void(0);"><?php echo ($_SESSION['user_auth']['username']); ?></a></h4>
+                        <p>#内容#</p>
+                        #图片#
+                        <div class="footer">
+                            <span class="time">刚刚发布</span>
+                            <span class="handler">赞(0) | 转发 | 评论 | 收藏</span>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+            <!--多图的图片部分-->
+            <div id="ajax_img"  style="display: none;">
+                <div class="imgs"><img src="/weibo#缩略图#" alt=""></div>
+                <div class="img_zoom" style="display: none;">
+                    <ol>
+                        <li class="in"><a href="javascript:void(0);">收起</a></li>
+                        <li class="source"><a href="/weibo#原图#" target="_blank">查看原图</a></li>
+                    </ol>
+                    <img data="/weibo#放大图#" src="/weibo/Public/Home/img/loading_100.png" alt="">
+                </div>
+            </div>
             <?php if(is_array($topiclist)): $i = 0; $__LIST__ = $topiclist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$obj): $mod = ($i % 2 );++$i;?><dl class="weibo_content_data">
                     <dt><a href="javascript:void(0);"><img src="/weibo/Public/Home/img/small_face.jpg" alt=""></a></dt>
                     <dd>
                         <h4><a href="javascript:void(0);"><?php echo ($obj["username"]); ?></a></h4>
-                        <p><?php echo ($obj["content"]); echo ($obj["content_over"]); ?></p>
+                        <p><?php echo ($obj["content"]); ?></p>
                         <?php switch($obj["count"]): case "0": break;?>
                             <?php case "1": ?><div class="img" style="display: block;"><img src="/weibo<?php echo ($obj["image"]["0"]["thumb"]); ?>" alt=""></div>
                                 <div class="img_zoom" style="display: none;">
