@@ -60,9 +60,9 @@
                                     <div class="img_zoom" style="display: none;">
                                         <ol>
                                             <li class="in"><a href="javascript:void(0);">收起</a></li>
-                                            <li class="source"><a href="__ROOT__{$image.source}" target="_blank">查看原图</a></li>
+                                            <li class="source"><a href="__ROOT__{$imgs.source}" target="_blank">查看原图</a></li>
                                         </ol>
-                                        <img data="__ROOT__{$image.unfold}" src="__IMG__/loading_100.png" alt="">
+                                        <img data="__ROOT__{$imgs.unfold}" src="__IMG__/loading_100.png" alt="">
                                     </div>
                                 </volist>
                         </switch>

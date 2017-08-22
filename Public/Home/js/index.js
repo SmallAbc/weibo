@@ -83,7 +83,7 @@ $(function () {
         })
     }
 
-    //点击图片放大
+    //单图:点击图片放大
     var imgdiv=$('.weibo_content_data .img');
     var len=imgdiv.length;
     for(var i=0;i<len;i++){
@@ -94,14 +94,36 @@ $(function () {
             img.attr('src',img.attr('data'));
         })
     }
-
-
-    //点击收起按钮,关闭放大图
+    //单图:点击收起按钮,关闭放大图
 
     $('.weibo_content_data .in').click(function () {
         $(this).parent().parent().hide();
         $(this).parent().parent().prev().show();
     })
+
+
+
+
+    //多图:点击多图的图片放大图片
+    var imgdiv=$('.weibo_content_data .imgs');
+    var len=imgdiv.length;
+    for(var i=0;i<len;i++){
+        $(imgdiv[i]).on('click',function () {
+            $(this).parent().find('.imgs').hide();
+            $(this).next().show();
+            var img=$(this).next().find('img');
+            img.attr('src',img.attr('data'));
+        })
+    }
+
+    //多图:点击收起按钮,关闭放大图
+
+    $('.weibo_content_data .in').click(function () {
+        $(this).parent().parent().hide();
+        $(this).parent().parent().parent().find('.imgs').show();
+    })
+
+    //TODO:做一个像新浪微博的,显示中图时,左右切换的箭头
 
     //error dialog
     $('#error').dialog({
