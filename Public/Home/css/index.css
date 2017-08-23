@@ -441,6 +441,7 @@ ul,ol{
     border: 1px solid #eee;
     margin: 0 0 10px 11px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 #main .main_left .weibo_content_data dd .img_zoom{
@@ -484,6 +485,25 @@ ul,ol{
     text-indent: 18px;
 }
 
+#main .main_left #loadmore{
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #8bd3af;
+    background: rgba(0, 33, 66, 0.67);
+    width: 120px;
+    height: 35px;
+    margin: 10px auto;
+    line-height: 35px;
+    clear: both;
+    text-align: center;
+}
+
+#main .main_left #loadmore:hover{
+    color: #c3490e;
+    font-weight: bold;
+    text-shadow: 6px -3px 15px #fff;
+}
 #main .main_right{
     float: right;
     width: 269px;

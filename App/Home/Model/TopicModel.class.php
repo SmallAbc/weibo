@@ -70,12 +70,23 @@ class TopicModel extends RelationModel
                 $list[$key]['time']=date('Y年m月d日 H:i:s',$value['create_date']);
             }
             $list[$key]['content'].=$list[$key]['content_over'];
-            $list[$key]['content']=preg_replace('/\[(a|b|b|d)([0-9]+)\]/i','<img src="./public/home/face/$1/$2.gif" border="0">',$list[$key]['content']);
+            $list[$key]['content']=preg_replace('/\[(a|b|c|d)([0-9]+)\]/i','<img src="'.__ROOT__.'/public/home/face/$1/$2.gif" border="0">',$list[$key]['content']);
         }
         return $list;
-
-
     }
+    //连接数据库
+    public function selectdata($first=0,$size=10){
+        $topiclist=$this ->relation(true)
+                                ->table('__TOPIC__ a,__USER__ b')
+                                ->field('a.id,a.content,a.content_over,a.create_date,b.username')
+                                ->limit($first,$size)
+                                ->order('create_date DESC')
+                                ->where('a.uid=b.id')
+                                ->select();
+
+        return $this->format($topiclist);
+    }
+
 
     //发布微博
     public function publish($allcontent,$uid){

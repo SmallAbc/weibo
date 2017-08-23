@@ -198,6 +198,7 @@
                         </div>
                     </dd>
                 </dl><?php endforeach; endif; else: echo "" ;endif; ?>
+            <div id="loadmore">加载更多 <img src="/weibo/Public/Home/img/loadmore.gif" alt=""></div>
         </div>
     </div>
 

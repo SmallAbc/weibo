@@ -136,6 +136,7 @@
                     </dd>
                 </dl>
             </volist>
+            <div id="loadmore">加载更多 <img src="__IMG__/loadmore.gif" alt=""></div>
         </div>
     </div>
 

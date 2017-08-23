@@ -157,7 +157,7 @@ $(function () {
 
         $('.weibo_content' ).on('click','.imgs img',function () {
             $(this).parent().hide();
-            $(this).parent().siblings().hide();
+            $(this).parent().siblings('.imgs').hide();
             $(this).parent().next().show();
             var img=$(this).parent().next().find('img');
             img.attr('src',img.attr('data'));
@@ -167,7 +167,10 @@ $(function () {
 
     $('.weibo_content ').on('click','.in',function () {
         $(this).parent().parent().hide();
+        //多图
         $(this).parent().parent().parent().find('.imgs').show();
+        //单图
+        $(this).parent().parent().parent().find('.img').show();
     })
 
     //TODO:做一个像新浪微博的,显示中图时,左右切换的箭头
@@ -232,9 +235,50 @@ $(function () {
     };
 
 
+    //动态获取微博总条数
+    $.ajax({
+        url: ThinkPHP['MODULE'] + '/Topic/ajaxcount',
+        type: 'post',
+        data: {},
+        success: function (data, responseText, resopnMsg) {
+            window.count=data;
+        }
+    });
 
 
 
+    //滚动条拖动
+    window.currentPage=2;
+    $(window).scroll(function () {
+        //滚动条顶端到窗口顶端的距离,也就是滚动条已经划过的距离
+        var scrollTop = $(this).scrollTop();
+        //全屏的高度,即滚动条从上到下拉一遍所看到的总高度
+        var scrollHeight = $(document).height();
+        //滚动条一条所占的位置高度,也就是一屏的高度
+        var windowHeight = $(this).height();
+        var totalPage=window.count;
+        console.log(currentPage+'||'+totalPage);
+        if(currentPage<=totalPage){
+        //相等,说明已滑到低端
+            if((scrollTop+windowHeight)==scrollHeight){
+                setTimeout(function () {
+                    $.ajax({
+                        url: ThinkPHP['MODULE'] + '/Topic/ajaxList',
+                        type: 'post',
+                        data: {
+                            count:10*(currentPage-1)
+                        },
+                        success: function (data, responseText, resopnMsg) {
+                            $('#loadmore').before(data);
+                            currentPage++;
+                        }
+                    });
+                },1000)
+
+             }
+
+        }
+    })
 
 
 
