@@ -1,4 +1,9 @@
 $(function () {
+    $(window).load(function () {
+        allHeight();
+    })
+
+
     //导航的消息和账号的下拉菜单
    $('.app').hover(function () {
     $(this).css({
@@ -17,12 +22,14 @@ $(function () {
 
 
     //微博整体高度协调
-    if($('.main_left').height()>800){
-        var height=$('.main_left').height();
-        $('.main_right').height(height);
-       $('.main_right').height();
-        $('#main').height(height);
-    };
+    function allHeight() {
+        if ($('.main_left').height() > 800) {
+            var height = $('.main_left').height();
+            $('.main_right').height(height);
+            $('.main_right').height();
+            $('#main').height(height);
+        }
+    }
 
     //微博发布按钮
     $('.weibo_button').button().click(function () {
@@ -114,7 +121,9 @@ $(function () {
                         $('.weibo_pic_total').text(pic_box.uploadTotal);
                         $('.weibo_pic_limit').text(pic_box.uploadLimit);
                         window.uploadCount.clear();
-                        $('#loading').dialog('close')},1000);
+                        $('#loading').dialog('close');
+                        allHeight();
+                        },1000);
 
                 }
             }
@@ -140,6 +149,7 @@ $(function () {
         $(this).parent().next().show();
         var img=$(this).parent().next().find('img');
         img.attr('src',img.attr('data'));
+        allHeight();
     })
 
 
@@ -161,6 +171,7 @@ $(function () {
             $(this).parent().next().show();
             var img=$(this).parent().next().find('img');
             img.attr('src',img.attr('data'));
+            allHeight();
         })
 
     //多图,单图:点击收起按钮,关闭放大图
@@ -171,6 +182,7 @@ $(function () {
         $(this).parent().parent().parent().find('.imgs').show();
         //单图
         $(this).parent().parent().parent().find('.img').show();
+        allHeight();
     })
 
     //TODO:做一个像新浪微博的,显示中图时,左右切换的箭头
@@ -257,7 +269,6 @@ $(function () {
         //滚动条一条所占的位置高度,也就是一屏的高度
         var windowHeight = $(this).height();
         var totalPage=window.count;
-        console.log(currentPage+'||'+totalPage);
         if(currentPage<=totalPage){
         //相等,说明已滑到低端
             if((scrollTop+windowHeight)==scrollHeight){
@@ -271,17 +282,29 @@ $(function () {
                         success: function (data, responseText, resopnMsg) {
                             $('#loadmore').before(data);
                             currentPage++;
+                            allHeight();
                         }
                     });
                 },1000)
-
-             }
+            }
 
         }
+        allHeight();
     })
 
 
 
+    //返回顶部按钮
+    $.scrollUp({
+        scrollName: 'scrollUp', // Element ID
+        topDistance: '300', // Distance from top before showing element (px)
+        topSpeed: 1000, // Speed back to top (ms)
+        animation: 'fade', // Fade, slide, none
+        animationInSpeed: 1000, // Animation in speed (ms)
+        animationOutSpeed: 200, // Animation out speed (ms)
+        scrollText: '返回顶部', // Text for element
+        activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+    });
 
 
 });

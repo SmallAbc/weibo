@@ -9,11 +9,13 @@
 <script type="text/javascript" src="/weibo/Public/Home/js/jquery.ui.js"></script>
 <script type="text/javascript" src="/weibo/Public/Home/js/rl_exp.js"></script>
 <script type="text/javascript" src="/weibo/Public/Home/js/pic_box.js"></script>
+<script type="text/javascript" src="/weibo/Public/Home/scrollup/js/jquery.scrollUp.js"></script>
 <script type="text/javascript" src="/weibo/Public/Home/uploadify/jquery.uploadify.js"></script>
 <link rel="stylesheet" href="/weibo/Public/Home/css/jquery.ui.css">
 <link rel="stylesheet" href="/weibo/Public/Home/css/index.css">
 <link rel="stylesheet" href="/weibo/Public/Home/css/rl_exp.css">
 <link rel="stylesheet" href="/weibo/Public/Home/uploadify/uploadify.css">
+<link rel="stylesheet" href="/weibo/Public/Home/scrollup/css/themes/pill.css">
 <title>微博系统首页</title>
 <script type="text/javascript">var ThinkPHP={
         'MODULE':'/weibo/index.php/Home',
