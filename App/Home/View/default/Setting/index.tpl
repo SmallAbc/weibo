@@ -7,8 +7,8 @@
 <block name="main">
     <div class="main_left">
         <ul>
-            <li><a href="javascript:void(0);" class="selected">个人设置</a></li>
-            <li><a href="javascript:void(0);">头像设置</a></li>
+            <li><a href="{:U('Setting/index')}" class="selected">个人设置</a></li>
+            <li><a href="{:U('Setting/avatar')}">头像设置</a></li>
         </ul>
     </div>
     <div class="main_right">

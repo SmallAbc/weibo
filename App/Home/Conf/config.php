@@ -8,7 +8,8 @@ return array(
       '__CSS__'=>__ROOT__.'/Public/'.MODULE_NAME.'/css',
       '__IMG__'=>__ROOT__.'/Public/'.MODULE_NAME.'/img',
       '__UPLOADIFY__'=>__ROOT__.'/Public/'.MODULE_NAME.'/uploadify',
-      '__SCROLLUP__'=>__ROOT__.'/Public/'.MODULE_NAME.'/scrollup'
+      '__SCROLLUP__'=>__ROOT__.'/Public/'.MODULE_NAME.'/scrollup',
+      '__JCROP__'=>__ROOT__.'/Public/'.MODULE_NAME.'/Jcrop',
     ),
 
 

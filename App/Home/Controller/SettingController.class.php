@@ -9,21 +9,31 @@
 namespace Home\Controller;
 
 use function I;
-use function print_r;
 use function sleep;
 
 class SettingController extends HomeController
 {
+    //个人设置
     public function index(){
         if ($this->login()){
             $user=D('User');
             $result=$user->getUser();
-            print_r($result);
             $this->assign('user',$result);
             $this->display();
         }
     }
 
+    //头像设置
+    public function avatar(){
+        if ($this->login()){
+            $user=D('User');
+//            $result=$user->getUser();
+//            print_r($result);
+//            $this->assign('user',$result);
+            $this->display();
+        }
+    }
+    //更新个人信息
     public function updateUser(){
 
         if(IS_AJAX) {
