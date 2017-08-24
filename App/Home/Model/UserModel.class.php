@@ -8,16 +8,18 @@
 
 namespace Home\Model;
 
-use Think\Model;
+use Think\Model\RelationModel;
 use function cookie;
 use function encryption;
 use function get_client_ip;
+use function is_null;
+use function M;
 use function print_r;
 use function session;
 use function sha1;
 use function time;
 
-class UserModel extends Model{
+class UserModel extends RelationModel {
     //批量验证,系统默认为false
 //    protected  $patchValidate=true;
 
@@ -29,6 +31,14 @@ class UserModel extends Model{
         array('create','time',self::MODEL_INSERT,'function')
     );
 
+    protected $_link=array(
+      'extend'=>array(
+          'mapping_type'=>self::HAS_ONE,
+          'class_name'=>'user_extend',
+          'mapping_fields'=>'intro',
+          'foreign_key'=>'uid'
+      )
+    );
     //自动验证
     protected $_validate=array(
         //-1,'用户名须在2位到20位之间!'
@@ -140,10 +150,32 @@ class UserModel extends Model{
     }
 
 
+    //通过一对一关联获取用户信息
+    public function getUser(){
+        $map['id']=session('user_auth')['id'];
+        $user=$this->relation(true)->field('id,username,email')->where($map)->find();
+        if(is_null($user['extend'])){
+            $userex=M('User_extend');
+            $data['uid']=session('user_auth')['id'];
+            $userex->add($data);
+        }
+        return $user;
+    }
 
 
+    //一对一关联更新表格
+    public function updateUser($email,$intro){
+        $map['id']=session('user_auth')['id'];
+        $data=array();
 
+            $data['email']=$email;
+            $data['extend']=array(
+                'intro'=>$intro
+        );
 
+        $result=$this->relation(true)->where($map)->save($data);
+        return $result;
+    }
 
 
 

@@ -14,11 +14,13 @@
     <div class="main_right">
         <h2>个人设置</h2>
         <dl>
-            <dd>账号名称:XXX</dd>
-            <dd>电子邮箱: <input type="text" name="email" class="text" value="XXX@xx.com"><spqn class="star">(*)</spqn></dd>
-            <dd><span class="introtitle">个人简介:</span><textarea name="intro" id="intro" ></textarea></dd>
+            <dd>账号名称:{$user.username}</dd>
+            <dd>电子邮箱: <input type="text" name="email" class="text" value="{$user.email}"><spqn class="star">(*)</spqn></dd>
+            <dd><span class="introtitle">个人简介:</span><textarea name="intro" id="intro" >{$user.extend.intro}</textarea></dd>
             <dd><input type="submit" class="submit" value="修改"></dd>
         </dl>
     </div>
+    <div id="loading">...</div>
+    <div id="error">...</div>
 
 </block>
