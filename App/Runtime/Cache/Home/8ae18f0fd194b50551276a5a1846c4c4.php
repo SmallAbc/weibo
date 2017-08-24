@@ -5,17 +5,23 @@
 <head>
   <meta charset="UTF-8">
 <script type="text/javascript" src="/weibo/Public/Home/js/jquery.js"></script>
-<script type="text/javascript" src="/weibo/Public/Home/js/index.js"></script>
 <script type="text/javascript" src="/weibo/Public/Home/js/jquery.ui.js"></script>
-<script type="text/javascript" src="/weibo/Public/Home/js/rl_exp.js"></script>
-<script type="text/javascript" src="/weibo/Public/Home/js/pic_box.js"></script>
-<script type="text/javascript" src="/weibo/Public/Home/scrollup/js/jquery.scrollUp.js"></script>
-<script type="text/javascript" src="/weibo/Public/Home/uploadify/jquery.uploadify.js"></script>
+<script type="text/javascript" src="/weibo/Public/Home/js/base.js"></script>
 <link rel="stylesheet" href="/weibo/Public/Home/css/jquery.ui.css">
-<link rel="stylesheet" href="/weibo/Public/Home/css/index.css">
-<link rel="stylesheet" href="/weibo/Public/Home/css/rl_exp.css">
-<link rel="stylesheet" href="/weibo/Public/Home/uploadify/uploadify.css">
-<link rel="stylesheet" href="/weibo/Public/Home/scrollup/css/themes/pill.css">
+<link rel="stylesheet" href="/weibo/Public/Home/css/base.css">
+
+    <script type="text/javascript" src="/weibo/Public/Home/js/index.js"></script>
+    <script type="text/javascript" src="/weibo/Public/Home/js/rl_exp.js"></script>
+    <script type="text/javascript" src="/weibo/Public/Home/js/pic_box.js"></script>
+    <script type="text/javascript" src="/weibo/Public/Home/scrollup/js/jquery.scrollUp.js"></script>
+    <script type="text/javascript" src="/weibo/Public/Home/uploadify/jquery.uploadify.js"></script>
+    <link rel="stylesheet" href="/weibo/Public/Home/css/index.css">
+    <link rel="stylesheet" href="/weibo/Public/Home/css/rl_exp.css">
+    <link rel="stylesheet" href="/weibo/Public/Home/uploadify/uploadify.css">
+    <link rel="stylesheet" href="/weibo/Public/Home/scrollup/css/themes/pill.css">
+
+
+
 <title>微博系统首页</title>
 <script type="text/javascript">var ThinkPHP={
         'MODULE':'/weibo/index.php/Home',
@@ -24,7 +30,6 @@
         'INDEX':'<?php echo U("index/index");?>',
         'UPLOADIFY':'/weibo/Public/Home/uploadify',
         'ROOT':'/weibo'
-
     };
 </script>
 </head>
@@ -34,7 +39,7 @@
     <div class="logo">logo</div>
     <div class="nav">
       <ul>
-        <li><a href="###">首页</a></li>
+        <li><a href="<?php echo u('index/index');?>">首页</a></li>
         <li><a href="###">广场</a></li>
         <li><a href="###">图片</a></li>
         <li><a href="###">找人</a></li>
@@ -55,10 +60,10 @@
           </span></li>
         <li class="app"><span>账号
               <dl class="list">
-                <dd><a href="#">个人设置</a></dd>
+                <dd><a href="<?php echo U('Setting/index');?>">个人设置</a></dd>
                 <dd><a href="#">排行榜</a></dd>
                 <dd><a href="#">申请认证</a></dd>
-                <dd><a href="<?php echo U('User/logout');?>" class="line">退出</a></dd>
+                <dd><a href="<?php echo u('User/logout');?>" class="line">退出</a></dd>
             </dl>
           </span></li>
       </ul>

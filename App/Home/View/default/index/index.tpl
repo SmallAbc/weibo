@@ -1,5 +1,15 @@
 <extend name="base/common" />
-
+<block name="head">
+    <script type="text/javascript" src="__JS__/index.js"></script>
+    <script type="text/javascript" src="__JS__/rl_exp.js"></script>
+    <script type="text/javascript" src="__JS__/pic_box.js"></script>
+    <script type="text/javascript" src="__SCROLLUP__/js/jquery.scrollUp.js"></script>
+    <script type="text/javascript" src="__UPLOADIFY__/jquery.uploadify.js"></script>
+    <link rel="stylesheet" href="__CSS__/index.css">
+    <link rel="stylesheet" href="__CSS__/rl_exp.css">
+    <link rel="stylesheet" href="__UPLOADIFY__/uploadify.css">
+    <link rel="stylesheet" href="__SCROLLUP__/css/themes/pill.css">
+</block>
 <block name="main">
     <div class="main_left">
         <div class="weibo_form">

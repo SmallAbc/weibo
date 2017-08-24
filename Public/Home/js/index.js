@@ -4,23 +4,6 @@ $(function () {
     })
 
 
-    //导航的消息和账号的下拉菜单
-   $('.app').hover(function () {
-    $(this).css({
-        'background':'#ccc',
-        'color':'#C67639',
-        'font-weight':'bold'
-    }).find('.list').show();
-   },function () {
-       $(this).css({
-           'background':'',
-           'color':'#fff',
-           'font-weight':'normal'
-       }).find('.list').hide();
-   });
-
-
-
     //微博整体高度协调
     function allHeight() {
         if ($('.main_left').height() > 800) {
@@ -123,7 +106,7 @@ $(function () {
                         window.uploadCount.clear();
                         $('#loading').dialog('close');
                         allHeight();
-                        },1000);
+                    },1000);
 
                 }
             }
@@ -165,14 +148,14 @@ $(function () {
 
     //多图:点击多图的图片放大图片
 
-        $('.weibo_content' ).on('click','.imgs img',function () {
-            $(this).parent().hide();
-            $(this).parent().siblings('.imgs').hide();
-            $(this).parent().next().show();
-            var img=$(this).parent().next().find('img');
-            img.attr('src',img.attr('data'));
-            allHeight();
-        })
+    $('.weibo_content' ).on('click','.imgs img',function () {
+        $(this).parent().hide();
+        $(this).parent().siblings('.imgs').hide();
+        $(this).parent().next().show();
+        var img=$(this).parent().next().find('img');
+        img.attr('src',img.attr('data'));
+        allHeight();
+    })
 
     //多图,单图:点击收起按钮,关闭放大图
 
@@ -187,29 +170,6 @@ $(function () {
 
     //TODO:做一个像新浪微博的,显示中图时,左右切换的箭头
 
-    //error dialog
-    $('#error').dialog({
-        height:40,
-        autoOpen:false,
-        modal:true,
-        draggable:false,
-        resizable:false,
-        closeOnEscape:false
-
-    }).parent().find('.ui-dialog-titlebar').hide();
-
-
-    //error dialog
-    $('#loading').dialog({
-        height:50,
-        width:170,
-        autoOpen:false,
-        modal:true,
-        draggable:false,
-        resizable:false,
-        closeOnEscape:false
-
-    }).parent().find('.ui-dialog-titlebar').hide();
 
     //微博发表字数统计按钮抬起时统计
     $('.weibo_text').on('keyup',weibo_num );
@@ -270,7 +230,7 @@ $(function () {
         var windowHeight = $(this).height();
         var totalPage=window.count;
         if(currentPage<=totalPage){
-        //相等,说明已滑到低端
+            //相等,说明已滑到低端
             if((scrollTop+windowHeight)==scrollHeight){
                 setTimeout(function () {
                     $.ajax({
@@ -308,5 +268,3 @@ $(function () {
 
 
 });
-
-

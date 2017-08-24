@@ -3,7 +3,7 @@
     <div class="logo">logo</div>
     <div class="nav">
       <ul>
-        <li><a href="###">首页</a></li>
+        <li><a href="{:u('index/index')}">首页</a></li>
         <li><a href="###">广场</a></li>
         <li><a href="###">图片</a></li>
         <li><a href="###">找人</a></li>
@@ -24,10 +24,10 @@
           </span></li>
         <li class="app"><span>账号
               <dl class="list">
-                <dd><a href="#">个人设置</a></dd>
+                <dd><a href="{:U('Setting/index')}">个人设置</a></dd>
                 <dd><a href="#">排行榜</a></dd>
                 <dd><a href="#">申请认证</a></dd>
-                <dd><a href="{:U('User/logout')}" class="line">退出</a></dd>
+                <dd><a href="{:u('User/logout')}" class="line">退出</a></dd>
             </dl>
           </span></li>
       </ul>
