@@ -6,7 +6,7 @@ $(function () {
             //文件上传测试
             $('#file').uploadify({
                 swf:ThinkPHP['UPLOADIFY']+'/uploadify.swf',
-                uploader:ThinkPHP['MODULE']+'/File/Upload',
+                uploader:ThinkPHP['MODULE']+'/File/image',
                 fileTypeDesc:'图片类型',
                 buttonCursor:'hand',
                 buttonText:'上传图片',
@@ -23,6 +23,7 @@ $(function () {
                       break;
                   }
                 },
+
                 onUploadStart:function () {
                     if (pic_box.uploadTotal>=7){
                         $('#file').uplodify('stop');
@@ -31,8 +32,12 @@ $(function () {
                     }else{
                         $('.weibo_pic_list').append('<div class="weibo_pic_content"><span class="remove"></span><span class="text">删除</span><img src="' + ThinkPHP['IMG'] + '/loading_100.png" class="weibo_pic_img"></div>');
                     }
+
                 },
+
                 onUploadSuccess : function (file, data, response) {
+                    alert();
+
                     $('.weibo_pic_list').append('<input type="hidden" name="image" value='+data+'>');
                     var path=$.parseJSON(data);
                     var img = $('.weibo_pic_img');

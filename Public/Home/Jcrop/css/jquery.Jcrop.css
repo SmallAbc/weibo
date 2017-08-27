@@ -15,9 +15,9 @@
 .jcrop-holder #preview-pane {
   display: block;
   position: absolute;
-  z-index: 2000;
-  top: 0;
-  right: -280px;
+  /*z-index: 2000;*/
+  top: 10;
+  right: -180px;
   padding: 6px;
   border: 1px rgba(0, 0, 0, .4) solid;
   border-radius: 6px;
@@ -29,9 +29,11 @@
 area based on the size of the thumbnail preview,
 specified here 这段是手动添加的,给阅览框用的*/
 #preview-pane .preview-container {
-  width: 250px;
+  width: 170px;
   height: 170px;
   overflow: hidden;
+  float: right;
+  margin-top: 0;
 }
 
 .button.active {
