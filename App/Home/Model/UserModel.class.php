@@ -153,7 +153,7 @@ class UserModel extends RelationModel {
     //通过一对一关联获取用户信息
     public function getUser(){
         $map['id']=session('user_auth')['id'];
-        $user=$this->relation(true)->field('id,username,email')->where($map)->find();
+        $user=$this->relation(true)->field('id,username,email,face')->where($map)->find();
         if(is_null($user['extend'])){
             $userex=M('User_extend');
             $data['uid']=session('user_auth')['id'];
@@ -178,7 +178,14 @@ class UserModel extends RelationModel {
     }
 
 
-
+    //更新个人头像
+    public function updateFace($face){
+        $data=array(
+            'face'=>$face,
+        );
+        $map['id']=session('user_auth')['id'];
+        return $this->where($map)->save($data);
+    }
 
 
 };

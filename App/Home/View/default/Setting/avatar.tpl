@@ -31,9 +31,12 @@
 
         </div>
     </div>-->
-                <div class="inwrap">
-                    <div class="example">
+                <div class="face">
+                    <if condition="$user.face eq 0">
                         <img src="__IMG__/big.jpg" id="target" alt="">
+                    <else/>
+                        <img src="__ROOT__/{$user.face.big}" id="target" alt="">
+                    </if>
                         <input type="file" name="file" id="file">
                         <input type="button" name="save" id="save" style="display:none;" value="保存">
                         <input type="button" name="cancel" id="cancel" style="display: none;" value="取消">
@@ -47,8 +50,6 @@
                                 <img src="__IMG__/big.jpg" class="jcrop-preview" alt="">
                             </div>
                         </div>
-                    </div>
-
                 </div>
     <div id="loading">...</div>
     <div id="error">...</div>

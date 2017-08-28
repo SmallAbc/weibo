@@ -16,8 +16,8 @@
   display: block;
   position: absolute;
   /*z-index: 2000;*/
-  top: 10;
-  right: -180px;
+  top: 30px;
+  right: -230px;
   padding: 6px;
   border: 1px rgba(0, 0, 0, .4) solid;
   border-radius: 6px;

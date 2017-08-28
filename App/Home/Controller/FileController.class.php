@@ -57,6 +57,9 @@ class FileController extends Controller
     public function crop(){
         $model=D('File');
         $result=$model->crop(I('post.x'),I('post.y'),I('post.w'),I('post.h'),I('post.imgurl'));
+
+        $userModel=D('User');
+        $userModel->updateFace(json_encode($result));
         //使用thinkPHP自带的ajaxReturn,最后返回给ajax时解析出错,所以改成原生的json_encode
         //$this->ajaxReturn($result);
         echo json_encode($result);

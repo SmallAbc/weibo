@@ -123,46 +123,47 @@ $(function(){
             }
             })
     })
-
-    $('#file').uploadify({
-        swf:ThinkPHP['UPLOADIFY']+'/uploadify.swf',
-        uploader:ThinkPHP['MODULE']+'/File/face',
-        fileTypeDesc:'图片类型',
-        buttonCursor:'hand',
-        buttonText:'上传图片',
-        fileSizeLimit:'1MB',
-        fileTypeExts:'*.gif;*.png;*.jpg;*.jpeg',
-        overrideEvents:['onSelectError','onSelect','onDialogClose'],
-        onSelectError:function (file,errorCode,errorMsg) {
-            switch (errorCode){
-                case -110:
-                    $('#error').dialog('open').html('部分上传图片超过1024KB!');
-                    setTimeout(function () {
-                        $('#error').dialog('close').html('...');
-                    },2000);
-                    break;
-            }
-        },
-        onUploadStart:function () {
+    if($('#file').length>0){
+        $('#file').uploadify({
+            swf:ThinkPHP['UPLOADIFY']+'/uploadify.swf',
+            uploader:ThinkPHP['MODULE']+'/File/face',
+            fileTypeDesc:'图片类型',
+            buttonCursor:'hand',
+            buttonText:'上传图片',
+            fileSizeLimit:'1MB',
+            fileTypeExts:'*.gif;*.png;*.jpg;*.jpeg',
+            overrideEvents:['onSelectError','onSelect','onDialogClose'],
+            onSelectError:function (file,errorCode,errorMsg) {
+                switch (errorCode){
+                    case -110:
+                        $('#error').dialog('open').html('部分上传图片超过1024KB!');
+                        setTimeout(function () {
+                            $('#error').dialog('close').html('...');
+                        },2000);
+                        break;
+                }
+            },
+            onUploadStart:function () {
                 $('#loading').dialog('open').addClass('loading').html('图片上传中!');
-        },
-        onUploadSuccess : function (file, data, response) {
-            var path=$.parseJSON(data);
-            $('.jcrop-holder > div:nth-child(1) > div:nth-child(1) > img:nth-child(1)').attr('src',ThinkPHP['ROOT']+path);
-            $('.jcrop-holder > img:nth-child(4)').attr('src',ThinkPHP['ROOT']+path);
-            $('#imgurl').val(path);
-            $('#file').hide();
-            $('#save').button().show();
-            $('#cancel').button().show();
+            },
+            onUploadSuccess : function (file, data, response) {
+                var path=$.parseJSON(data);
+                $('.jcrop-holder > div:nth-child(1) > div:nth-child(1) > img:nth-child(1)').attr('src',ThinkPHP['ROOT']+path);
+                $('.jcrop-holder > img:nth-child(4)').attr('src',ThinkPHP['ROOT']+path);
+                $('#imgurl').val(path);
+                $('#file').hide();
+                $('#save').button().show();
+                $('#cancel').button().show();
 
-            //Todo:取消后的图片尺寸有问题还需要改
-            // $('#target').one('load',function () {
+                //Todo:取消后的图片尺寸有问题还需要改
+                // $('#target').one('load',function () {
                 $('#target').attr('src',ThinkPHP['ROOT']+path).Jcrop({
                         onChange: updatePreview,
                         onSelect: updatePreview,
                         bgFade: true,	//	使用背景过渡效果
                         aspectRatio: 1,	//	选框宽高比。说明：width/height
-                        minSelect:	[50, 50]//Expecting newline or semicolon,          //	选框最小选择尺寸。说明：若选框小于该尺寸，则自
+                        minSelect:	[50, 50],//Expecting newline or semicolon,          //	选框最小选择尺寸。说明：若选框小于该尺寸，则自
+                        setSelect:[0,0,200,200]
                     },
                     function () {
                         // Use the API to get the real image size
@@ -178,13 +179,15 @@ $(function(){
                         $('.jcrop-preview').attr('src',ThinkPHP['ROOT']+path);
                         $('#preview-pane').show();
                     });
-            // })
-            setTimeout(function () {
-                $('#loading').dialog('close');
-            }, 50);
+                // })
+                setTimeout(function () {
+                    $('#loading').dialog('close');
+                }, 50);
 
-        }
-    });
+            }
+        });
+
+    }
 
 
     //取消按钮
@@ -219,8 +222,17 @@ $(function(){
             },
             success:function (data,responeText,msg) {
                 $('#loading').dialog('close').removeClass('load').html('');
-               $path=$.parseJSON(data);
-                alert($path['small']);
+               var path=$.parseJSON(data);
+                //销毁jcrop
+                jcrop_api.destroy();
+                //清除图片框的格式,让他回归200X200
+                $('#target').removeAttr('style');
+                $('#target').attr('src',ThinkPHP['ROOT']+path['big']+'?'+Math.random());  //由于缓存的问题,第二次提交剪切图时不会立即刷新,所以需要加一个随机数
+                $('.jcrop-holder,.jcrop-tracker').hide();
+                $('#preview-pane').hide();
+                $('#file').show();
+                $('#save').button().hide();
+                $('#cancel').button().hide();
             }
         })
     })

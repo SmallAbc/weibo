@@ -11,6 +11,7 @@
 <script type="text/javascript">var ThinkPHP={
         'MODULE':'__MODULE__',
         'IMG':'__PUBLIC__/{$Think.MODULE_NAME}/img',
+        'AVATAR':'Uploads/Faces',
         'FACE':'__PUBLIC__/{$Think.MODULE_NAME}/face',
         'INDEX':'{:U("index/index")}',
         'UPLOADIFY':'__UPLOADIFY__',

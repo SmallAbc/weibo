@@ -1,15 +1,20 @@
 @charset "UTF-8";
 
-#main .main_right .face p{
+#main .main_right .tar p{
     padding-left: 10px;
 }
 
 #main .main_right .face img{
     display: block;
-    margin: 5px auto;
 }
 
 
 .uploadify{
-margin: 10px auto;
+margin: 10px 0 10px 42px;
 }
+
+.face{
+    margin:10px 0 10px 10px;
+}
+
+

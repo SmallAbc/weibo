@@ -9,6 +9,7 @@
 namespace Home\Controller;
 
 use function I;
+use function json_decode;
 use function sleep;
 
 class SettingController extends HomeController
@@ -27,9 +28,10 @@ class SettingController extends HomeController
     public function avatar(){
         if ($this->login()){
             $user=D('User');
-//            $result=$user->getUser();
-//            print_r($result);
-//            $this->assign('user',$result);
+            $result=$user->getUser();
+            $result['face']=json_decode($result['face'],true);
+//            dump($result);
+            $this->assign('user',$result);
             $this->display();
         }
     }
