@@ -11,6 +11,9 @@ namespace Home\Controller;
 
 use Home\Model\FileModel;
 use Think\Controller;
+use function D;
+use function I;
+use function json_encode;
 
 
 class FileController extends Controller
@@ -42,11 +45,21 @@ class FileController extends Controller
 //        } else {
 //            return $upload->getError();
 //        }
-    }    //图片上传方法
+    }
+    //图片上传方法
     public function face(){
         $file=new FileModel();
         $this->ajaxReturn($file->face());
 
+    }
+
+    //剪切的头像保存
+    public function crop(){
+        $model=D('File');
+        $result=$model->crop(I('post.x'),I('post.y'),I('post.w'),I('post.h'),I('post.imgurl'));
+        //使用thinkPHP自带的ajaxReturn,最后返回给ajax时解析出错,所以改成原生的json_encode
+        //$this->ajaxReturn($result);
+        echo json_encode($result);
     }
 
 

@@ -33,14 +33,18 @@
     </div>-->
                 <div class="inwrap">
                     <div class="example">
-                        <img src="__IMG__/big.jpg" id="target" alt="[Jcrop Example]">
-
+                        <img src="__IMG__/big.jpg" id="target" alt="">
                         <input type="file" name="file" id="file">
                         <input type="button" name="save" id="save" style="display:none;" value="保存">
                         <input type="button" name="cancel" id="cancel" style="display: none;" value="取消">
+                        <input type="hidden" id="x" name="x">
+                        <input type="hidden" id="y" name="y">
+                        <input type="hidden" id="w" name="h">
+                        <input type="hidden" id="h" name="h">
+                        <input type="hidden" id="imgurl" name="imgurl">
                         <div id="preview-pane" style="display: none">
                             <div class="preview-container">
-                                <img src="__ROOT__/Uploads/2017-08-23/550_599ce8ae4866b.jpg" class="jcrop-preview" alt="Preview">
+                                <img src="__IMG__/big.jpg" class="jcrop-preview" alt="">
                             </div>
                         </div>
                     </div>

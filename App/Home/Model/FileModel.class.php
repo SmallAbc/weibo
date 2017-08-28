@@ -12,6 +12,7 @@ namespace Home\Model;
 use Think\Image;
 use Think\Upload;
 use function C;
+use function session;
 use function sleep;
 
 //由于这个model是不需要对应相关的数据的,所以不能extends Model,这样会自动链接数据表,检测到没有相应的表会报错
@@ -63,4 +64,22 @@ class FileModel
             return $upload->getError();
         }
     }
+
+    //头像图片保存
+    public function crop($x,$y,$w,$h,$imgurl){
+        $smallface=C('FACE_PATH').'_50_'.session('user_auth')['id'].'.jpg';
+        $bigface=C('FACE_PATH').'_200_'.session('user_auth')['id'].'.jpg';
+        $image=new Image();
+        $image->open($imgurl);
+        $image->crop($w,$h,$x,$y);
+        $image->thumb(200,200,image::IMAGE_THUMB_FIXED)->save($bigface);
+        $image->thumb(50,50,image::IMAGE_THUMB_FIXED)->save($smallface);
+        $path=array(
+            'small'=>$smallface,
+            'big'=>$bigface
+        );
+
+        return $path;
+    }
+
 }

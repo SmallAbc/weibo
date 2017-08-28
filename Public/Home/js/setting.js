@@ -15,6 +15,10 @@ $(function(){
 
 
     function updatePreview(c){
+        $('#x').val(c.x);
+        $('#y').val(c.y);
+        $('#w').val(c.w);
+        $('#h').val(c.h);
         if (parseInt(c.w) > 0) {
             var rx = xsize / c.w;
             var ry = ysize / c.h;
@@ -26,6 +30,13 @@ $(function(){
                 marginTop: '-' + Math.round(ry * c.y) + 'px'
             });
         }
+    };
+
+
+    // Simple event handler, called from onChange and onSelect
+// event handlers, as per the Jcrop invocation above
+    function showCoords(c){
+
     };
     //更改为图片上传成功后再能剪切
     // console.log('init',[xsize,ysize]);
@@ -136,29 +147,22 @@ $(function(){
                 $('#loading').dialog('open').addClass('loading').html('图片上传中!');
         },
         onUploadSuccess : function (file, data, response) {
-            // $('.weibo_pic_list').append('<input type="hidden" name="image" value='+data+'>');
-
-
-
-
             var path=$.parseJSON(data);
-            $('#target').attr('src',ThinkPHP['ROOT']+path);
             $('.jcrop-holder > div:nth-child(1) > div:nth-child(1) > img:nth-child(1)').attr('src',ThinkPHP['ROOT']+path);
             $('.jcrop-holder > img:nth-child(4)').attr('src',ThinkPHP['ROOT']+path);
-            $('.jcrop-preview').attr('src',ThinkPHP['ROOT']+path).show();
+            $('#imgurl').val(path);
             $('#file').hide();
-            $('#preview-pane').show();
             $('#save').button().show();
             $('#cancel').button().show();
 
             //Todo:取消后的图片尺寸有问题还需要改
-            $('#target').one('load',function () {
-                $('#target').Jcrop({
+            // $('#target').one('load',function () {
+                $('#target').attr('src',ThinkPHP['ROOT']+path).Jcrop({
                         onChange: updatePreview,
                         onSelect: updatePreview,
                         bgFade: true,	//	使用背景过渡效果
                         aspectRatio: 1,	//	选框宽高比。说明：width/height
-                        minSelect:	[80, 80]//Expecting newline or semicolon,          //	选框最小选择尺寸。说明：若选框小于该尺寸，则自
+                        minSelect:	[50, 50]//Expecting newline or semicolon,          //	选框最小选择尺寸。说明：若选框小于该尺寸，则自
                     },
                     function () {
                         // Use the API to get the real image size
@@ -170,8 +174,11 @@ $(function(){
 
                         // Move the preview into the jcrop container for css positioning
                         $preview.appendTo(jcrop_api.ui.holder);
+                        //添加了模块之后再给src赋值,否则显示的还是上一次上传的图片
+                        $('.jcrop-preview').attr('src',ThinkPHP['ROOT']+path);
+                        $('#preview-pane').show();
                     });
-            })
+            // })
             setTimeout(function () {
                 $('#loading').dialog('close');
             }, 50);
@@ -179,15 +186,42 @@ $(function(){
         }
     });
 
+
+    //取消按钮
     $('#cancel').button().click(function () {
+        //销毁jcrop
         jcrop_api.destroy();
-        $('#target').css('width','','height','');
+        //清除图片框的格式,让他回归200X200
+        $('#target').removeAttr('style');
         $('#target ,#crop').attr('src',ThinkPHP['IMG']+'/big.jpg');
-        $('.jcrop-holder,.jcrop-tracker').attr('src',ThinkPHP['IMG']+'/big.jpg');
+        $('.jcrop-holder,.jcrop-tracker').hide();
         $('#preview-pane').hide();
         $('#file').show();
         $('#save').button().hide();
         $('#cancel').button().hide();
     })
 
+
+    //保存按钮
+    $('#save').button().click(function () {
+        $.ajax({
+            url:ThinkPHP['MODULE']+'/File/crop',
+            type:'post',
+            data:{
+                x:$('#x').val(),
+                y:$('#y').val(),
+                w:$('#w').val(),
+                h:$('#h').val(),
+                imgurl:$('#imgurl').val()
+            },
+            beforeSend:function () {
+                $('#loading').dialog('open').addClass('load').html('头像保存中!!');
+            },
+            success:function (data,responeText,msg) {
+                $('#loading').dialog('close').removeClass('load').html('');
+               $path=$.parseJSON(data);
+                alert($path['small']);
+            }
+        })
+    })
 });
