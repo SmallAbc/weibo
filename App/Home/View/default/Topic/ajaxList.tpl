@@ -1,6 +1,12 @@
 <volist name="ajaxlist" id="obj">
   <dl class="weibo_content_data">
-    <dt><a href="javascript:void(0);"><img src="__IMG__/small_face.jpg" alt=""></a></dt>
+    <dt><a href="javascript:void(0);">
+        <if condition="$obj.face eq 0">
+          <img src="__IMG__/small_face.jpg" alt="">
+          <else/>
+          <img src="__ROOT__{$obj.face.small}" alt="">
+        </if>
+      </a></dt>
     <dd>
       <h4><a href="javascript:void(0);">{$obj.username}</a></h4>
       <p>{$obj.content}</p>

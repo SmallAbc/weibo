@@ -2,6 +2,7 @@
 namespace Home\Controller;
 
 use Home\Model\TopicModel;
+use function session;
 
 class IndexController extends HomeController{
     public function index(){
@@ -9,6 +10,7 @@ class IndexController extends HomeController{
             $topic=new TopicModel();
             $topiclist=$topic->selectdata(0,10);
             $this->assign('topiclist',$topiclist);
+            $this->assign('face',session(user_auth)['face']);
             $this->display();
         }
     }

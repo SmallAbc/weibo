@@ -46,10 +46,20 @@
                 <li ><a href="javascript:void(0);" class="selected">我关注的<i class="nav_arrow"></i></a></li>
                 <li><a href="javascript:void(0);">互听的</a></li>
             </ul>
+
+
+
+
             <!--无配图的局部刷新-->
             <div id="ajax_html" style="display: none;">
                 <dl class="weibo_content_data">
-                    <dt><a href="javascript:void(0);"><img src="__IMG__/small_face.jpg" alt=""></a></dt>
+                    <dt><a href="javascript:void(0);">
+                            <if condition="$face eq 0">
+                                <img src="__IMG__/small_face.jpg" alt="">
+                                <else/>
+                                <img src="__ROOT__{$face.small}" alt="">
+                            </if>
+                        </a></dt>
                     <dd>
                         <h4><a href="javascript:void(0);">{$Think.session.user_auth.username}</a></h4>
                         <p>#内容#</p>
@@ -63,7 +73,13 @@
             <!--一张配图的局部刷新-->
             <div id="ajax_html1" style="display: none;">
                 <dl class="weibo_content_data" >
-                    <dt><a href="javascript:void(0);"><img src="__IMG__/small_face.jpg" alt=""></a></dt>
+                    <dt><a href="javascript:void(0);">
+                            <if condition="$face eq 0">
+                                <img src="__IMG__/small_face.jpg" alt="">
+                                <else/>
+                                <img src="__ROOT__{$face.small}" alt="">
+                            </if>
+                        </a></dt>
                     <dd>
                         <h4><a href="javascript:void(0);">{$Think.session.user_auth.username}</a></h4>
                         <p>#内容#</p>
@@ -85,7 +101,13 @@
             <!--多张配图的局部刷新-->
             <div id="ajax_html2" style="display: none;">
                 <dl class="weibo_content_data">
-                    <dt><a href="javascript:void(0);"><img src="__IMG__/small_face.jpg" alt=""></a></dt>
+                    <dt><a href="javascript:void(0);">
+                            <if condition="$face eq 0">
+                                <img src="__IMG__/small_face.jpg" alt="">
+                                <else/>
+                                <img src="__ROOT__{$face.small}" alt="">
+                            </if>
+                        </a></dt>
                     <dd>
                         <h4><a href="javascript:void(0);">{$Think.session.user_auth.username}</a></h4>
                         <p>#内容#</p>
@@ -108,9 +130,21 @@
                     <img data="__ROOT__#放大图#" src="__IMG__/loading_100.png" alt="">
                 </div>
             </div>
+
+
+
+
+
+
             <volist name="topiclist" id="obj">
                 <dl class="weibo_content_data">
-                    <dt><a href="javascript:void(0);"><img src="__IMG__/small_face.jpg" alt=""></a></dt>
+                    <dt><a href="javascript:void(0);">
+                            <if condition="$obj.face eq 0">
+                                <img src="__IMG__/small_face.jpg" alt="">
+                                <else/>
+                                <img src="__ROOT__{$obj.face.small}" alt="">
+                            </if>
+                        </a></dt>
                     <dd>
                         <h4><a href="javascript:void(0);">{$obj.username}</a></h4>
                         <p>{$obj.content}</p>
@@ -151,7 +185,14 @@
     </div>
 
         <div class="main_right">
-                right
+                <if condition="$face eq 0">
+                    <img class="face" src="__IMG__/big.jpg" alt="">
+                    <else/>
+                    <img class="face" src="__ROOT__{$face.big}" alt="">
+                </if>
+                <span class="user">
+                    <a href="#">{$Think.session.user_auth.username}</a>
+                </span>
         </div>
 
         <div id="error">...</div>

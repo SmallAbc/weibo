@@ -39,6 +39,7 @@ class TopicController extends HomeController
             $topic = new TopicModel();
             $ajaxlist = $topic->selectdata(I('post.count'), 10);
             $this->assign('ajaxlist', $ajaxlist);
+            //返回整个html数据给ajax,然后ajax加入到加载按钮的前边
             $this->display();
         }else{
             $this->error('非法访问!');

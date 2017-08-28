@@ -26,10 +26,13 @@
 <script type="text/javascript">var ThinkPHP={
         'MODULE':'/weibo/index.php/Home',
         'IMG':'/weibo/Public/<?php echo (MODULE_NAME); ?>/img',
+        'AVATAR':'Uploads/Faces',
         'FACE':'/weibo/Public/<?php echo (MODULE_NAME); ?>/face',
         'INDEX':'<?php echo U("index/index");?>',
         'UPLOADIFY':'/weibo/Public/Home/uploadify',
         'ROOT':'/weibo'
+        //用于上传头像时,假如取消上传,回归的图片路径
+        'BIG':<?php echo ($_SESSION['user_auth']['face']); ?>
     };
 </script>
 </head>
@@ -113,10 +116,18 @@
                 <li ><a href="javascript:void(0);" class="selected">我关注的<i class="nav_arrow"></i></a></li>
                 <li><a href="javascript:void(0);">互听的</a></li>
             </ul>
+
+
+
+
             <!--无配图的局部刷新-->
             <div id="ajax_html" style="display: none;">
                 <dl class="weibo_content_data">
-                    <dt><a href="javascript:void(0);"><img src="/weibo/Public/Home/img/small_face.jpg" alt=""></a></dt>
+                    <dt><a href="javascript:void(0);">
+                            <?php if($face == 0): ?><img src="/weibo/Public/Home/img/small_face.jpg" alt="">
+                                <?php else: ?>
+                                <img src="/weibo<?php echo ($face["small"]); ?>" alt=""><?php endif; ?>
+                        </a></dt>
                     <dd>
                         <h4><a href="javascript:void(0);"><?php echo ($_SESSION['user_auth']['username']); ?></a></h4>
                         <p>#内容#</p>
@@ -130,7 +141,11 @@
             <!--一张配图的局部刷新-->
             <div id="ajax_html1" style="display: none;">
                 <dl class="weibo_content_data" >
-                    <dt><a href="javascript:void(0);"><img src="/weibo/Public/Home/img/small_face.jpg" alt=""></a></dt>
+                    <dt><a href="javascript:void(0);">
+                            <?php if($face == 0): ?><img src="/weibo/Public/Home/img/small_face.jpg" alt="">
+                                <?php else: ?>
+                                <img src="/weibo<?php echo ($face["small"]); ?>" alt=""><?php endif; ?>
+                        </a></dt>
                     <dd>
                         <h4><a href="javascript:void(0);"><?php echo ($_SESSION['user_auth']['username']); ?></a></h4>
                         <p>#内容#</p>
@@ -152,7 +167,11 @@
             <!--多张配图的局部刷新-->
             <div id="ajax_html2" style="display: none;">
                 <dl class="weibo_content_data">
-                    <dt><a href="javascript:void(0);"><img src="/weibo/Public/Home/img/small_face.jpg" alt=""></a></dt>
+                    <dt><a href="javascript:void(0);">
+                            <?php if($face == 0): ?><img src="/weibo/Public/Home/img/small_face.jpg" alt="">
+                                <?php else: ?>
+                                <img src="/weibo<?php echo ($face["small"]); ?>" alt=""><?php endif; ?>
+                        </a></dt>
                     <dd>
                         <h4><a href="javascript:void(0);"><?php echo ($_SESSION['user_auth']['username']); ?></a></h4>
                         <p>#内容#</p>
@@ -175,8 +194,18 @@
                     <img data="/weibo#放大图#" src="/weibo/Public/Home/img/loading_100.png" alt="">
                 </div>
             </div>
+
+
+
+
+
+
             <?php if(is_array($topiclist)): $i = 0; $__LIST__ = $topiclist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$obj): $mod = ($i % 2 );++$i;?><dl class="weibo_content_data">
-                    <dt><a href="javascript:void(0);"><img src="/weibo/Public/Home/img/small_face.jpg" alt=""></a></dt>
+                    <dt><a href="javascript:void(0);">
+                            <?php if($obj["face"] == 0): ?><img src="/weibo/Public/Home/img/small_face.jpg" alt="">
+                                <?php else: ?>
+                                <img src="/weibo<?php echo ($obj["face"]["small"]); ?>" alt=""><?php endif; ?>
+                        </a></dt>
                     <dd>
                         <h4><a href="javascript:void(0);"><?php echo ($obj["username"]); ?></a></h4>
                         <p><?php echo ($obj["content"]); ?></p>
@@ -210,7 +239,12 @@
     </div>
 
         <div class="main_right">
-                right
+                <?php if($face == 0): ?><img class="face" src="/weibo/Public/Home/img/big.jpg" alt="">
+                    <?php else: ?>
+                    <img class="face" src="/weibo<?php echo ($face["big"]); ?>" alt=""><?php endif; ?>
+                <span class="user">
+                    <a href="#"><?php echo ($_SESSION['user_auth']['username']); ?></a>
+                </span>
         </div>
 
         <div id="error">...</div>

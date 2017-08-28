@@ -219,7 +219,7 @@ $(function () {
 
 
 
-    //滚动条拖动
+    //滚动条拖动到底部自动静态更新画面
     window.currentPage=2;
     $(window).scroll(function () {
         //滚动条顶端到窗口顶端的距离,也就是滚动条已经划过的距离

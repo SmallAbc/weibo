@@ -18,19 +18,9 @@
     </div>
     <div class="main_right">
         <h2>头像设置</h2>
-       <!-- <div class="face">
-            <p>请上传一张尺寸大于200X200像素的头像</p>
-            <div >
-                <img id="avatar" src="__IMG__/big.jpg">
-                <div id="preview-pane">
-                    <div class="preview-container">
-                        <img id="crop" src="__ROOT__/Uploads/2017-08-23/180_599ce8ae4866b.jpg" class="jcrop-preview" alt="Preview" style="width: 687px; height: 456px; margin-left: -277px; margin-top: -89px; display: none">
-                    </div>
-                </div>
-            </div>
 
-        </div>
-    </div>-->
+            <p>请上传一张尺寸大于200X200像素的头像</p>
+
                 <div class="face">
                     <if condition="$user.face eq 0">
                         <img src="__IMG__/big.jpg" id="target" alt="">

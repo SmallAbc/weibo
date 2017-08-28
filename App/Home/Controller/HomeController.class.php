@@ -14,6 +14,7 @@ use Think\Controller;
 use function cookie;
 use function explode;
 use function get_client_ip;
+use function json_decode;
 use function session;
 use function time;
 
@@ -28,12 +29,13 @@ class HomeController extends Controller
             if($ip==get_client_ip(1)) {
                 $map['username'] = $username;
                 $usermodel = new UserModel();
-                $userinfo = $usermodel->field('id,username,last_login')->where($map)->find();
+                $userinfo = $usermodel->field('id,username,face,last_login')->where($map)->find();
                 //自动登录后的验证信息
                 $auth = array(
                     'id' => $userinfo['id'],
                     'username'=>$username,
-                    'last_login' => time()
+                    'last_login' => time(),
+                    'face'=>json_decode($userinfo['face'],true)
                 );
                 session('user_auth', $auth);
             }

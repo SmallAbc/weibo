@@ -13,6 +13,7 @@ use function cookie;
 use function encryption;
 use function get_client_ip;
 use function is_null;
+use function json_decode;
 use function M;
 use function print_r;
 use function session;
@@ -90,12 +91,12 @@ class UserModel extends RelationModel {
         if($this->create($data)){
             //正确则说明采用的是邮箱登录方式
             $map['email']=$username;
-            $user=$this->field('id,password,username')->where($map)->find();
+            $user=$this->field('id,password,username,face')->where($map)->find();
         }else{
             $error=$this->getError();
             if($error=='notemail'){
                 $map['username']=$username;
-                $user=$this->field('id,username,password,last_login')->where($map)->find();
+                $user=$this->field('id,username,password,face,last_login')->where($map)->find();
             }else{
                 return $this->getError();
             }
@@ -105,7 +106,7 @@ class UserModel extends RelationModel {
             $update = array(
                 'id' => $user['id'],
                 'last_login' => time(),
-                'last_ip' => get_client_ip(1)
+                'last_ip' => get_client_ip(1),
             );
             $this->save($update);
 
@@ -113,7 +114,8 @@ class UserModel extends RelationModel {
             $auth = array(
                 'id' => $user['id'],
                 'username' => $user['username'],
-                'last_login' => time()
+                'last_login' => time(),
+                'face'=>json_decode($user['face'],true)
             );
             session('user_auth', $auth);
             //生成COOKIE

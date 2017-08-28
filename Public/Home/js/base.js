@@ -34,6 +34,5 @@ $(function () {
         draggable:false,
         resizable:false,
         closeOnEscape:false
-
     }).parent().find('.ui-dialog-titlebar').hide();
 });

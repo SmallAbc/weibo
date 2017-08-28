@@ -386,6 +386,28 @@
     border-left:1px solid #ddd;
 }
 
+#main .main_right .face{
+    margin:30px auto 10px auto;
+    display:block;
+    width:120px;
+    height: 120px;
+    border: 2px solid #371b1b;
 
+}
+
+
+#main .main_right .user{
+    display: block;
+    margin: 10px auto;
+    width: 240px;
+    text-align: center;
+    font-size: 13px;
+}
+
+#main .main_right .user a{
+    text-decoration: none;
+    color: #b63c0b;
+    font-weight:bold;
+}
 
 

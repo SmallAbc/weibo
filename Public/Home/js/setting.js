@@ -196,7 +196,11 @@ $(function(){
         jcrop_api.destroy();
         //清除图片框的格式,让他回归200X200
         $('#target').removeAttr('style');
-        $('#target ,#crop').attr('src',ThinkPHP['IMG']+'/big.jpg');
+        if(ThinkPHP['BIG'].length>0){
+            $('#target ,#crop').attr('src',ThinkPHP['ROOT']+ThinkPHP['BIG']);
+        }else{
+            $('#target ,#crop').attr('src',ThinkPHP['IMG']+'/big.jpg');
+        }
         $('.jcrop-holder,.jcrop-tracker').hide();
         $('#preview-pane').hide();
         $('#file').show();

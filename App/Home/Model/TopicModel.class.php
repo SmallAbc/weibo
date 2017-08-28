@@ -53,6 +53,9 @@ class TopicModel extends RelationModel
                     $value['image'][$key2]=json_decode($value2['data'],true);
                 }
             }
+            if(!is_null($value['face'])){
+                $value['face']=json_decode($value['face'],true);
+            }
             $list[$key]=$value;
             $list[$key]['count']=count($value['image']);
             $time=NOW_TIME-$value['create_date'];
@@ -78,7 +81,7 @@ class TopicModel extends RelationModel
     public function selectdata($first=0,$size=10){
         $topiclist=$this ->relation(true)
                                 ->table('__TOPIC__ a,__USER__ b')
-                                ->field('a.id,a.content,a.content_over,a.create_date,b.username')
+                                ->field('a.id,a.content,a.content_over,a.create_date,b.username,b.face')
                                 ->limit($first,$size)
                                 ->order('create_date DESC')
                                 ->where('a.uid=b.id')

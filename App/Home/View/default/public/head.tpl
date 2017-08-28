@@ -15,6 +15,8 @@
         'FACE':'__PUBLIC__/{$Think.MODULE_NAME}/face',
         'INDEX':'{:U("index/index")}',
         'UPLOADIFY':'__UPLOADIFY__',
-        'ROOT':'__ROOT__'
+        'ROOT':'__ROOT__',
+        //用于上传头像时,假如取消上传,回归的图片路径
+        'BIG':'{:session("user_auth")["face"]["big"]}'
     };
 </script>
