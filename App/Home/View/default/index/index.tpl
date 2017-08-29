@@ -140,13 +140,13 @@
                 <dl class="weibo_content_data">
                     <dt><a href="javascript:void(0);">
                             <if condition="$obj.face eq 0">
-                                <img src="__IMG__/small_face.jpg" alt="">
+                                <a href="{:U('Space/index',array('id'=>$obj['uid']))}"><img src="__IMG__/small_face.jpg" alt=""></a>
                                 <else/>
-                                <img src="__ROOT__{$obj.face.small}" alt="">
+                                <a href="{:U('Space/index',array('id'=>$obj['uid']))}"><img src="__ROOT__{$obj.face.small}" alt=""></a>
                             </if>
                         </a></dt>
                     <dd>
-                        <h4><a href="javascript:void(0);">{$obj.username}</a></h4>
+                        <h4><a href="{:U('Space/index',array('id'=>$obj['uid']))}">{$obj.username}</a></h4>
                         <p>{$obj.content}</p>
                         <switch name="obj.count">
                             <case value="0"></case>

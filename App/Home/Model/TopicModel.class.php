@@ -78,10 +78,10 @@ class TopicModel extends RelationModel
         return $list;
     }
     //连接数据库
-    public function selectdata($first=0,$size=10){
+    public function getUser($first=0, $size=10){
         $topiclist=$this ->relation(true)
                                 ->table('__TOPIC__ a,__USER__ b')
-                                ->field('a.id,a.content,a.content_over,a.create_date,b.username,b.face')
+                                ->field('a.id,a.content,a.content_over,a.create_date,a.uid,b.username,b.face')
                                 ->limit($first,$size)
                                 ->order('create_date DESC')
                                 ->where('a.uid=b.id')

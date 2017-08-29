@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+#main .main_left{
+    width: 690px;
+    min-height: 800px;
+    float: left;
+    background: #fff;
+}
+
+
+#main .main_right{
+    width:269px;
+    min-height:800px;
+    background: #f7f7f7;
+    border-left:1px solid #ddd;
+    float:right;
+}
+
+#main .main_left .header{
+    height:220px;
+    background: #f2f2f2;
+    border:1px solid #ccc;
+}
+
+
+#main .main_right .header dl{
+
+}
+
+#main .main_left .header dl dt{
+    margin:10px 0 0 10px;
+    float: left;
+}
+
+#main .main_left .header dl dt img{
+    display: block;
+
+}
+
+#main .main_left .header dl dd{
+    width: 450px;
+    float: left;
+}
+
+
+#main .main_left .header dl dd.username{
+    padding:15px 0 0 20px;
+    font-size:20px;
+    font-weight:bold;
+    color: #049;
+}
+
+#main .main_left .header dl dd.info{
+    padding:15px 0 0 20px;
+    font-size:14px;
+    color: #666;
+}
