@@ -5,12 +5,7 @@
 </block>
 
 <block name="main">
-    <div class="main_left">
-        <ul>
-            <li><a href="{:U('Setting/index')}" class="selected">个人设置</a></li>
-            <li><a href="{:U('Setting/avatar')}">头像设置</a></li>
-        </ul>
-    </div>
+    <include file="Setting/main_left" />
     <div class="main_right">
         <h2>个人设置</h2>
         <dl>

@@ -19,8 +19,13 @@ class SpaceController extends HomeController
     public function index(){
         if ($this->login()){
             $UserModel=D('user');
-            if(I('get.id')){
-                $result=$UserModel->getUser(I('get.id'));
+            echo I('get.id');
+            if(I('get.id')!=0||I('get.domain')!=''){
+                if(I('get.id')){
+                    $result=$UserModel->getUser(I('get.id'),'id');
+                }else{
+                    $result=$UserModel->getUser(I('get.domain'),'domain');
+                }
                 if($result){
                     $result['face']=json_decode($result['face'],true);
                     $this->assign('user',$result);

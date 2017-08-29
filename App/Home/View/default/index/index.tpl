@@ -140,13 +140,29 @@
                 <dl class="weibo_content_data">
                     <dt><a href="javascript:void(0);">
                             <if condition="$obj.face eq 0">
-                                <a href="{:U('Space/index',array('id'=>$obj['uid']))}"><img src="__IMG__/small_face.jpg" alt=""></a>
+                                <empty name="obj.domain">
+                                    <a href="{:U('Space/index',array('id'=>$obj['uid']))}"><img src="__IMG__/small_face.jpg" alt=""></a>
+                                    <else/>
+                                    <a href="__ROOT__/i/{$obj.domain}"><img src="__IMG__/small_face.jpg" alt=""></a>
+                                </empty>
+
+
                                 <else/>
-                                <a href="{:U('Space/index',array('id'=>$obj['uid']))}"><img src="__ROOT__{$obj.face.small}" alt=""></a>
+                                <empty name="obj.domain">
+                                    <a href="{:U('Space/index',array('id'=>$obj['uid']))}"><img src="__ROOT__{$obj.face.small}" alt=""></a>
+                                    <else/>
+                                    <a href="__ROOT__/i/{$obj.domain}"><img src="__ROOT__{$obj.face.small}" alt=""></a>
+                                </empty>
                             </if>
                         </a></dt>
                     <dd>
-                        <h4><a href="{:U('Space/index',array('id'=>$obj['uid']))}">{$obj.username}</a></h4>
+                        <h4>
+                            <empty name="obj.domain">
+                                <a href="{:U('Space/index',array('id'=>$obj['uid']))}">{$obj.username}</a>
+                            <else/>
+                                <a href="__ROOT__/i/{$obj.domain}">{$obj.username}</a>
+                            </empty>
+                        </h4>
                         <p>{$obj.content}</p>
                         <switch name="obj.count">
                             <case value="0"></case>
@@ -183,7 +199,6 @@
             <div id="loadmore">加载更多 <img src="__IMG__/loadmore.gif" alt=""></div>
         </div>
     </div>
-
         <div class="main_right">
                 <if condition="$face eq 0">
                     <img class="face" src="__IMG__/big.jpg" alt="">

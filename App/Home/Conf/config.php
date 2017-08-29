@@ -24,7 +24,15 @@ return array(
     //图片上传路径
     'UPLOAD_PATH'=>'./Uploads/',
     //头像上传路径
-    'FACE_PATH'=>'./Uploads/Faces/'
+    'FACE_PATH'=>'./Uploads/Faces/',
+
+    //路由开启
+    'URL_ROUTER_ON'=>true,
+    //动态路由 注意：为了不影响动态路由的遍历效率，静态路由采用URL_MAP_RULES定义和动态路由区分开来
+    'URL_ROUTE_RULES'=>array(
+        'i/:domain'=>'Space/index'
+    )
+
 
 
 

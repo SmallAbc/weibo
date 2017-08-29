@@ -202,12 +202,22 @@
 
             <?php if(is_array($topiclist)): $i = 0; $__LIST__ = $topiclist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$obj): $mod = ($i % 2 );++$i;?><dl class="weibo_content_data">
                     <dt><a href="javascript:void(0);">
-                            <?php if($obj["face"] == 0): ?><a href="<?php echo U('Space/index',array('id'=>$obj['uid']));?>"><img src="/weibo/Public/Home/img/small_face.jpg" alt=""></a>
+                            <?php if($obj["face"] == 0): if(empty($obj["domain"])): ?><a href="<?php echo U('Space/index',array('id'=>$obj['uid']));?>"><img src="/weibo/Public/Home/img/small_face.jpg" alt=""></a>
+                                    <?php else: ?>
+                                    <a href="/weibo/i/<?php echo ($obj["domain"]); ?>"><img src="/weibo/Public/Home/img/small_face.jpg" alt=""></a><?php endif; ?>
+
+
                                 <?php else: ?>
-                                <a href="<?php echo U('Space/index',array('id'=>$obj['uid']));?>"><img src="/weibo<?php echo ($obj["face"]["small"]); ?>" alt=""></a><?php endif; ?>
+                                <?php if(empty($obj["domain"])): ?><a href="<?php echo U('Space/index',array('id'=>$obj['uid']));?>"><img src="/weibo<?php echo ($obj["face"]["small"]); ?>" alt=""></a>
+                                    <?php else: ?>
+                                    <a href="/weibo/i/<?php echo ($obj["domain"]); ?>"><img src="/weibo<?php echo ($obj["face"]["small"]); ?>" alt=""></a><?php endif; endif; ?>
                         </a></dt>
                     <dd>
-                        <h4><a href="<?php echo U('Space/index',array('id'=>$obj['uid']));?>"><?php echo ($obj["username"]); ?></a></h4>
+                        <h4>
+                            <?php if(empty($obj["domain"])): ?><a href="<?php echo U('Space/index',array('id'=>$obj['uid']));?>"><?php echo ($obj["username"]); ?></a>
+                            <?php else: ?>
+                                <a href="/weibo/i/<?php echo ($obj["domain"]); ?>"><?php echo ($obj["username"]); ?></a><?php endif; ?>
+                        </h4>
                         <p><?php echo ($obj["content"]); ?></p>
                         <?php switch($obj["count"]): case "0": break;?>
                             <?php case "1": ?><div class="img" style="display: block;"><img src="/weibo<?php echo ($obj["image"]["0"]["thumb"]); ?>" alt=""></div>
@@ -237,7 +247,6 @@
             <div id="loadmore">加载更多 <img src="/weibo/Public/Home/img/loadmore.gif" alt=""></div>
         </div>
     </div>
-
         <div class="main_right">
                 <?php if($face == 0): ?><img class="face" src="/weibo/Public/Home/img/big.jpg" alt="">
                     <?php else: ?>

@@ -1,4 +1,5 @@
 <extend name="base/common" />
+
 <block name="head">
     <script type="text/javascript" src="__JCROP__/js/jquery.Jcrop.js"></script>
     <script type="text/javascript" src="__UPLOADIFY__/jquery.uploadify.js"></script>
@@ -10,12 +11,7 @@
 </block>
 
 <block name="main">
-    <div class="main_left">
-        <ul>
-            <li><a href="{:U('Setting/index')}" >个人设置</a></li>
-            <li><a href="{:U('Setting/avatar')}" class="selected">头像设置</a></li>
-        </ul>
-    </div>
+    <include file="Setting/main_left" />
     <div class="main_right">
         <h2>头像设置</h2>
 

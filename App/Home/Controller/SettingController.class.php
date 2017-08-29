@@ -30,10 +30,18 @@ class SettingController extends HomeController
             $user=D('User');
             $result=$user->getUser();
             $result['face']=json_decode($result['face'],true);
-//            dump($result);
             $this->assign('user',$result);
             $this->display();
         }
+    }
+
+
+    //域名设置
+    public function domain(){
+        $user=D('User');
+        $result=$user->getUser();
+        $this->assign('domain',$result['domain']);
+        $this->display();
     }
     //更新个人信息
     public function updateUser(){
@@ -47,4 +55,20 @@ class SettingController extends HomeController
             $this->error('非法操作!');
         }
     }
-}
+
+    //设置个人域名
+    public function setdomain(){
+        if(IS_AJAX){
+            sleep(2);
+            $user=D('User');
+            $result=$user->setDomain(I('post.domain'));
+            echo $result;
+        }else{
+            $this->error('非法操作!');
+        }
+    }
+
+
+
+
+};

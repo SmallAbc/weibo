@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+#main .main_right p{
+    height: 35px;
+    line-height:35px;
+
+}
+
+#main .main_right p span{
+    font-weight:bold;
+    color: #000;
+}
+
+#main .main_right p a{
+    text-decoration: none;
+    color: #666666;
+}

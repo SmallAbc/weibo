@@ -81,7 +81,7 @@ class TopicModel extends RelationModel
     public function getUser($first=0, $size=10){
         $topiclist=$this ->relation(true)
                                 ->table('__TOPIC__ a,__USER__ b')
-                                ->field('a.id,a.content,a.content_over,a.create_date,a.uid,b.username,b.face')
+                                ->field('a.id,a.content,a.content_over,a.create_date,a.uid,b.username,b.face,b.domain')
                                 ->limit($first,$size)
                                 ->order('create_date DESC')
                                 ->where('a.uid=b.id')

@@ -153,21 +153,27 @@ class UserModel extends RelationModel {
 
 
     //通过一对一关联获取用户信息
-    public function getUser($id){
-        if($id==0){
-            $map['id']=session('user_auth')['id'];
-            $user=$this->relation(true)->field('id,username,email,face')->where($map)->find();
-            if(is_null($user['extend'])){
-                $userex=M('User_extend');
-                $data['uid']=session('user_auth')['id'];
-                $userex->add($data);
-            }
-        }else{
-            $map['id']=$id;
-            $user=$this->relation(true)->field('id,username,email,face')->where($map)->find();
+    public function getUser($id,$type='id'){
+        switch ($type){
+            case 'id':
+                if($id==0){
+                    $map['id']=session('user_auth')['id'];
+                    $user=$this->relation(true)->field('id,username,email,face,domain')->where($map)->find();
+                    if(is_null($user['extend'])){
+                        $userex=M('User_extend');
+                        $data['uid']=session('user_auth')['id'];
+                        $userex->add($data);
+                    }
+                }else{
+                    $map['id']=$id;
+                    $user=$this->relation(true)->field('id,username,email,face,domain')->where($map)->find();
+                }
+                break;
+            case 'domain':
+                $map['domain']=$id;
+                $user=$this->relation(true)->field('id,username,email,face,domain')->where($map)->find();
+                break;
         }
-
-
         return $user;
     }
 
@@ -176,7 +182,6 @@ class UserModel extends RelationModel {
     public function updateUser($email,$intro){
         $map['id']=session('user_auth')['id'];
         $data=array();
-
             $data['email']=$email;
             $data['extend']=array(
                 'intro'=>$intro
@@ -196,5 +201,12 @@ class UserModel extends RelationModel {
         return $this->where($map)->save($data);
     }
 
+
+    //更新个人域名
+    public function setDomain($domain){
+        $data['domain']=$domain;
+        $map['id']=session('user_auth')['id'];
+        return $this->where($map)->save($data);
+    }
 
 };

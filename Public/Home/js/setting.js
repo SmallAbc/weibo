@@ -240,4 +240,38 @@ $(function(){
             }
         })
     })
+
+
+
+
+    //域名注册页面呢,域名注册按钮
+    $('.domainbutton').on('click',function () {
+        $.ajax({
+            url:ThinkPHP['MODULE']+'/Setting/setdomain',
+            type:'post',
+            data:{
+                domain:$('input[name="domain"]').val(),
+            },
+            beforeSend:function () {
+                $('#loading').dialog('open').html('正在注册域名!').addClass('loading');
+            },
+            success:function (data,responText,msg) {
+                if (responText === 'success') {
+                    $('#loading').dialog().html('注册成功!').removeClass('loading').addClass('succ');
+                    setTimeout(function () {
+                        location.reload();
+                        $('#loading').dialog('close').html('').removeClass('succ');
+                    }, 2000)
+                }
+            }
+        })
+
+    })
+
+
+
+
+
+
+
 });
