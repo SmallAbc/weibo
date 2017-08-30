@@ -188,10 +188,16 @@
                                     </div>
                                 </volist>
                         </switch>
+                        <div class="forward_box" style="display: none">
+                            <span>请输入转发评论:</span>
+                            <textarea class="forward_text"  name="forward_text"></textarea>
+                            <input type="hidden" value="{$obj.id}" name="resource_id" class="resource_id">
+                            <input type="submit" name="submit" class="forward_submit" value="转发">
+                        </div>
 
                         <div class="footer">
                             <span class="time">{$obj.time}发布</span>
-                            <span class="handler">赞(0) | 转发 | 评论 | 收藏</span>
+                            <span class="handler">赞(0) | <a class="forward" href="javascript:void(0);">转发</a> | 评论 | 收藏</span>
                         </div>
                     </dd>
                 </dl>

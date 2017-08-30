@@ -17,6 +17,7 @@ use function is_null;
 use function json_decode;
 use function mb_strlen;
 use function preg_replace;
+use function session;
 use function sleep;
 use function strtotime;
 
@@ -123,4 +124,44 @@ class TopicModel extends RelationModel
             return $this->getError();
         }
     }
-}
+
+    //转发微博
+    public function forward($rid,$allcontent){
+        $len=mb_strlen($allcontent,'utf-8');
+        if ($len>255){
+            $content=mb_substr($allcontent,0,255,'utf-8');
+            $content_over=mb_substr($allcontent,255,280,'utf-8');
+        }else{
+            $content=$allcontent;
+            $content_over='';
+        }
+        $data=array(
+            'content'=>$content,
+            'uid'=>session('user_auth')['id'],
+            'rid'=>$rid,
+            'ip'=>get_client_ip(1)
+        );
+        if(!empty($content_over)){
+            $data['content_over']=$content_over;
+        }
+        if($this->create($data)){
+            $uid=$this->add();
+            $this->setForwardCount($rid);
+            sleep(2);
+            return $uid?$uid:0;
+        }else{
+            return $this->getError();
+        }
+
+    }
+
+
+
+
+    //更新主微博的被装发次数
+    private function setForwardCount($rid){
+        $map['id']=$rid;
+        $this->where($map)-$this->setInc('forward_count');
+    }
+
+};

@@ -285,7 +285,6 @@ $(function () {
                         name:space[i].innerHTML.substr(1),
                     },
                     success:function (data) {
-                        alert(data);
                         if(data!=0){
                             $('.space').eq(i).attr('href',data);
                             $('.space').eq(i).attr('flag','true');
@@ -300,6 +299,59 @@ $(function () {
 
         }
     }
+
+    //微博转发按钮
+        $('.forward').on('click',function(){
+            if($(this).parent().parent().prev('div').is(':hidden')){
+                $(this).parent().parent().prev('div').show();
+                $(this).parent().parent().prev('div').find('.forward_text').focus();
+                allHeight();
+            }else{
+                $(this).parent().parent().prev('div').hide();
+                allHeight();
+            }
+        })
+    
+    
+    //微博转发提交按钮
+
+        $('.forward_submit').button().click(function () {
+            rid=$(this).parent().find('.resource_id').val();
+            content=$(this).parent().find('.forward_text').val();
+            $.ajax({
+                url:ThinkPHP['MODULE']+'/Topic/forward',
+                type:'post',
+                data:{
+                    rid:rid,
+                    content:content
+                },
+                beforeSend:function () {
+                    $('#loading').dialog('open');
+                },
+                success:function (responseText) {
+                    if(responseText){
+                        $('#loading').dialog().html('微博转发成功!').addClass('succ').removeClass('loading');
+                        setTimeout(function () {
+                            $('#loading').dialog('close');
+                            $('.forward_box').hide();
+                            $('.forward_text').val('');  //清空转发框的内容
+                            allHeight();
+                            setUrl();
+                        },500);
+
+                    }
+                }
+
+            })
+        })
+
+
+
+
+
+
+
+
 
 
 });

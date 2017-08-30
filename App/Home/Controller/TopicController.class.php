@@ -12,6 +12,7 @@ namespace Home\Controller;
 use Home\Model\ImageModel;
 use Home\Model\TopicModel;
 use function ceil;
+use function I;
 use function session;
 
 class TopicController extends HomeController
@@ -57,7 +58,18 @@ class TopicController extends HomeController
         }
     }
 
-
+    //转发微博
+    public function forward(){
+        if(IS_AJAX){
+            $topicmodel=new TopicModel();
+            $uid=$topicmodel->forward(I('post.rid'),I('post.content'));
+            if($uid){
+                echo $uid;
+            }
+        }else{
+            $this->error('非法访问!');
+        }
+    }
 
 
 };
