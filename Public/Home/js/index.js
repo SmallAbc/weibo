@@ -106,6 +106,7 @@ $(function () {
                         window.uploadCount.clear();
                         $('#loading').dialog('close');
                         allHeight();
+                        setUrl();
                     },1000);
 
                 }
@@ -243,6 +244,7 @@ $(function () {
                             $('#loadmore').before(data);
                             currentPage++;
                             allHeight();
+                            setUrl();
                         }
                     });
                 },1000)
@@ -265,6 +267,39 @@ $(function () {
         scrollText: '返回顶部', // Text for element
         activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
     });
+
+    setUrl();
+
+    //微博@博客名 添加链接
+    function setUrl() {
+        space=$('.space');
+        var len=$('.space').length;
+        for (var i=0;i<len;i++){
+            if($('.space').eq(i).attr('flag')!=='true'){
+                $.ajax({
+                    url:ThinkPHP['MODULE']+'/Space/setUrl',
+                    type:'post',
+                    //将异步调用关闭才能在success内给全局变量space赋值
+                    async:false,
+                    data:{
+                        name:space[i].innerHTML.substr(1),
+                    },
+                    success:function (data) {
+                        alert(data);
+                        if(data!=0){
+                            $('.space').eq(i).attr('href',data);
+                            $('.space').eq(i).attr('flag','true');
+                        }else {
+                            $('.space').eq(i).after(space[i].innerHTML);
+                            $('.space').eq(i).hide().attr('flag', 'true');
+                        }
+                    }
+                })
+            }
+
+
+        }
+    }
 
 
 });

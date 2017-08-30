@@ -10,8 +10,11 @@ namespace Home\Controller;
 
 
 
+use Home\Model\UserModel;
+use const __ROOT__;
 use function I;
 use function json_decode;
+use function U;
 
 class SpaceController extends HomeController
 {
@@ -40,7 +43,19 @@ class SpaceController extends HomeController
         }
     }
 
+    //设置@的链接
+    public function setUrl(){
+        $usermodel=new UserModel();
+        $result=$usermodel->getUser(I('post.name'),'username');
+            if($result){
+                if (empty($result['domain'])){
+                echo U('Space/index',array(id=>$result['id']));
+            }else{
+                echo __ROOT__.'/i/'.$result['domain'];
+            }
+        }
 
+    }
 
 
 

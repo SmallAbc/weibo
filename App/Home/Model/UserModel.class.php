@@ -153,10 +153,10 @@ class UserModel extends RelationModel {
 
 
     //通过一对一关联获取用户信息
-    public function getUser($id,$type='id'){
+    public function getUser($index, $type='id'){
         switch ($type){
             case 'id':
-                if($id==0){
+                if($index==0){
                     $map['id']=session('user_auth')['id'];
                     $user=$this->relation(true)->field('id,username,email,face,domain')->where($map)->find();
                     if(is_null($user['extend'])){
@@ -165,14 +165,20 @@ class UserModel extends RelationModel {
                         $userex->add($data);
                     }
                 }else{
-                    $map['id']=$id;
+                    $map['id']=$index;
                     $user=$this->relation(true)->field('id,username,email,face,domain')->where($map)->find();
                 }
-                break;
+            break;
+
             case 'domain':
-                $map['domain']=$id;
+                $map['domain']=$index;
                 $user=$this->relation(true)->field('id,username,email,face,domain')->where($map)->find();
-                break;
+            break;
+
+            case 'username':
+                $map['username']=$index;
+                $user=$this->field('id,domain')->where($map)->find();
+            break;
         }
         return $user;
     }

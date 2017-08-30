@@ -16,6 +16,7 @@ use function get_client_ip;
 use function is_null;
 use function json_decode;
 use function mb_strlen;
+use function preg_replace;
 use function sleep;
 use function strtotime;
 
@@ -73,7 +74,11 @@ class TopicModel extends RelationModel
                 $list[$key]['time']=date('Y年m月d日 H:i:s',$value['create_date']);
             }
             $list[$key]['content'].=$list[$key]['content_over'];
+            //在结尾加个空格,以便在末尾的@可以被找到
+            $list[$key]['content'].=' ';
             $list[$key]['content']=preg_replace('/\[(a|b|c|d)([0-9]+)\]/i','<img src="'.__ROOT__.'/public/home/face/$1/$2.gif" border="0">',$list[$key]['content']);
+            $list[$key]['content']=preg_replace('/(@\S+)\s/i','<a class="space" href="assignByAjax">$1</a>',$list[$key]['content']);
+
         }
         return $list;
     }
