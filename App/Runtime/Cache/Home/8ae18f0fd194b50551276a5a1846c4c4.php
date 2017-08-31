@@ -218,7 +218,42 @@
                             <?php else: ?>
                                 <a href="/weibo/i/<?php echo ($obj["domain"]); ?>"><?php echo ($obj["username"]); ?></a><?php endif; ?>
                         </h4>
-                        <p><?php echo ($obj["content"]); ?></p>
+                        <!--文字内容部分-->
+                        <?php if(empty($obj["rid"])): ?><p><?php echo ($obj["content"]); ?></p>
+                            <?php else: ?>
+                            <p><?php echo ($obj["content"]); ?></p>
+                            <div class="forward_content">
+                                <h4>
+                                    <?php if(empty($obj["forward_content"]["domain"])): ?><a href="<?php echo U('Space/index',array('id'=>$obj["forward_content"]["uid"]));?>">@<?php echo ($obj["forward_content"]["username"]); ?></a>
+                                        <?php else: ?>
+                                        <a href="/weibo/i/<?php echo ($obj["forward_content"]["domain"]); ?>">@<?php echo ($obj["forward_content"]["username"]); ?></a><?php endif; ?>
+                                </h4>
+                                <!--转发源微博文字内容部分-->
+                                    <p><?php echo ($obj["forward_content"]["content"]); ?></p>
+
+                                <!--转发微博的图片部分-->
+                                <?php switch($obj["forward_content"]["count"]): case "0": break;?>
+                                    <?php case "1": ?><div class="img" style="display: block;"><img src="/weibo<?php echo ($obj["forward_content"]["image"]["0"]["thumb"]); ?>" alt=""></div>
+                                        <div class="img_zoom" style="display: none;">
+                                            <ol>
+                                                <li class="in"><a href="javascript:void(0);">收起</a></li>
+                                                <li class="source"><a href="/weibo<?php echo ($obj["forward_content"]["image"]["0"]["source"]); ?>" target="_blank">查看原图</a></li>
+                                            </ol>
+                                            <img data="/weibo<?php echo ($obj["forward_content"]["image"]["0"]["unfold"]); ?>" src="/weibo/Public/Home/img/loading_100.png" alt="">
+                                        </div><?php break;?>
+                                    <!--多张图片-->
+                                    <?php default: ?>
+                                    <?php if(is_array($obj["forward_content"]["image"])): $i = 0; $__LIST__ = $obj["forward_content"]["image"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$imgs): $mod = ($i % 2 );++$i;?><div class="imgs"><img src="/weibo<?php echo ($imgs["thumb"]); ?>" alt=""></div>
+                                        <div class="img_zoom" style="display: none;">
+                                            <ol>
+                                                <li class="in"><a href="javascript:void(0);">收起</a></li>
+                                                <li class="source"><a href="/weibo<?php echo ($imgs["source"]); ?>" target="_blank">查看原图</a></li>
+                                            </ol>
+                                            <img data="/weibo<?php echo ($imgs["unfold"]); ?>" src="/weibo/Public/Home/img/loading_100.png" alt="">
+                                        </div><?php endforeach; endif; else: echo "" ;endif; endswitch;?>
+                            </div><?php endif; ?>
+
+                        <!--图片部分-->
                         <?php switch($obj["count"]): case "0": break;?>
                             <?php case "1": ?><div class="img" style="display: block;"><img src="/weibo<?php echo ($obj["image"]["0"]["thumb"]); ?>" alt=""></div>
                                 <div class="img_zoom" style="display: none;">
@@ -228,6 +263,7 @@
                                     </ol>
                                     <img data="/weibo<?php echo ($obj["image"]["0"]["unfold"]); ?>" src="/weibo/Public/Home/img/loading_100.png" alt="">
                                 </div><?php break;?>
+                            <!--多张图片-->
                             <?php default: ?>
                                 <?php if(is_array($obj["image"])): $i = 0; $__LIST__ = $obj["image"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$imgs): $mod = ($i % 2 );++$i;?><div class="imgs"><img src="/weibo<?php echo ($imgs["thumb"]); ?>" alt=""></div>
                                     <div class="img_zoom" style="display: none;">

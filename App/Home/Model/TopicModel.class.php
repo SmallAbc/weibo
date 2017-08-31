@@ -83,17 +83,31 @@ class TopicModel extends RelationModel
         }
         return $list;
     }
-    //连接数据库
+    //获取多个微博数据
     public function getUser($first=0, $size=10){
         $topiclist=$this ->relation(true)
                                 ->table('__TOPIC__ a,__USER__ b')
-                                ->field('a.id,a.content,a.content_over,a.create_date,a.uid,b.username,b.face,b.domain')
+                                ->field('a.id,a.content,a.content_over,a.create_date,a.uid,a.rid,b.username,b.face,b.domain')
                                 ->limit($first,$size)
                                 ->order('create_date DESC')
                                 ->where('a.uid=b.id')
                                 ->select();
 
         return $this->format($topiclist);
+    }
+
+    //获取单个微博数据
+    public function getOneTopic($id){
+        $map['a.id']=$id;
+        $onelist=$this ->relation(true)
+            ->table('__TOPIC__ a,__USER__ b')
+            ->field('a.id,a.content,a.content_over,a.create_date,a.uid,a.rid,b.username,b.face,b.domain')
+            ->limit(0,1)
+            ->where('b.id=a.uid')
+            ->where($map)
+            ->select();
+
+        return $this->format($onelist);
     }
 
 

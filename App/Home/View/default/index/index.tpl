@@ -163,7 +163,52 @@
                                 <a href="__ROOT__/i/{$obj.domain}">{$obj.username}</a>
                             </empty>
                         </h4>
-                        <p>{$obj.content}</p>
+                        <!--文字内容部分-->
+                        <empty name="obj.rid">
+                            <p>{$obj.content}</p>
+                            <else/>
+                            <p>{$obj.content}</p>
+                            <div class="forward_content">
+                                <h4>
+                                    <empty name="obj.forward_content.domain">
+                                        <a href="{:U('Space/index',array('id'=>$obj["forward_content"]["uid"]))}">@{$obj.forward_content.username}</a>
+                                        <else/>
+                                        <a href="__ROOT__/i/{$obj.forward_content.domain}">@{$obj.forward_content.username}</a>
+                                    </empty>
+                                </h4>
+                                <!--转发源微博文字内容部分-->
+                                    <p>{$obj.forward_content.content}</p>
+
+                                <!--转发微博的图片部分-->
+                                <switch name="obj.forward_content.count">
+                                    <case value="0"></case>
+                                    <case value="1">
+                                        <div class="img" style="display: block;"><img src="__ROOT__{$obj.forward_content.image.0.thumb}" alt=""></div>
+                                        <div class="img_zoom" style="display: none;">
+                                            <ol>
+                                                <li class="in"><a href="javascript:void(0);">收起</a></li>
+                                                <li class="source"><a href="__ROOT__{$obj.forward_content.image.0.source}" target="_blank">查看原图</a></li>
+                                            </ol>
+                                            <img data="__ROOT__{$obj.forward_content.image.0.unfold}" src="__IMG__/loading_100.png" alt="">
+                                        </div>
+                                    </case>
+                                    <!--多张图片-->
+                                    <default/>
+                                    <volist name="obj.forward_content.image" id="imgs" >
+                                        <div class="imgs"><img src="__ROOT__{$imgs.thumb}" alt=""></div>
+                                        <div class="img_zoom" style="display: none;">
+                                            <ol>
+                                                <li class="in"><a href="javascript:void(0);">收起</a></li>
+                                                <li class="source"><a href="__ROOT__{$imgs.source}" target="_blank">查看原图</a></li>
+                                            </ol>
+                                            <img data="__ROOT__{$imgs.unfold}" src="__IMG__/loading_100.png" alt="">
+                                        </div>
+                                    </volist>
+                                </switch>
+                            </div>
+                        </empty>
+
+                        <!--图片部分-->
                         <switch name="obj.count">
                             <case value="0"></case>
                             <case value="1">
@@ -176,6 +221,7 @@
                                     <img data="__ROOT__{$obj.image.0.unfold}" src="__IMG__/loading_100.png" alt="">
                                 </div>
                             </case>
+                            <!--多张图片-->
                             <default/>
                                 <volist name="obj.image" id="imgs" >
                                     <div class="imgs"><img src="__ROOT__{$imgs.thumb}" alt=""></div>
