@@ -105,13 +105,18 @@ class CommentModel extends RelationModel
 
 
     //获取微博评论列表
-    public function getComment($id){
+    public function getComment($id,$first,$size){
         $map['a.tid']=$id;
-       $result=$this->format($this->table('__COMMENT__ a,__USER__ b')->field('a.id,a.content,a.create_date,a.uid,a.tid,b.username,b.domain')->where('a.uid=b.id')->where($map)->select());
+       $result=$this->format($this->table('__COMMENT__ a,__USER__ b')->field('a.id,a.content,a.create_date,a.uid,a.tid,b.username,b.domain')->limit($first,$size)->where('a.uid=b.id')->where($map)->order('a.create_date desc')->select());
         return $result;
 
     }
 
-
+    //获取微博评论总条数
+    public function getCount($id){
+        $map['a.tid']=$id;
+        $count=$this->table('__COMMENT__ a,__USER__ b')->field('a.id,a.content,a.create_date,a.uid,a.tid,b.username,b.domain')->where('a.uid=b.id')->where($map)->count();
+        return $count;
+    }
 
 };

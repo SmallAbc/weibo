@@ -12,4 +12,7 @@
             <li class="line">{$obj.time}</li>
         </volist>
     </ol>
+    <div class="page">
+        <for start="1" end='$pagetotal' comparison="elt" name="i"><a class="pagetag" href="javascript:void (0);" flag="{$i}">{$i}</a> </for>
+    </div>
 </div>

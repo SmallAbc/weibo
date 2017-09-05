@@ -332,6 +332,7 @@ $(function () {
                     },
                     success:function (data,responT,msg) {
                         loading.before(data).hide();
+                        loading.prev('div').find('.page').find('a').eq(0).addClass('selected');
 
                     }
                 });
@@ -408,6 +409,32 @@ $(function () {
             })
         })
 
+
+        //微博评论的标签页码按钮
+        //由于页码的pagetag是后面加上去的所以只能使用事件委托,即加载这个按钮的时候,pagetag是还没有出现的,用它添加到的地方的祖宗节点代收,再传递给它
+        $('.comment_box').on('click','.pagetag',function () {
+            currentpage=$(this).attr('flag');
+            tid=$(this).parent().parent().parent().parent().find('.resource_id').val();
+            loading=$(this).parent().parent().parent().parent().find('.loading_comment');
+            $(this).addClass('selected');
+                $.ajax({
+                    url:ThinkPHP['MODULE']+'/Comment/commentList',
+                    type:'post',
+                    data:{
+                        'tid':tid,
+                        'currentpage':currentpage
+                    },
+                    beforeSend:function () {
+                        loading.show();
+                    },
+                    success:function (data,responT,msg) {
+                        loading.prev('div').remove();
+                        loading.before(data).hide();
+                        loading.prev('div').find('.page').find('a').eq(currentpage-1).addClass('selected');
+                    }
+                });
+                allHeight();
+        })
 
 
 

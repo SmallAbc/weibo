@@ -501,21 +501,46 @@
     font-weight: bold;
 }
 
-.comment_content{
-    border:1px solid #d6d6d6;
+.comment_content {
+    border: 1px solid #d6d6d6;
     width: 94%;
     margin-top: 40px;
 }
 
-.comment_list{
-    padding:5px 15px 0 15px;
+.comment_list {
+    padding: 5px 15px 0 15px;
 }
 
-.comment_list li{
+.comment_list li {
     line-height: 200%;
+    word-wrap: break-word;
 }
 
-.comment_list li.line{
-    border-bottom:1px solid #eee;
+.comment_list li.line {
+    border-bottom: 1px solid #eee;
     color: #999;
+}
+
+.page {
+    height: 35px;
+    line-height: 35px;
+    float: right;
+}
+
+.page a {
+    text-decoration: none;
+    margin: 0 5px;
+    padding:5px 10px;
+
+}
+
+.page a:hover {
+    background: #f4f4f4;
+    color: #c3490e;
+    font-weight: bold;
+}
+.page a.selected {
+    background: #113233;
+    color: #e1e1e1;
+    font-weight: bold;
 }
