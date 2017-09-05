@@ -10,18 +10,14 @@ namespace Home\Model;
 
 
 use Think\Model\RelationModel;
-use function count;
 use function date;
 use function get_client_ip;
-use function is_null;
-use function json_decode;
 use function mb_strlen;
 use function preg_replace;
-use function session;
 use function sleep;
 use function strtotime;
 
-class TopicModel extends RelationModel
+class CommentModel extends RelationModel
 {
     //自动完成
     protected $_auto=array(
@@ -50,16 +46,7 @@ class TopicModel extends RelationModel
     //解析图片json数据
     public function format($list){
         foreach ($list as $key=>$value){
-            if (!is_null($value['image'])){
-                foreach ($value['image'] as $key2=>$value2){
-                    $value['image'][$key2]=json_decode($value2['data'],true);
-                }
-            }
-            if(!is_null($value['face'])){
-                $value['face']=json_decode($value['face'],true);
-            }
             $list[$key]=$value;
-            $list[$key]['count']=count($value['image']);
             $time=NOW_TIME-$value['create_date'];
             if($time<60){
                 $list[$key]['time']='刚刚';
@@ -86,36 +73,10 @@ class TopicModel extends RelationModel
         }
         return $list;
     }
-    //获取多个微博数据
-    public function getUser($first=0, $size=10){
-        $topiclist=$this ->relation(true)
-                                ->table('__TOPIC__ a,__USER__ b')
-                                ->field('a.id,a.content,a.content_over,a.create_date,a.uid,a.rid,b.username,b.face,b.domain')
-                                ->limit($first,$size)
-                                ->order('create_date DESC')
-                                ->where('a.uid=b.id')
-                                ->select();
-
-        return $this->format($topiclist);
-    }
-
-    //获取单个微博数据
-    public function getOneTopic($id){
-        $map['a.id']=$id;
-        $onelist=$this ->relation(true)
-            ->table('__TOPIC__ a,__USER__ b')
-            ->field('a.id,a.content,a.content_over,a.create_date,a.uid,a.rid,b.username,b.face,b.domain')
-            ->limit(0,1)
-            ->where('b.id=a.uid')
-            ->where($map)
-            ->select();
-
-        return $this->format($onelist);
-    }
 
 
     //发布微博
-    public function publish($allcontent,$uid){
+    public function publish($allcontent,$uid,$tid){
         $len=mb_strlen($allcontent,'utf-8');
         if ($len>255){
             $content=mb_substr($allcontent,0,255,'utf-8');
@@ -124,11 +85,11 @@ class TopicModel extends RelationModel
             $content=$allcontent;
             $content_over='';
         }
-        echo $uid;
         $data=array(
           'content'=>$content,
             'uid'=>$uid,
-            'ip'=>get_client_ip(1)
+            'ip'=>get_client_ip(1),
+            'tid'=>$tid
         );
         if(!empty($content_over)){
             $data['content_over']=$content_over;
@@ -142,49 +103,15 @@ class TopicModel extends RelationModel
         }
     }
 
-    //转发微博
-    public function forward($rid,$allcontent){
-        $len=mb_strlen($allcontent,'utf-8');
-        if ($len>255){
-            $content=mb_substr($allcontent,0,255,'utf-8');
-            $content_over=mb_substr($allcontent,255,280,'utf-8');
-        }else{
-            $content=$allcontent;
-            $content_over='';
-        }
-        $data=array(
-            'content'=>$content,
-            'uid'=>session('user_auth')['id'],
-            'rid'=>$rid,
-            'ip'=>get_client_ip(1)
-        );
-        if(!empty($content_over)){
-            $data['content_over']=$content_over;
-        }
-        if($this->create($data)){
-            $uid=$this->add();
-            $this->setForwardCount($rid);
-            sleep(2);
-            return $uid?$uid:0;
-        }else{
-            return $this->getError();
-        }
+
+    //获取微博评论列表
+    public function getComment($id){
+        $map['a.tid']=$id;
+       $result=$this->format($this->table('__COMMENT__ a,__USER__ b')->field('a.id,a.content,a.create_date,a.uid,a.tid,b.username,b.domain')->where('a.uid=b.id')->where($map)->select());
+        return $result;
 
     }
 
 
-
-
-    //更新主微博的被转发次数
-    private function setForwardCount($rid){
-        $map['id']=$rid;
-        $this->where($map)->setInc('forward_count');
-    }
-
-    //更新主微博的被评论次数
-    public function setCommentCount($rid){
-        $map['id']=$rid;
-        $this->where($map)->setInc('comment_count');
-    }
 
 };

@@ -302,14 +302,45 @@ $(function () {
 
     //微博转发按钮
         $('.forward').on('click',function(){
-            if($(this).parent().parent().prev('div').is(':hidden')){
-                $(this).parent().parent().prev('div').show();
-                $(this).parent().parent().prev('div').find('.forward_text').focus();
+            if($(this).parent().parent().parent().find('.forward_box').is(':hidden')){
+                $(this).parent().parent().parent().find('.comment_box').hide();
+                $(this).parent().parent().parent().find('.forward_box').show();
+                $(this).parent().parent().parent().find('.forward_box').find('.forward_text').focus();
                 allHeight();
             }else{
-                $(this).parent().parent().prev('div').hide();
+                $(this).parent().parent().parent().find('.forward_box').hide();
                 allHeight();
             }
+        })
+    //微博评论按钮
+        $('.comment').on('click',function(){
+            tid=$(this).parent().parent().prev('div').find('.resource_id').val();
+            loading=$(this).parent().parent().prev('div').find('.loading_comment');
+            if($(this).parent().parent().parent().find('.comment_box').is(':hidden')){
+                $(this).parent().parent().parent().find('.forward_box').hide();
+                $(this).parent().parent().parent().find('.comment_box').show();
+                $(this).parent().parent().parent().find('.comment_box').find('.comment_text').focus();
+                $('.comment_content').remove();
+                $.ajax({
+                    url:ThinkPHP['MODULE']+'/Comment/commentList',
+                    type:'post',
+                    data:{
+                        'tid':tid
+                    },
+                    beforeSend:function () {
+                        loading.show();
+                    },
+                    success:function (data,responT,msg) {
+                        loading.before(data).hide();
+
+                    }
+                });
+                allHeight();
+            }else{
+                $(this).parent().parent().parent().find('.comment_box').hide();
+                $('.comment_content').remove();
+                allHeight();
+            };
         })
     
     
@@ -326,7 +357,7 @@ $(function () {
                     content:content
                 },
                 beforeSend:function () {
-                    $('#loading').dialog('open');
+                    $('#loading').dialog('open').html('评论发布中...').addClass('loading');
                 },
                 success:function (responseText) {
                     if(responseText){
@@ -338,7 +369,39 @@ $(function () {
                             allHeight();
                             setUrl();
                         },500);
+                    location.reload(true);
+                    }
+                }
 
+            })
+        })
+
+
+    //微博评论提交按钮
+
+        $('.comment_submit').button().click(function () {
+            rid=$(this).parent().find('.resource_id').val();
+            content=$(this).parent().find('.forward_text').val();
+            $.ajax({
+                url:ThinkPHP['MODULE']+'/Comment/publish',
+                type:'post',
+                data:{
+                    tid:rid,
+                    content:content
+                },
+                beforeSend:function () {
+                    $('#loading').dialog('open').html('评论发布中...').addClass('loading');
+                },
+                success:function (data,responseText,msg) {
+                    if(responseText){
+                        $('#loading').dialog().html('评论发布成功!').addClass('succ').removeClass('loading');
+                        setTimeout(function () {
+                            $('#loading').dialog('close');
+                            $('.comment_box').hide();
+                            $('.forward_text').val('');  //清空转发框的内容
+                            allHeight();
+                            setUrl();
+                        },500);
                     }
                 }
 

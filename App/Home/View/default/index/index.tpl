@@ -234,16 +234,32 @@
                                     </div>
                                 </volist>
                         </switch>
-                        <div class="forward_box" style="display: none">
+                        <div class="forward_box fc_box" style="display: none">
                             <span>请输入转发评论:</span>
-                            <textarea class="forward_text"  name="forward_text"></textarea>
-                            <input type="hidden" value="{$obj.id}" name="resource_id" class="resource_id">
+                            <textarea class="forward_text"  name="forward_text">//@{$obj.username} : {$obj.textarea}</textarea>
+                            <empty name="obj.forward_content.id">
+                                <input type="hidden" value="{$obj.id}" name="resource_id" class="resource_id">
+                                <else/>
+                                <input type="hidden" value="{$obj.forward_content.id}" name="resource_id" class="resource_id">
+                            </empty>
                             <input type="submit" name="submit" class="forward_submit" value="转发">
                         </div>
-
+                        <div class="comment_box fc_box" style="display: none">
+                            <span>请输入要发表的评论:</span>
+                            <textarea class="forward_text"  name="forward_text"></textarea>
+                            <empty name="obj.forward_content.id">
+                                <input type="hidden" value="{$obj.id}" name="resource_id" class="resource_id">
+                                <else/>
+                                <input type="hidden" value="{$obj.forward_content.id}" name="resource_id" class="resource_id">
+                            </empty>
+                            <input type="submit" name="submit" class="comment_submit" value="发表">
+                            <div>
+                                <p class="loading_comment" ><img  src="__IMG__/loadmore.gif" alt="">评论加载中</p>
+                            </div>
+                        </div>
                         <div class="footer">
                             <span class="time">{$obj.time}发布</span>
-                            <span class="handler">赞(0) | <a class="forward" href="javascript:void(0);">转发</a> | 评论 | 收藏</span>
+                            <span class="handler">赞(0) | <a class="forward" href="javascript:void(0);">转发</a> | <a class="comment" href="javascript:void(0);">评论</a> | 收藏</span>
                         </div>
                     </dd>
                 </dl>
