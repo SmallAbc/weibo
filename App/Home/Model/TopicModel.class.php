@@ -11,15 +11,18 @@ namespace Home\Model;
 
 use Think\Model\RelationModel;
 use function count;
+use function D;
 use function date;
 use function get_client_ip;
 use function is_null;
 use function json_decode;
 use function mb_strlen;
+use function preg_match_all;
 use function preg_replace;
 use function session;
 use function sleep;
 use function strtotime;
+use function substr;
 
 class TopicModel extends RelationModel
 {
@@ -124,7 +127,6 @@ class TopicModel extends RelationModel
             $content=$allcontent;
             $content_over='';
         }
-        echo $uid;
         $data=array(
           'content'=>$content,
             'uid'=>$uid,
@@ -134,9 +136,12 @@ class TopicModel extends RelationModel
             $data['content_over']=$content_over;
         }
         if($this->create($data)){
-            $uid=$this->add();
+            //微博发布完成
             sleep(2);
-            return $uid?$uid:0;
+            $tid=$this->add();
+            //过滤@信息
+            $this->refer($allcontent,$tid);
+            return $tid?$tid:0;
         }else{
             return $this->getError();
         }
@@ -185,6 +190,26 @@ class TopicModel extends RelationModel
     public function setCommentCount($rid){
         $map['id']=$rid;
         $this->where($map)->setInc('comment_count');
+    }
+
+
+
+    //@信息提取
+    public function refer($content,$tid){
+        $pattern='/(@\S+)\s/i';
+        preg_match_all($pattern,$content,$attr);
+        if(!empty($attr[0])){
+            $user=D('User');
+            $refer=D('Refer');
+            foreach ($attr[0] as $key => $value){
+                 $username=substr(substr($value,1),0,-1);
+                 if($result=$user->getUser($username,'username')){
+                     $uid=$result['id'];
+                     $refer->referto($tid,$uid);
+                 }
+
+            }
+        }
     }
 
 };

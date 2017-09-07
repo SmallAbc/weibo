@@ -8,8 +8,10 @@
 
 namespace Home\Controller;
 
+use function D;
 use function I;
 use function json_decode;
+use function session;
 use function sleep;
 
 class SettingController extends HomeController
@@ -69,6 +71,22 @@ class SettingController extends HomeController
     }
 
 
+    //查看@提及我的信息
+    public function refer(){
+        $refer=D('Refer');
+        $result=$refer->getRefer(session('user_auth')['id']);
+        $this->assign('refer',$result);
+        $this->display();
+    }
+
+
+    //设置提及我的信息已读状态
+    public function  setRead(){
+        if (IS_AJAX){
+            $refer=D('Refer');
+            $refer->setRead(I('post.flag'),I('post.id'));
+        }
+    }
 
 
 };

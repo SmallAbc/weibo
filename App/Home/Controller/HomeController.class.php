@@ -9,6 +9,7 @@
 namespace Home\Controller;
 
 
+use Home\Model\ReferModel;
 use Home\Model\UserModel;
 use Think\Controller;
 use function cookie;
@@ -20,6 +21,14 @@ use function time;
 
 class HomeController extends Controller
 {
+
+    //构造方法,加载一些进入页面就看到的初始信息,不需要额外运行别的方法
+    public function _initialize(){
+        $refer=new ReferModel();
+        $count=$refer->getReferCount(session('user_auth')['id']);
+        echo $count;
+        $this->assign('count',$count);
+    }
     //检测用户登录状态
     protected function login(){
         if (!is_null(cookie('auto')) && !session('?user_auth')) {

@@ -99,3 +99,16 @@
     width: 80px;
     margin-left: 55px;
 }
+
+
+.red{
+    color: #cd0a0a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.green{
+    color: #00ee00;
+    text-decoration: none;
+}

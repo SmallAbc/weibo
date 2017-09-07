@@ -131,18 +131,19 @@ class UserModel extends RelationModel {
 
 
     //验证数据,用户名是否被占用,邮箱是否被占用,验证码是否正确
-    public function checkField($field,$type){
+    public function checkField($value,$type){
         $data=array();
         switch ($type){
             case 'username':
-                $data['username']=$field;
+                $data['username']=$value;
+                echo $value;
                 break;
 
             case 'email':
-                $data['email']=$field;
+                $data['email']=$value;
                 break;
                 case 'verify':
-                $data['verify']=$field;
+                $data['verify']=$value;
                 break;
             default:
                 return 0;

@@ -269,7 +269,26 @@ $(function(){
     })
 
 
+    //@提及页面未读按钮
+    $('.read').on('click',function () {
+       flag=$(this).attr('flag');
+       id=$(this).attr('atid');
+        $.ajax({
+                url:ThinkPHP['MODULE']+'/Setting/setRead',
+                type:'post',
+            data:{
+                flag:flag,
+                id:id
+            },
+            beforeSend:function () {
+                
+            },
+            success:function () {
+                location.reload();
+            }
 
+            })
+    })
 
 
 

@@ -14,7 +14,13 @@
         <li><a href="###">蜡笔小新</a></li>
         <li class="app"><span>消息
             <dl class="list">
-                <dd><a href="#">@提到我的</a></dd>
+                <dd><a href="{:U('Setting/refer')}">
+                        <empty name="count">
+                            @提及我的
+                            <else/>
+                            @提及我<span class="refercount">({$count})</span>
+                        </empty>
+                    </a></dd>
                 <dd><a href="#">收到的评论</a></dd>
                 <dd><a href="#">发出的评论</a></dd>
                 <dd><a href="#">我的私信</a></dd>
