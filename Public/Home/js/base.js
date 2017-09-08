@@ -35,4 +35,37 @@ $(function () {
         resizable:false,
         closeOnEscape:false
     }).parent().find('.ui-dialog-titlebar').hide();
+
+    //@信息提示框关闭按钮
+    $('.referbox').find('i').click(function () {
+        $('.referbox').remove();
+    })
+
+
+    //加载完成后执行一遍refer()
+    refer();
+    //refer轮询刷新
+    function refer(){
+        $.ajax({
+            url:ThinkPHP['MODULE']+'/Home/getReferCount',
+            type:'post',
+            data:{
+
+            },
+            success:function (data,reText,msg) {
+                if(data>0){
+                    $('.referbox').find('span').text('('+data+')').addClass('red');
+                    $('.referbox').show();
+                    $('.refercount').text('('+data+')');
+                }else{
+                    $('.referbox').hide();
+                }
+            }
+        })
+        setTimeout(function () {
+            refer();
+        },60000);
+    }
+
+
 });

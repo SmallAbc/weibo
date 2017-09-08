@@ -23,11 +23,24 @@ class HomeController extends Controller
 {
 
     //构造方法,加载一些进入页面就看到的初始信息,不需要额外运行别的方法
-    public function _initialize(){
-        $refer=new ReferModel();
-        $count=$refer->getReferCount(session('user_auth')['id']);
-        echo $count;
-        $this->assign('count',$count);
+//    public function _initialize(){
+//        $refer=new ReferModel();
+//        $count=$refer->getReferCount(session('user_auth')['id']);
+//        echo $count;
+//        $this->assign('count',$count);
+//    }
+
+
+    //不通过构造方法加载,改成通过ajax轮询加载
+    public function getReferCount(){
+        if (IS_AJAX){
+            $refer=new ReferModel();
+            $count=$refer->getReferCount(session('user_auth')['id']);
+            echo $count;
+        }else{
+            $this->error('非法操作!');
+        }
+
     }
     //检测用户登录状态
     protected function login(){

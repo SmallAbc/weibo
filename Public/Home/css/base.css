@@ -172,3 +172,34 @@ ul,ol{
 .refercount{
     color: #ee1520;
 }
+
+.referbox{
+    clear: both;
+    background: #f0f0f0;
+    font-size:12px;
+    position: relative;
+    left:700px;
+    text-align: center;
+    width: 120px;
+    height:35px;
+    line-height: 35px;
+    border:1px solid #666666;
+}
+
+.referbox span{
+    font-weight:bold;
+}
+
+.referbox i{
+    height: 15px;
+    line-height: 15px;
+    color: #a2a2a2;
+    cursor: pointer;
+    border: 1px solid #cccccc;
+    float: right;
+}
+
+.referbox span.red{
+    color: #cd0a0a;
+    font-weight: bold;
+}

@@ -15,11 +15,12 @@
         <li class="app"><span>消息
             <dl class="list">
                 <dd><a href="{:U('Setting/refer')}">
-                        <empty name="count">
+                        <!--<empty name="count">
                             @提及我的
                             <else/>
                             @提及我<span class="refercount">({$count})</span>
-                        </empty>
+                        </empty>-->
+                        @提及我<span class="refercount"></span>
                     </a></dd>
                 <dd><a href="#">收到的评论</a></dd>
                 <dd><a href="#">发出的评论</a></dd>
@@ -28,14 +29,16 @@
                 <dd><a href="#" class="line">发私信</a></dd>
             </dl>
           </span></li>
-        <li class="app"><span>账号
-              <dl class="list">
-                <dd><a href="{:U('Setting/index')}">个人设置</a></dd>
-                <dd><a href="#">排行榜</a></dd>
-                <dd><a href="#">申请认证</a></dd>
-                <dd><a href="{:u('User/logout')}" class="line">退出</a></dd>
-            </dl>
-          </span></li>
+        <li class="app">
+            <span>账号
+                <dl class="list">
+                    <dd><a href="{:U('Setting/index')}">个人设置</a></dd>
+                    <dd><a href="#">排行榜</a></dd>
+                    <dd><a href="#">申请认证</a></dd>
+                    <dd><a href="{:u('User/logout')}" class="line">退出</a></dd>
+                </dl>
+            </span>
+        </li>
       </ul>
     </div>
     <div class="search">
@@ -43,5 +46,7 @@
       <label for="search"><input type="text" id="search" name="search" placeholder="请输入文章或或作者关键字" ></label>
       <a href="javascript:void (0)"></a>
     </div>
+      <div class="referbox" style="display: none;">有<span></span>条@你的信息! <i>X</i>
+      </div>
   </div>
 </div>
