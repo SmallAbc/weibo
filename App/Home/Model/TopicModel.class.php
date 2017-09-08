@@ -194,7 +194,7 @@ class TopicModel extends RelationModel
 
 
 
-    //@信息提取
+    //@提及信息提取
     public function refer($content,$tid){
         $pattern='/(@\S+)\s/i';
         preg_match_all($pattern,$content,$attr);

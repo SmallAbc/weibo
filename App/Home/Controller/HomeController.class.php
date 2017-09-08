@@ -9,13 +9,13 @@
 namespace Home\Controller;
 
 
-use Home\Model\ReferModel;
 use Home\Model\UserModel;
 use Think\Controller;
 use function cookie;
 use function explode;
 use function get_client_ip;
 use function json_decode;
+use function S;
 use function session;
 use function time;
 
@@ -34,8 +34,12 @@ class HomeController extends Controller
     //不通过构造方法加载,改成通过ajax轮询加载
     public function getReferCount(){
         if (IS_AJAX){
-            $refer=new ReferModel();
-            $count=$refer->getReferCount(session('user_auth')['id']);
+//            $refer=new ReferModel();
+//            //通过获取数据库信息返回给ajax
+//            $count=$refer->getReferCount(session('user_auth')['id']);
+            //通过获取缓存内容,不需要通过数据库,减轻数据库的压力
+            //由于memcached没能正常安装上,这里我们采用的是ThinkPhP的File缓存
+            $count=S('refer'.session('user_auth')['id']);
             echo $count;
         }else{
             $this->error('非法操作!');

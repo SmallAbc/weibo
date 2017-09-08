@@ -12,6 +12,8 @@ namespace Home\Model;
 use Think\Model\RelationModel;
 use function count;
 use function date;
+use function S;
+use function session;
 use function strtotime;
 
 class ReferModel extends RelationModel
@@ -45,7 +47,15 @@ class ReferModel extends RelationModel
             'uid'=>$uid
         );
         $this->create($data);
+        if($count=S('refer'.$uid)){
+            S('refer'.$uid,$count+1);
+        }else{
+            S('refer'.$uid,1);
+        }
+
         return $this->add();
+        //增加完成后要生成缓存内容,给前台调用
+
     }
 
 
@@ -69,9 +79,16 @@ class ReferModel extends RelationModel
         switch ($flag){
             case '0':
                 $data['read']=1;
+                $count=S('refer'.session('user_auth')['id']);
+                S('refer'.session('user_auth')['id'],$count-1);
             break;
             case '1':
                 $data['read']=0;
+                if($count=S('refer'.session('user_auth')['id'])){
+                    S('refer'.session('user_auth')['id'],$count+1);
+                }else{
+                    S('refer'.session('user_auth')['id'],1);
+                }
             break;
         }
         $this->where($map)->save($data);
