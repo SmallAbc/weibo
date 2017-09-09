@@ -1,0 +1,18 @@
+@charset "UTF-8";
+.panel-tool{
+    display: none;
+}
+
+#loginbox p{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#loginbox p input{
+    width: 170px;
+}
+
+
+#btn {
+    text-align: center;
+}
