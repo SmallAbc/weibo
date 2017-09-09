@@ -9,9 +9,12 @@
     <link rel="stylesheet" href="__EASYUI__/themes/bootstrap/easyui.css">
     <link rel="stylesheet" href="__EASYUI__/themes/icon.css">
     <link rel="stylesheet" href="__CSS__/login.css">
+    <include file="public/base" />
+
     <title>微博系统后台登录</title>
 </head>
 <body>
+
 <div id="loginbox">
     <p>账号:<input type="text" class="admin" id="admin" name="admin"></p>
     <p>密码:<input type="password" class="password" id="password" name="password"></p>

@@ -43,7 +43,7 @@ class UserModel extends RelationModel {
     //自动验证
     protected $_validate=array(
         //-1,'用户名须在2位到20位之间!'
-        array('username','^[^@]{2,20}$/i',-1,self::EXISTS_VALIDATE,'length'),
+        array('username','/^[^@]{2,20}$/i',-1,self::EXISTS_VALIDATE),
         //-2 '密码须在6位到30位之间!'
         array('password','6,30',-2,self::EXISTS_VALIDATE,'length'),
         //-3 '两次输入的密码不一致!'

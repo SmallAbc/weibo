@@ -36,16 +36,37 @@ $(function () {
     
     //登录按钮,登录提交
     $('#btn a').on('click',function () {
-        if($('#admin').validatebox('isValid')){
-
-            if($('#password').validatebox('isValid')){
-                alert('登录中!!');
-            }else{
-                $('#password').focus();
-            }
-        }else{
+        if(!$('#admin').validatebox('isValid')){
             $('#admin').focus();
+        }else if(!$('#password').validatebox('isValid')){
+            $('#password').focus();
+        }else{
+               $.ajax({
+                    url:ThinkPHP['MODULE']+'/Login/checkManager',
+                    type:'post',
+                   data:{
+                        manager:$('#admin').val(),
+                       password:$('#password').val()
+                   },
+                   beforeSend:function () {
+                     $.messager.progress({
+                         text:'登录中...'
+                     });
+                   },
+                   success:function (data,reText,msg) {
+                       $.messager.progress('close');
+                       if(data>0){
+                        location.href=ThinkPHP['INDEX'];
+                       }else{
+                           $.messager.alert('登录失败!','管理员账号或密码错误!','warning',function () {
+                               $('#password').select();
+                           });
+                       }
+                   }
+                   
+            })
         }
+
     })
 
 
