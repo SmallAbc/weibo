@@ -55,10 +55,4 @@ class ManagerModel extends Model
     }
 
 
-    //验证管理员账号
-    public function checkManager(){
-
-            echo true;
-
-    }
 }

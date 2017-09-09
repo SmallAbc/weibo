@@ -1,0 +1,43 @@
+@charset "UTF-8";
+.logo{
+    float: left;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 23px;
+    font-weight:bold;
+    letter-spacing: 4px;
+    font-family: "Britannic Bold";
+    color: #d2560e;
+    text-shadow: -4px -4px 5px #000;
+    margin-left: 20px;
+}
+
+
+.logout{
+    float: right;
+    margin-right: 40px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 15px;
+}
+
+.logout span{
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #43a866;
+}
+
+
+.logout a{
+    text-decoration: none;
+    color: #0052A3;
+    font-weight: bold;
+}
+
+
+.logout a:hover{
+    font-size: 16px;
+    text-shadow: 2px -2px 2px #666;
+}
