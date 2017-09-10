@@ -13,19 +13,26 @@
     <title>微博系统后台</title>
 </head>
 <body class="easyui-layout">
-<div data-options="region:'north',noheader:true,split:true" style="height:60px;">
-    <div class="logo">微博后台管理</div>
-    <div class="logout"><span>{:session('admin')}</span>,欢迎您!　｜　<a id="logout" href="__MODULE__/Login/logout">退出</a></div>
-</div>
+    <div data-options="region:'north',noheader:true,split:true" style="height:60px;">
+        <div class="logo">微博后台管理</div>
+        <div class="logout"><span>{:session('admin')}</span>,欢迎您!　｜　<a id="logout" href="__MODULE__/Login/logout">退出</a></div>
+    </div>
 
-<div data-options="region:'south',noheader:true,split:true" style="height:35px; line-height: 30px; text-align: center">
-    &copy;20017-2022 哎哟喂 PHP 俱乐部.
-</div>
-<div data-options="region:'west',title:'West',split:true" style="width:170px;">
-    <ul id="nav">
+    <div data-options="region:'south',noheader:true,split:true" style="height:35px; line-height: 30px; text-align: center">
+        &copy;20017-2022 哎哟喂 PHP 俱乐部.
+    </div>
 
-    </ul>
-</div>
-<div data-options="region:'center',title:'center title'" style="padding:5px;background:#eee;"></div>
+    <div data-options="region:'west',title:'导航',split:true"  iconCls="icon-world" style="width:170px;">
+        <ul id="nav">
+        </ul>
+    </div>
+
+    <div data-options="region:'center' ">
+        <div id="tabs">
+            <div title="起始页" iconCls="icon-house">
+                <p>欢迎来到微博后台管理中心!</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
