@@ -29,14 +29,13 @@ $(function () {
                     href:ThinkPHP['MODULE']+'/'+node.url,
                 });
             }
-
         }
     })
 
 
     //主界面标签页
     $('#tabs').tabs({
-
+        fit:true,
     })
 
 });
