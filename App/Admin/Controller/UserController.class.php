@@ -19,7 +19,7 @@ class UserController extends Controller {
     //获取会员列表
     public function getList(){
         $user=D('User');
-        $result=$user->getList(I('post.page'),I('post.rows'),I('post.sort'),I('post.order'));
+        $result=$user->getList(I('post.page'),I('post.rows'),I('post.sort'),I('post.order'),I('post.username'),I('post.datefrom'),I('post.dateto'));
         $this->ajaxReturn($result);
     }
 

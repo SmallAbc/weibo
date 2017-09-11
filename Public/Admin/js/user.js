@@ -63,6 +63,14 @@ $(function () {
     })
 
 
+    //查询按钮
+    $('#search').on('click',function () {
+        $('#user').datagrid('load',{
+            username:$.trim($('input[name="username"]').val()),
+            datefrom:$('input[name="date_from"]').val(),
+            dateto:$('input[name="date_to"]').val()
+        });
+    })
 
 
 });
