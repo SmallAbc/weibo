@@ -4,7 +4,8 @@
 </table>
 <div id="toolbar">
     <div style="margin:5px 0 5px 10px ;">
-        <a href="" class="easyui-linkbutton" iconCls="icon-reload">更新</a>
+        <a id="delete" href="javascript:void (0);" class="easyui-linkbutton" iconCls="icon-delete-new">删除</a>
+        <a id="refresh" href="javascript:void (0);" class="easyui-linkbutton" iconCls="icon-reload">更新</a>
     </div>
     <div style="padding: 5px">
         账 号: <input type="text" class="username" name="username" style="width: 140px; margin-right: 30px;">

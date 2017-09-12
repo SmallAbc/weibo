@@ -49,4 +49,11 @@ class UserModel extends Model
     }
 
 
+
+    //删除会员
+    public function deleteUser($ids){
+       return $result=$this->delete($ids);
+    }
+
+
 }
