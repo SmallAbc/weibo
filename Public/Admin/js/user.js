@@ -1,3 +1,15 @@
+//通过 $.fn.validatebox.defaults 重写默认的 defaults。(扩展)
+//验证框（validatebox）是为了验证表单输入字段而设计的。
+//扩展domain验证
+$.extend($.fn.validatebox.defaults.rules,{
+    domain:{
+        validator:function (value) {
+            return /^\w{4,10}$/.test(value);
+        },
+        message:'请输入正确的个性域名,必须是数字字母或下划线组合的4-10位'
+    }
+})
+
 $(function () {
    $('#user').datagrid({
        url:ThinkPHP['MODULE']+'/User/getList',
@@ -116,6 +128,58 @@ $(function () {
         })
 
     })
+
+    //添加用户界面
+    $('#user-add').dialog(
+        {
+        title:'新增用户',
+        width:350,
+        height:420,
+        autoOpen:true,
+        modal:true,
+        iconCls:'icon-user-add',
+        buttons:[
+            {
+                text:'添加',
+                iconCls:'icon-add-new'
+            },
+            {
+                text:'取消',
+                iconCls:'icon-redo'
+            }
+        ]
+    }
+    )
+
+
+    //数据验证(用户名)
+    $('#name').validatebox({
+        required:true,
+        missingMessage:'请输入2到20位用户名',
+        validType:'length[2,20]',
+    })
+
+
+    //数据验证(密码)
+    $('#password').validatebox({
+        required:true,
+        missingMessage:'请输入6到30位密码',
+        validType:'length[6,30]',
+    })
+
+
+    //数据验证(邮件)
+    $('#email').validatebox({
+        missingMessage:'请输入邮箱地址',
+        validType:'email',
+    })
+
+    //数据验证(域名)
+    $('#domain').validatebox({
+        validType:'domain',
+    })
+
+
 
 
 });
