@@ -128,10 +128,118 @@ $(function () {
         })
 
     })
-
+    
+    
+    //工具栏取消选定按钮
+    $('#unselect').on('click',function () {
+        $('#user').datagrid('unselectAll');
+    })
     //工具栏新增按钮
     $('#add').on('click',function () {
         $('#user-add').dialog('open');
+    })
+
+    //工具栏修改按钮
+    $('#edit').on('click',function(){
+        var select=$('#user').datagrid('getSelections');
+        if(select.length>1){
+            $.messager.alert('提示','每次只能选择一个用户进行修改','info');
+        }else if(select.length==0){
+            $.messager.alert('提示','需要选择一个用户进行修改','info');
+        }else{
+            var id=select[0]['id'];
+            $.ajax({
+                url:ThinkPHP['MODULE']+'/User/getOne',
+                type:'post',
+                data:{
+                    id:id,
+                },
+                beforeSend:function () {
+
+                },
+                success:function (data,responText,msg) {
+                    alert(data['username']);
+                    $('#user-edit #name').val(data.username);
+                        $('#user-edit #email').val(data.email);
+                    if(data.domain){
+                        $('#user-edit #domain').val(data.domain).attr('readonly','readonly');
+                    }
+                        $('#user-edit #info').val(data.extend.intro);
+                }
+            })
+            $('#user-edit').dialog('open');
+
+        }
+
+    })
+
+
+    // 修改用户信息界面
+    $('#user-edit').dialog({
+        title:'修改信息',
+        width:350,
+        height:420,
+        modal:true,
+        closed:true,
+        buttons:[
+            {
+                text:'修改',
+                iconCls:'icon-edit',
+                handler:function () {
+                    if($('#user-edit').form('validate')){
+                        $.ajax({
+                            url:ThinkPHP['MODULE']+'/User/edit',
+                            type:'post',
+                            data:{
+                                username:$('#user-edit #name').val(),
+                                password:$('#user-edit #password').val(),
+                                email:$('#user-edit #email').val(),
+                                domain:$('#user-edit #domain').val(),
+                                face:'/face/small_face.jpg',
+                                info:$('#user-edit #info').val(),
+                            },
+                            beforeSend:function () {
+                                $.messager.progress({
+                                    text:'数据处理中...',
+                                });
+                            },
+                            success:function(data,reText,msg){
+                                $.messager.progress('close');
+                                if(data>0){
+                                    $.messager.show({
+                                        title:'提示',
+                                        msg:'用户新增成功!',
+                                        timeout:5000,
+                                        showType:'slide'
+                                    })
+                                }else{
+                                    switch (data){
+                                        case '-5':
+                                            $.messager.alert('提示','该用户名已被占用!','waring');
+                                            break;
+
+                                        case '-6':
+                                            $.messager.alert('提示','该邮箱已被占用!','waring');
+                                            break;
+                                        case '-7':
+                                            $.messager.alert('提示','该域名已被占用!','waring');
+                                            break;
+
+                                        default:
+                                            $.messager.alert('提示','未知错误,请刷新重试!','waring');
+                                            break;
+                                    }
+                                }
+                            }
+                        })
+                    }
+                }
+            },
+            {
+                text:'重置',
+                iconCls:'icon-redo'
+            }
+        ]
     })
 
 
@@ -154,12 +262,12 @@ $(function () {
                            url:ThinkPHP['MODULE']+'/User/register',
                            type:'post',
                            data:{
-                               username:$('#name').val(),
-                               password:$('#password').val(),
-                               email:$('#email').val(),
-                               domain:$('#domain').val(),
+                               username:$('#user-add #name').val(),
+                               password:$('#user-add #password').val(),
+                               email:$('#user-add #email').val(),
+                               domain:$('#user-add #domain').val(),
                                face:'/face/small_face.jpg',
-                               info:$('#info').val(),
+                               info:$('#user-add #info').val(),
                            },
                            beforeSend:function () {
                                $.messager.progress({
@@ -211,7 +319,7 @@ $(function () {
             $('#user-add').form('reset');
         },
         onOpen:function () {
-            $('#name').focus();
+            $('#user-add #name').focus();
         }
     }
     )
@@ -220,7 +328,7 @@ $(function () {
 
 
     //数据验证(用户名)
-    $('#name').validatebox({
+    $('#user-add #name').validatebox({
         required:true,
         missingMessage:'请输入2到20位用户名',
         validType:'length[2,20]',
@@ -228,7 +336,7 @@ $(function () {
 
 
     //数据验证(密码)
-    $('#password').validatebox({
+    $('#user-add #password').validatebox({
         required:true,
         missingMessage:'请输入6到30位密码',
         validType:'length[6,30]',
@@ -236,14 +344,14 @@ $(function () {
 
 
     //数据验证(邮件)
-    $('#email').validatebox({
+    $('#user-add #email').validatebox({
         required:true,
         missingMessage:'请输入邮箱地址',
         validType:'email',
     })
 
     //数据验证(域名)
-    $('#domain').validatebox({
+    $('#user-add #domain').validatebox({
         validType:'domain',
     })
 

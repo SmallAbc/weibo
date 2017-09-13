@@ -29,6 +29,16 @@ class UserController extends Controller {
 
     }
 
+    //获取需要被修改的会员信息
+    public function getOne(){
+        if(IS_AJAX){
+            $user=D('User');
+            $result=$user->getOne(I('post.id'));
+            $this->ajaxReturn($result);
+        }else{
+            $this->error('非法操作!');
+        }
+    }
 
     //删除会员信息
     public function delete(){

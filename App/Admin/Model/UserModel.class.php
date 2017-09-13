@@ -15,9 +15,19 @@ use function date;
 use function long2ip;
 use function strtotime;
 
-class UserModel extends Model
+class UserModel extends Model\RelationModel
 {
 
+
+    //关联数据库
+    protected $_link=array(
+      'extend'=>array(
+          'mapping_type'=>self::HAS_ONE,
+          'class_name'=>'user_extend',
+          'mapping_fields'=>'intro',
+          'foreign_key'=>'uid'
+      )
+    );
 
 
     //自动验证
@@ -112,6 +122,14 @@ class UserModel extends Model
         }else{
             return $this->getError();
         }
+    }
+
+
+    //获取一条会员信息
+    public function getOne($id){
+        $map['id']=$id;
+        $result=$this->relation(true)->field('id,username,password,email,domain')->where($map)->find();
+        return $result;
     }
 
 }
