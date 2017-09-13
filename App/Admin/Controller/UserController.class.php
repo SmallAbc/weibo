@@ -44,6 +44,18 @@ class UserController extends Controller {
     }
 
 
+    //添加新会员
+    public function register(){
+        if(IS_AJAX){
+            sleep(2);
+            $user=D('User');
+            $result=$user->register(I('post.username'),I('post.password'),I('post.email'),I('post.domain'),I('post.face'),I('post.info'));
+            echo $result;
+        }else{
+            $this->error('非法操作!');
+        }
+    }
+
 
 
 };

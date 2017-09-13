@@ -129,27 +129,94 @@ $(function () {
 
     })
 
+    //工具栏新增按钮
+    $('#add').on('click',function () {
+        $('#user-add').dialog('open');
+    })
+
+
     //添加用户界面
     $('#user-add').dialog(
         {
         title:'新增用户',
         width:350,
         height:420,
-        autoOpen:true,
+        closed:true,
         modal:true,
         iconCls:'icon-user-add',
         buttons:[
             {
                 text:'添加',
-                iconCls:'icon-add-new'
+                iconCls:'icon-add-new',
+                handler:function () {
+                   if($('#user-add').form('validate')){
+                       $.ajax({
+                           url:ThinkPHP['MODULE']+'/User/register',
+                           type:'post',
+                           data:{
+                               username:$('#name').val(),
+                               password:$('#password').val(),
+                               email:$('#email').val(),
+                               domain:$('#domain').val(),
+                               face:'/face/small_face.jpg',
+                               info:$('#info').val(),
+                           },
+                           beforeSend:function () {
+                               $.messager.progress({
+                                   text:'数据处理中...',
+                               });
+                           },
+                           success:function(data,reText,msg){
+                               $.messager.progress('close');
+                            if(data>0){
+                                $.messager.show({
+                                    title:'提示',
+                                    msg:'用户新增成功!',
+                                    timeout:5000,
+                                    showType:'slide'
+                                })
+                            }else{
+                                switch (data){
+                                    case '-5':
+                                        $.messager.alert('提示','该用户名已被占用!','waring');
+                                        break;
+
+                                    case '-6':
+                                        $.messager.alert('提示','该邮箱已被占用!','waring');
+                                        break;
+                                    case '-7':
+                                        $.messager.alert('提示','该域名已被占用!','waring');
+                                        break;
+
+                                    default:
+                                        $.messager.alert('提示','未知错误,请刷新重试!','waring');
+                                        break;
+                                }
+                            }
+                           }
+                       })
+                   }
+                }
             },
             {
-                text:'取消',
-                iconCls:'icon-redo'
+                text:'重置',
+                iconCls:'icon-redo',
+                handler:function () {
+                    $('#user-add').form('reset');
+                }
+                
             }
-        ]
+        ],
+        onClose:function () {
+            $('#user-add').form('reset');
+        },
+        onOpen:function () {
+            $('#name').focus();
+        }
     }
     )
+
+
 
 
     //数据验证(用户名)
@@ -170,6 +237,7 @@ $(function () {
 
     //数据验证(邮件)
     $('#email').validatebox({
+        required:true,
         missingMessage:'请输入邮箱地址',
         validType:'email',
     })

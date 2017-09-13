@@ -34,7 +34,6 @@ class LoginController extends Controller {
     public function logout(){
 
             session('admin',null);
-            echo 1111222333;
             $this->redirect('Login/index');
 
     }
