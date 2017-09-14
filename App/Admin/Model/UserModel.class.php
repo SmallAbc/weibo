@@ -33,9 +33,11 @@ class UserModel extends Model\RelationModel
     //自动验证
     protected $_validate=array(
         //-1,'用户名须在2位到20位之间!'
-        array('username','/^[^@]{2,20}$/i',-1,self::EXISTS_VALIDATE),
-        //-2 '密码须在6位到30位之间!'
-        array('password','6,30',-2,self::EXISTS_VALIDATE,'length'),
+        array('username','/^[^@]{2,20}$/i',-1,self::EXISTS_VALIDATE,self::MODEL_INSERT),
+        //-2 '密码须在6位到30位之间!' 新增
+        array('password','6,30',-2,self::EXISTS_VALIDATE,'length',self::MODEL_INSERT),
+        //-2 '密码须在6位到30位之间!' 修改
+        array('password','6,30',-8,self::VALUE_VALIDATE,'length',self::MODEL_UPDATE),
         //-3 '邮箱格式不正确!'
         array('email','email',-3),
         //-4 当domain存在时验证长度及合法性
@@ -43,16 +45,15 @@ class UserModel extends Model\RelationModel
         //-5 '该账号已被使用!'
         array('username','',-5,self::VALUE_VALIDATE,'unique',self::MODEL_INSERT),
         //-6 '该邮箱已被使用!'
-        array('email','',-6,self::VALUE_VALIDATE,'unique',self::MODEL_INSERT),
+        array('email','',-6,self::VALUE_VALIDATE,'unique',self::MODEL_BOTH),
         //-7 '域名已被使用!'
-        array('domain','',-7,self::VALUE_VALIDATE,'unique',self::MODEL_INSERT),
+        array('domain','',-7,self::VALUE_VALIDATE,'unique',self::MODEL_BOTH),
     );
 
 
     //自动完成
     protected $_auto=array(
-        array('password','sha1',self::MODEL_BOTH,'function') ,
-
+        array('password','sha1',self::MODEL_BOTH,'function'),
         array('create','time',self::MODEL_INSERT,'function'),
     );
 
@@ -130,6 +131,29 @@ class UserModel extends Model\RelationModel
         $map['id']=$id;
         $result=$this->relation(true)->field('id,username,password,email,domain')->where($map)->find();
         return $result;
+    }
+
+
+    //修改会员信息
+    public function edit($id,$password,$email,$domain,$face,$info){
+
+        $data=array(
+            'id'=>$id,               //create的时候,如果有id就是修改模式,没有的话就是新增模式
+            'email'=>$email,
+            'domain'=>$domain,
+            'face'=>$face,
+            'extend'=>array('intro'=>$info)
+        );
+        if($password!=''){
+            $data['password']=$password;
+        }
+        //使用create时最好给他指定type,1是新增模式,2是更新模式,否则让函数自动判断有可能会出现错误
+        if($this->create($data,2)){
+            $result=$this->relation(true)->save();
+            return $result;
+        }else{
+            return $this->getError();
+        }
     }
 
 }

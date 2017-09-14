@@ -31,6 +31,8 @@ class UserController extends Controller {
 
     //获取需要被修改的会员信息
     public function getOne(){
+        sleep(2);
+
         if(IS_AJAX){
             $user=D('User');
             $result=$user->getOne(I('post.id'));
@@ -60,6 +62,19 @@ class UserController extends Controller {
             sleep(2);
             $user=D('User');
             $result=$user->register(I('post.username'),I('post.password'),I('post.email'),I('post.domain'),I('post.face'),I('post.info'));
+            echo $result;
+        }else{
+            $this->error('非法操作!');
+        }
+    }
+
+
+    //修改用户信息
+    public function edit(){
+        sleep(2);
+        if(IS_AJAX){
+            $user=D('User');
+            $result=$user->edit(I('post.id'),I('post.password'),I('post.email'),I('post.domain'),I('post.face'),I('post.info'));
             echo $result;
         }else{
             $this->error('非法操作!');

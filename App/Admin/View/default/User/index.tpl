@@ -29,8 +29,9 @@
 
 <!--修改会员信息界面-->
 <form action="" id="user-edit" style="text-align: center;">
-    <p>用户账号: <input type="text" name="name" id="name" readonly="readonly"></p>
-    <p>用户密码: <input type="password" name="password" id="password"></p>
+    <input type="hidden" name="id" id="id">
+    <p>用户账号: <input type="text" name="name" id="name" disabled="disabled"></p>
+    <p>用户密码: <input type="password" name="password" id="password" placeholder='留空则不修改'></p>
     <p>电子邮件: <input type="text" name="email" id="email"></p>
     <p>个人域名: <input type="text" name="domain" id="domain"></p>
     <p>默认图像: <a href="javascript:alert();"><img src="__PUBLIC__/Home/img/small_face.jpg" alt=""></a></p>

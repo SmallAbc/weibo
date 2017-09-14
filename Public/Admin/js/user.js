@@ -155,19 +155,25 @@ $(function () {
                     id:id,
                 },
                 beforeSend:function () {
-
+                $.messager.progress({
+                    text:'正在获取数据...'
+                })
                 },
                 success:function (data,responText,msg) {
-                    alert(data['username']);
+                    $.messager.progress('close');
+                    $('#user-edit #id').val(data.id);
                     $('#user-edit #name').val(data.username);
-                        $('#user-edit #email').val(data.email);
+                    $('#user-edit #email').val(data.email);
                     if(data.domain){
-                        $('#user-edit #domain').val(data.domain).attr('readonly','readonly');
+                        $('#user-edit #domain').val(data.domain);
                     }
+                    if(data.extend){
                         $('#user-edit #info').val(data.extend.intro);
+                    }
+                    $('#user-edit').dialog('open');
+
                 }
             })
-            $('#user-edit').dialog('open');
 
         }
 
@@ -181,6 +187,7 @@ $(function () {
         height:420,
         modal:true,
         closed:true,
+        iconCls:'icon-user',
         buttons:[
             {
                 text:'修改',
@@ -191,7 +198,7 @@ $(function () {
                             url:ThinkPHP['MODULE']+'/User/edit',
                             type:'post',
                             data:{
-                                username:$('#user-edit #name').val(),
+                                id:$('#user-edit #id').val(),
                                 password:$('#user-edit #password').val(),
                                 email:$('#user-edit #email').val(),
                                 domain:$('#user-edit #domain').val(),
@@ -205,15 +212,16 @@ $(function () {
                             },
                             success:function(data,reText,msg){
                                 $.messager.progress('close');
-                                if(data>0){
+                                if(data>=0){
                                     $.messager.show({
                                         title:'提示',
-                                        msg:'用户新增成功!',
+                                        msg:'用户信息修改成功!',
                                         timeout:5000,
                                         showType:'slide'
                                     })
                                 }else{
                                     switch (data){
+
                                         case '-5':
                                             $.messager.alert('提示','该用户名已被占用!','waring');
                                             break;
@@ -233,13 +241,17 @@ $(function () {
                             }
                         })
                     }
-                }
+                },
+
             },
             {
                 text:'重置',
                 iconCls:'icon-redo'
             }
-        ]
+        ],
+        onClose:function () {
+            $('#user-edit').form('reset');
+        }
     })
 
 
@@ -335,23 +347,31 @@ $(function () {
     })
 
 
-    //数据验证(密码)
+    //数据验证(密码),,新增框
     $('#user-add #password').validatebox({
         required:true,
         missingMessage:'请输入6到30位密码',
         validType:'length[6,30]',
     })
+//数据验证(密码)修改框
+    $('#user-edit #password').validatebox({
+        validType:'length[6,30]',
+    })
 
 
-    //数据验证(邮件)
+    //数据验证(邮件)新增框
     $('#user-add #email').validatebox({
         required:true,
         missingMessage:'请输入邮箱地址',
         validType:'email',
     })
-
+    //数据验证(邮件)修改框
+    $('#user-edit #email').validatebox({
+        missingMessage:'请输入邮箱地址',
+        validType:'email',
+    })
     //数据验证(域名)
-    $('#user-add #domain').validatebox({
+    $('#user-add #domain,#user-edit #domain').validatebox({
         validType:'domain',
     })
 
