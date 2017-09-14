@@ -14,6 +14,7 @@ use function D;
 use function date;
 use function long2ip;
 use function strtotime;
+use function time;
 
 class UserModel extends Model\RelationModel
 {
@@ -51,11 +52,11 @@ class UserModel extends Model\RelationModel
     );
 
 
-    //自动完成
-    protected $_auto=array(
-        array('password','sha1',self::MODEL_BOTH,'function'),
-        array('create','time',self::MODEL_INSERT,'function'),
-    );
+    //自动完成  不能满足关联模式的需求
+//    protected $_auto=array(
+//        array('password','sha1',self::VALUE_VALIDATE,self::MODEL_BOTH,'function'),
+//        array('create','time',self::MODEL_INSERT,'function'),
+//    );
 
     //获取会员数据库信息
     public function getList($page,$rows,$sort,$order,$username,$datefrom,$dateto){
@@ -93,7 +94,7 @@ class UserModel extends Model\RelationModel
 
     //删除会员
     public function deleteUser($ids){
-       return $result=$this->delete($ids);
+       return $result=$this->relation(true)->delete($ids);
     }
 
 
@@ -102,24 +103,18 @@ class UserModel extends Model\RelationModel
     public function register($username,$password,$email,$domain,$face,$info){
         $data=array(
             'username'=>$username,
-            'password'=>$password,
             'email'=>$email,
             'domain'=>$domain,
             'face'=>$face,
-
+            'create'=>time(),
+            'extend'=>array(
+                'intro'=>$info,
+            )
         );
         if($this->create($data)){
-            $uid=$this->add();
-            if($uid&&$info){
-                $data=array(
-                  'intro'=>$info,
-                  'uid' =>$uid,
-                );
-            $userexted=D('user_extend');
-            $userexted->add($data);
-            }
+            $data['password']=sha1($password);
+            $uid=$this->relation(true)->add($data);
             return $uid;
-
         }else{
             return $this->getError();
         }
@@ -136,6 +131,16 @@ class UserModel extends Model\RelationModel
 
     //修改会员信息
     public function edit($id,$password,$email,$domain,$face,$info){
+        $ex=D('user_extend');
+        $map['uid']=$id;
+        $result=$ex->where($map)->select();
+        if (!$result){
+            $data=array(
+                'uid'=>$id,
+                'intro'=>'',
+            );
+            $ex->add($data);
+        }
 
         $data=array(
             'id'=>$id,               //create的时候,如果有id就是修改模式,没有的话就是新增模式
@@ -144,12 +149,13 @@ class UserModel extends Model\RelationModel
             'face'=>$face,
             'extend'=>array('intro'=>$info)
         );
-        if($password!=''){
-            $data['password']=$password;
-        }
+
         //使用create时最好给他指定type,1是新增模式,2是更新模式,否则让函数自动判断有可能会出现错误
         if($this->create($data,2)){
-            $result=$this->relation(true)->save();
+            if($password){
+                $data['password']=sha1($password);
+            }
+            $result=$this->relation(true)->save($data);
             return $result;
         }else{
             return $this->getError();
