@@ -128,8 +128,8 @@ $(function () {
         })
 
     })
-    
-    
+
+
     //工具栏取消选定按钮
     $('#unselect').on('click',function () {
         $('#user').datagrid('unselectAll');
