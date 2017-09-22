@@ -90,16 +90,22 @@ $(function () {
                 maxlength:20,
                 isAt:true,
                 remote:{
-                    url:ThinkPHP['MODULE']+'/User/checkUserName',
+                    url:ThinkPHP['MODULE']+'/User/checkUsername',
                     type:'post',
                     beforeSend:function () {
+                        $('#username').next().removeClass('succ');
                         $('#username').next().html('').removeClass('star').addClass('loading');
                     },
                     complete:function (jqXHR) {
                         if(jqXHR.responseText==='true'){
                             $('#username').next().addClass('succ').removeClass('loading');
-                        }else{
-                            $('#username').next().addClass('star').removeClass('loading');
+                        }else if(jqXHR.responseText==='false'){
+                            $('#username').next().removeClass('loading');
+                            //此处延迟50毫秒,是为了class的顺利添加,否则会添加,删除失败
+                            setTimeout(function(){
+                                $('#username').next().removeClass('succ');
+                            },50);
+                            $('#username').next().addClass('star').html('*');
                         }
                     }
                 }

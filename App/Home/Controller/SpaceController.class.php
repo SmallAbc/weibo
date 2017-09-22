@@ -14,6 +14,7 @@ use Home\Model\UserModel;
 use const __ROOT__;
 use function I;
 use function json_decode;
+use function print_r;
 use function U;
 
 class SpaceController extends HomeController
@@ -30,6 +31,7 @@ class SpaceController extends HomeController
                     $result=$UserModel->getUser(I('get.domain'),'domain');
                 }
                 if($result){
+                    print_r($result);
                     $result['face']=json_decode($result['face'],true);
                     $this->assign('user',$result);
                     $this->display();

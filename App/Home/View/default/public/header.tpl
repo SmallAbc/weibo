@@ -11,7 +11,7 @@
     </div>
     <div class="person">
       <ul>
-        <li><a href="###">蜡笔小新</a></li>
+        <li><a href="{:U('Setting/index')}">{:session('user_auth')['username']},欢迎您!</a></li>
         <li class="app"><span>消息
             <dl class="list">
                 <dd><a href="{:U('Setting/refer')}">

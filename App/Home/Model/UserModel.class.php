@@ -28,7 +28,6 @@ class UserModel extends RelationModel {
     //用户表自动完成
     protected $_auto=array(
         array('password','sha1',self::MODEL_BOTH,'function'),
-        array('repassword','sha1',self::MODEL_BOTH,'function'),
         array('create','time',self::MODEL_INSERT,'function')
     );
 
@@ -38,7 +37,16 @@ class UserModel extends RelationModel {
           'class_name'=>'user_extend',
           'mapping_fields'=>'intro',
           'foreign_key'=>'uid'
-      )
+      ),
+        'approve'=>array(
+            'mapping_type'=>self::HAS_MANY,
+            'class_name'=>'approve',
+            'mapping_fields'=>'name,info',
+            'foreign_key'=>'uid',
+            'mapping_order'=>'create_date desc',
+            'mapping_limit'=>'1',
+            'condition'=>'state=1'
+        )
     );
     //自动验证
     protected $_validate=array(
@@ -136,7 +144,6 @@ class UserModel extends RelationModel {
         switch ($type){
             case 'username':
                 $data['username']=$value;
-                echo $value;
                 break;
 
             case 'email':

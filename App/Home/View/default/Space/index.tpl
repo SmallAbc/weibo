@@ -15,12 +15,29 @@
                     <img src="__ROOT__{$user.face.big}" alt="">
                 </if>
                 </dt>
-                <dd class="username">{$user.username}</dd>
+                <dd class="username">{$user.username}
+                    <empty name="user.approve">
+                        <else/>
+                        <img src="__IMG__/approve.png" alt="微博个人认证" title="微博个人认证">
+                        <volist name='user.approve' id="app">
+                            <p class="app-info">{$app.name}---{$app.info}</p>
+                        </volist>
+                    </empty>
+                </dd>
                 <dd class="info">{$user.extend.intro}</dd>
             </dl>
         </div>
     </div>
     <div class="main_right">
+        <empty name="user.approve">
+            <else/>
 
+            <volist name='user.approve' id="app">
+                <dl>
+                    <dt><img src="__IMG__/approve.png" alt="微博个人认证" title="微博个人认证"> 微博认证资料</dt>
+                    <dd>{$app.name}---{$app.info}</dd>
+                </dl>
+            </volist>
+        </empty>
     </div>
 </block>

@@ -64,7 +64,7 @@ $(function () {
         })
         setTimeout(function () {
             refer();
-        },1000);
+        },30000);
     }
 
 

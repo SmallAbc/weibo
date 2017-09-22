@@ -190,7 +190,7 @@ $(function(){
     }
 
 
-    //取消按钮
+    //图像剪切取消按钮
     $('#cancel').button().click(function () {
         //销毁jcrop
         jcrop_api.destroy();
@@ -209,7 +209,7 @@ $(function(){
     })
 
 
-    //保存按钮
+    //图像剪切保存按钮
     $('#save').button().click(function () {
         $.ajax({
             url:ThinkPHP['MODULE']+'/File/crop',
@@ -237,6 +237,11 @@ $(function(){
                 $('#file').show();
                 $('#save').button().hide();
                 $('#cancel').button().hide();
+
+                $.ajax({
+                    //相当于重新加载一次reload,以便session写入
+                    url:ThinkPHP['MODULE']+'/Setting/avatar'
+                })
             }
         })
     })
@@ -290,7 +295,49 @@ $(function(){
             })
     })
 
+    $('#add-button').on('click',function () {
+        $('#approve').dialog('open');
+    })
 
+    $('#approve').dialog({
+        title:'添加认证',
+        autoOpen:false,
+        modal:true,
+        buttons:[
+            {
+                text:'提交',
+                click:function (e) {
+                $.ajax({
+                    url:ThinkPHP['MODULE']+'/Setting/sendApplication',
+                    type:'post',
+                    data:{
+                        id:$('input[name="uid"]').val(),
+                        name:$('input[name="name"]').val(),
+                        info:$('textarea[name="info"]').val(),
+                    },
+                    beforeSend:function () {
+                        $('#loading').dialog('open').html('数据提交中...').addClass('loading')
+                    },
+                    success:function (data,responText) {
+                        if(data>0){
+                            $('#loading').dialog().html('申请已提交!').removeClass('loading').addClass('succ');
+                            setTimeout(function () {
+                                $('#loading').dialog('close').html('...');
+                            })
+                        }else{
+                            $('#loading').dialog('close').html('...');
+                            $('#error').html('数据错误:'+data).dialog('open');
+                            setTimeout(function () {
+                                $('#error').dialog('close');
+                            },3000)
+                        }
 
+                    }
+                    
+                })
+                }
+            }
+        ]
+    })
 
 });

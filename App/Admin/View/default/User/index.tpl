@@ -1,9 +1,14 @@
 <script type="text/javascript" src="__JS__/user.js"></script>
+
 <table id="user">
 <!--datagrid-->
+
 </table>
+
 <div id="toolbar">
+
     <div style="margin:5px 0 5px 10px ;">
+
         <a id="add" href="javascript:void (0);" class="easyui-linkbutton" iconCls="icon-add" style="margin-right: 10px;">新增</a>
         <a id="edit" href="javascript:void (0);" class="easyui-linkbutton" iconCls="icon-edit" style="margin-right: 10px;">修改</a>
         <a id="delete" href="javascript:void (0);" class="easyui-linkbutton" iconCls="icon-delete-new" style="margin-right: 10px;">删除</a>

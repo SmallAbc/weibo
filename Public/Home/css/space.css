@@ -55,3 +55,31 @@
     font-size:14px;
     color: #666;
 }
+
+
+.app-info{
+    font-size:16px ;
+    text-indent: 30px;
+}
+
+.main_right dl {
+    margin: 10px;
+}
+
+
+
+.main_right dl dt{
+    border:1px solid #c0460e;
+    text-align: center;
+    font-size:14px;
+    height: 22px;
+    line-height: 20px;
+    width: 110px;
+    border-radius: 3px;
+    background: #ffeeac;
+}
+
+.main_right dl dd{
+    margin-top: 10px;
+    font-size: 13px;
+}

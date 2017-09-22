@@ -61,6 +61,7 @@ class HomeController extends Controller
                     'id' => $userinfo['id'],
                     'username'=>$username,
                     'last_login' => time(),
+                    //写入数据库的是json数据,所以要解析后才能给PHP
                     'face'=>json_decode($userinfo['face'],true)
                 );
                 session('user_auth', $auth);
